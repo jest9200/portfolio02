@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <% if (cssFiles.length !== 0) { %>
+        <% for( let i=0; i<cssFiles.length; i++ ) { %>
+            <link rel="stylesheet" href="/css/<%- cssFiles[i] %>">
+        <% } %>
+    <% } %>
+    <% if (jsFiles.length !== 0) { %>
+        <% for( let i=0; i<jsFiles.length; i++ ) { %>
+            <script defer src="/js/<%- jsFiles[i] %>"></script>
+        <% } %>
+    <% } %>
+</head>
+<body>
+    <div id="header">
+        <div class="bg"></div>
+        <div class="topHeader">
+            <h1 class="logo"><a href="/"><img src="/img/index/logo.png"></a></h1>
+        </div>
+        <div class="botHeader">
+            <div class="center">
+                <ul class="gnb">
+                    <li>
+                        <a href="/"><span>PRODUCTS</span></a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="/">
+                                    <img src="/img/index/more01.png">
+                                    <p>ROLLABLE OLED TV</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/index/more02.png">
+                                    <p>OLED 8K</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/index/more03.png">
+                                    <p>REFRIGERATOR</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/index/more04.png">
+                                    <p>WINE CELLAR</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/index/more05.png">
+                                    <p>WASHING MACHINE</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/index/more06.png">
+                                    <p>AIR PURIFIER</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>BRAND</span></a></li>
+                    <li><a href="#"><span>MAGAZINE</span></a></li>
+                    <li><a href="#"><span>LOUNGE</span></a></li>
+                    <li><a href="#"><span>INSPIRATION</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
