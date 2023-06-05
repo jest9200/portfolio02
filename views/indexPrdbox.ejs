@@ -1,0 +1,40 @@
+
+<% 
+    const prdData = [{
+        title:"Rollable OLED TV",
+        prdImg:"index/product01.jpg",
+        prdhoverImg:"index/product01_hover.jpg"
+    },{
+        title:"OLED 8K",
+        prdImg:"index/product02.jpg",
+        prdhoverImg:"index/product02_hover.jpg"
+    },{
+        title:"REFRIGERATOR",
+        prdImg:"index/product03.jpg",
+        prdhoverImg:"index/product03_hover.jpg"
+    },{
+        title:"WINE CELLAR",
+        prdImg:"index/product04.jpg",
+        prdhoverImg:"index/product04_hover.jpg"
+    },{
+        title:"WASHING MACHINE",
+        prdImg:"index/product05.jpg",
+        prdhoverImg:"index/product05_hover.jpg"
+    },{
+        title:"AIR PURIFIER",
+        prdImg:"index/product06.jpg",
+        prdhoverImg:"index/product06_hover.jpg"
+    }]
+%>
+
+<!-- prdBox a태그 경로 변경 필요 => 데이터에 차후 추가할것 -->
+<% for( let i=0; i<prdData.length; i++) { %>
+    <a class="prdBox" href="/">
+        <div>
+            <img class="prdImg" src="/img/<%- prdData[i].prdImg %>">
+            <img class="prdhoverImg" src="/img/<%- prdData[i].prdhoverImg %>">
+            <p>LEARN MORE</p>
+        </div>
+        <h2><%- prdData[i].title %></h2>
+    </a>
+<% } %>

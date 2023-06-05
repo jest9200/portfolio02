@@ -156,6 +156,41 @@ input, button {
 #header .botHeader .center .gnb > li .depth2 > li:hover a p::after {
   transform: scale(1);
 }
+#header .loginWrap {
+  position: absolute;
+  top: 40px;
+  right: 10%;
+  display: flex;
+}
+#header .loginWrap > a {
+  margin-left: 20px;
+  display: flex;
+}
+#header .loginWrap > a:nth-child(2)::before, #header .loginWrap > a:nth-child(3)::before {
+  content: "|";
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  margin-right: 20px;
+}
+#header .loginWrap > a span {
+  font-size: 15px;
+  color: #fff;
+  transition: all 0.5s;
+}
+#header .loginWrap > a span::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  margin-top: 2px;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+#header .loginWrap > a:hover span::after {
+  transform: scale(1);
+}
 
 #header.top {
   background: none;
@@ -166,6 +201,18 @@ input, button {
   display: flex;
 }
 #header.top .botHeader .center .gnb > li > a {
+  color: #fff;
+}
+#header.top .loginWrap {
+  display: flex;
+}
+#header.top .loginWrap > a::before {
+  color: #fff;
+}
+#header.top .loginWrap > a span {
+  color: #fff;
+}
+#header.top .loginWrap > a span::after {
   color: #fff;
 }
 
@@ -180,6 +227,18 @@ input, button {
 #header.up .botHeader .center .gnb > li > a {
   color: #000;
 }
+#header.up .loginWrap {
+  display: flex;
+}
+#header.up .loginWrap > a::before {
+  color: #000;
+}
+#header.up .loginWrap > a span {
+  color: #000;
+}
+#header.up .loginWrap > a span::after {
+  background-color: #000;
+}
 
 #header.down {
   background: linear-gradient(180deg, #000, #000 10%, rgba(0, 0, 0, 0.2) 65%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0));
@@ -188,12 +247,21 @@ input, button {
 #header.down .botHeader {
   display: none;
 }
+#header.down .loginWrap {
+  display: none;
+}
 
 #header.white {
   background: #fff;
   border-bottom: 1px solid #eee;
 }
 #header.white .botHeader .center .gnb > li > a {
+  color: #000;
+}
+#header.white .loginWrap > a::before {
+  color: #000;
+}
+#header.white .loginWrap > a span {
   color: #000;
 }
 
@@ -248,7 +316,94 @@ input, button {
   position: relative;
   margin-top: 120vh;
   background-color: #000;
-  height: 1000px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0 100px;
+}
+#container .cont2 .center {
+  width: 62.5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#container .cont2 .center .prdBox {
+  display: block;
+  margin-bottom: 50px;
+  width: 354px;
+}
+#container .cont2 .center .prdBox > div {
+  position: relative;
+  width: 100%;
+  height: 354px;
+}
+#container .cont2 .center .prdBox > div::after {
+  content: "";
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+#container .cont2 .center .prdBox > div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 354px;
+  transition: all 0.5s;
+}
+#container .cont2 .center .prdBox > div .prdImg {
+  opacity: 1;
+}
+#container .cont2 .center .prdBox > div .prdhoverImg {
+  opacity: 0;
+}
+#container .cont2 .center .prdBox > div p {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#container .cont2 .center .prdBox > div p::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  margin-top: 3px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#container .cont2 .center .prdBox:hover > div::after {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+#container .cont2 .center .prdBox:hover > div .prdImg {
+  opacity: 0;
+}
+#container .cont2 .center .prdBox:hover > div .prdhoverImg {
+  opacity: 1;
+}
+#container .cont2 .center .prdBox:hover > div p {
+  opacity: 1;
+}
+#container .cont2 .center .prdBox:hover > div p::after {
+  opacity: 1;
+}
+#container .cont2 .center .prdBox h2 {
+  color: #fff;
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: center;
 }
 #container .cont3 {
   position: relative;
@@ -258,7 +413,72 @@ input, button {
 
 #footer {
   position: relative;
-  height: 100px;
-  background-color: #222;
+  padding: 50px 0;
+  background-color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+#footer .center {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .center > ul {
+  margin-bottom: 30px;
+}
+#footer .center .sns {
+  display: flex;
+}
+#footer .center .sns li {
+  margin: 0 20px;
+}
+#footer .center .sns li a {
+  font-size: 22px;
+  color: #777;
+  transition: all 0.5s;
+}
+#footer .center .sns li a:hover {
   color: #fff;
+}
+#footer .center .footerMenu {
+  display: flex;
+  width: 100%;
+}
+#footer .center .footerMenu li {
+  width: 16.666666%;
+}
+#footer .center .footerMenu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#footer .center .footerMenu li a span {
+  font-size: 17px;
+}
+#footer .center .footerMenu li a span::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  margin-top: 3px;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+#footer .center .footerMenu li a:hover span::after {
+  transform: scale(1);
+}
+#footer .center .textWrap {
+  text-align: center;
+  color: #a6a6a6;
+}
+#footer .center .textWrap p {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+#footer .center .textWrap span {
+  font-size: 12px;
 }
