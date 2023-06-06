@@ -33,7 +33,7 @@ input, button {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 20;
   transition: all 0.5s;
   border-bottom: 1px solid transparent;
 }
@@ -406,9 +406,327 @@ input, button {
   text-align: center;
 }
 #container .cont3 {
+  font-family: "Poppins", sans-serif;
   position: relative;
   background-color: #fff;
-  height: 1000px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+#container .cont3 .center {
+  width: 83%;
+  position: relative;
+}
+#container .cont3 .center .textWrap {
+  position: absolute;
+  padding-left: 3vw;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+#container .cont3 .center .textWrap h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #a50034;
+}
+#container .cont3 .center .textWrap h2 {
+  font-size: 80px;
+  padding: 15px 0 25px;
+}
+#container .cont3 .center .textWrap h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  padding-bottom: 40px;
+}
+#container .cont3 .center .textWrap p {
+  font-size: 14px;
+  padding-bottom: 40px;
+  line-height: 25px;
+}
+#container .cont3 .center .textWrap a {
+  display: block;
+  width: 280px;
+  height: 45px;
+  border: 1px solid #a50034;
+}
+#container .cont3 .center .textWrap a .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a50034;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.5s;
+}
+#container .cont3 .center .textWrap a:hover .text {
+  background-color: #fff;
+  color: #a50034;
+}
+#container .cont3 .center .tvWrap {
+  position: relative;
+  width: 100%;
+}
+#container .cont3 .center .tvWrap img, #container .cont3 .center .tvWrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+}
+#container .cont4 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: #fff;
+  padding: 250px 0 150px;
+}
+#container .cont4::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #a50034;
+  top: 0px;
+  left: 50%;
+  width: 2px;
+  height: 80px;
+}
+#container .cont4 .imgWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#container .cont4 .imgWrap .center {
+  width: 83%;
+  height: 843px;
+  position: relative;
+}
+#container .cont4 .imgWrap .center img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#container .cont4 .imgWrap .center .prdVid {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#container .cont4 .imgWrap .center .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+#container .cont4 .imgWrap .center .play:hover {
+  background-color: #a50034;
+  color: #fff;
+}
+#container .cont4 .imgWrap .center .close {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 10;
+  transition: all 0.5s;
+}
+#container .cont4 .imgWrap .center .close:hover {
+  background-color: #a50034;
+}
+#container .cont4 .imgWrap.on .center .prdVid {
+  display: block;
+}
+#container .cont4 .imgWrap.on .center .play {
+  display: none;
+}
+#container .cont4 .imgWrap.on .center .close {
+  display: flex;
+}
+#container .cont4 .textWrap {
+  display: flex;
+  justify-content: center;
+}
+#container .cont4 .textWrap .center {
+  width: 83%;
+  display: flex;
+  justify-content: center;
+}
+#container .cont4 .textWrap .center .text {
+  width: 690px;
+  text-align: center;
+}
+#container .cont4 .textWrap .center .text h2 {
+  font-size: 60px;
+  line-height: 65px;
+  padding-bottom: 80px;
+  position: relative;
+}
+#container .cont4 .textWrap .center .text h2::after {
+  content: "";
+  display: block;
+  background-color: #a50034;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#container .cont4 .textWrap .center .text p {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333;
+}
+#container .cont5 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: #fff;
+  padding: 100px 0;
+}
+#container .cont5 .imgWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#container .cont5 .imgWrap .center {
+  width: 83%;
+  height: 792px;
+  position: relative;
+}
+#container .cont5 .imgWrap .center .imgs {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#container .cont5 .imgWrap .center .imgs > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#container .cont5 .imgWrap .center .imgs > img:nth-child(1) {
+  display: block;
+}
+#container .cont5 .imgWrap .center .area {
+  width: 60px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+#container .cont5 .imgWrap .center .area::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#container .cont5 .imgWrap .center .area_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-image: url(/img/index/btn-drag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(90deg);
+  filter: drop-shadow(0 0 0 #999);
+  z-index: 10;
+}
+#container .cont5 .imgWrap .center .titleWrap {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 0;
+}
+#container .cont5 .imgWrap .center .titleWrap span {
+  font-size: 20px;
+  color: #444;
+}
+#container .cont5 .imgWrap .center .titleWrap h2 {
+  font-size: 60px;
+  padding-top: 10px;
+}
+#container .cont5 .textWrap {
+  display: flex;
+  justify-content: center;
+}
+#container .cont5 .textWrap .center {
+  width: 83%;
+  display: flex;
+  justify-content: center;
+}
+#container .cont5 .textWrap .center .text {
+  width: 690px;
+  text-align: center;
+}
+#container .cont5 .textWrap .center .text h2 {
+  font-size: 60px;
+  line-height: 65px;
+  padding-bottom: 80px;
+  position: relative;
+}
+#container .cont5 .textWrap .center .text h2::after {
+  content: "";
+  display: block;
+  background-color: #a50034;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#container .cont5 .textWrap .center .text p {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333;
 }
 
 #footer {

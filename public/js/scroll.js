@@ -1,4 +1,11 @@
 let lastScroll = 0;
+const indexCont3 = document.querySelector("#container .cont3");
+const indexCont4 = document.querySelector("#container .cont4");
+const cont3Video = document.querySelector(".cont3 video");
+let cont3Top = indexCont3.offsetTop;
+let cont4Top = indexCont4.offsetTop;
+
+
 window.onscroll = () => {
     let scrollTop = document.documentElement.scrollTop;
     if(scrollTop === 0) {
@@ -21,7 +28,16 @@ window.onscroll = () => {
         header.classList.remove("top");
     }
     lastScroll = scrollTop;
+
+    // index cont3 비디오 기능
+    // if(scrollTop > cont3Top && scrollTop < cont4Top){
+    //     cont3Video.play();
+    // } else {
+    //     cont3Video.pause();
+    // }
 }
+
+
 
 // 스크롤화살표 움직이기(공통)
 const scrollWrap = document.querySelector(".scrollWrap");
