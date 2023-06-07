@@ -819,6 +819,85 @@ input, button {
 #container .cont6 .swiper .swiper-button-next {
   left: 50px;
 }
+#container .cont7 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: #fff;
+  padding: 150px 0;
+}
+#container .cont7 .imgWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#container .cont7 .imgWrap .center {
+  width: 83%;
+}
+#container .cont7 .imgWrap .center .view {
+  width: 100%;
+  height: 800px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+#container .cont7 .imgWrap .center .imgList {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#container .cont7 .imgWrap .center .imgList > a {
+  display: block;
+  width: 19%;
+  height: 150px;
+  position: relative;
+  border: 4px solid #fff;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+#container .cont7 .imgWrap .center .imgList > a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#container .cont7 .imgWrap .center .imgList > a.show {
+  border: 4px solid #a50034;
+  opacity: 1;
+}
+#container .cont7 .textWrap {
+  display: flex;
+  justify-content: center;
+}
+#container .cont7 .textWrap .center {
+  width: 83%;
+  display: flex;
+  justify-content: center;
+}
+#container .cont7 .textWrap .center .text {
+  width: 690px;
+  text-align: center;
+}
+#container .cont7 .textWrap .center .text h2 {
+  font-size: 60px;
+  line-height: 65px;
+  padding-bottom: 80px;
+  position: relative;
+}
+#container .cont7 .textWrap .center .text h2::after {
+  content: "";
+  display: block;
+  background-color: #a50034;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#container .cont7 .textWrap .center .text p {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333;
+}
 
 #footer {
   position: relative;
