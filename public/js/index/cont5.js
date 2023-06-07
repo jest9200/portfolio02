@@ -19,12 +19,18 @@ boxArea.addEventListener("mousedown",(e)=>{
     originTop = boxArea.offsetTop;
 });
 
-area.addEventListener("mouseup",(edge)=>{
+area.addEventListener("mouseup",(e)=>{
     isDragging = false;
     // console.log(box.offsetTop);
     
 });
 
+// 마우스가 area 바깥쪽으로 나갔을때에도 계속 움직이는 버그 제거 위함
+// area.addEventListener("mouseleave",(e)=>{
+//     isDragging = false;
+// })
+
+// img태그 44장 생성
 let imgTags = "";
 for(let i=1; i<45; i++){
     imgTags = document.createElement("img");
@@ -44,7 +50,6 @@ area.addEventListener("mousemove",(e)=>{
     }
 
     let percent = Math.floor(boxArea.offsetTop / maxHeight * 43); 
-    console.log(percent);
 
     const wrapImg = document.querySelectorAll(".cont5 .imgs img");
     const titleCont5 = document.querySelector(".cont5 .titleWrap");
@@ -54,6 +59,7 @@ area.addEventListener("mousemove",(e)=>{
     }
     wrapImg[percent].style.display = "block";
 
+    // title 글씨 서서히 등장
     if(percent === 43) {
         titleCont5.style.opacity = 1;
     } else if(percent === 40){

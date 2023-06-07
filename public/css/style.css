@@ -610,7 +610,7 @@ input, button {
   font-family: "Poppins", sans-serif;
   position: relative;
   background-color: #fff;
-  padding: 100px 0;
+  padding: 100px 0 300px;
 }
 #container .cont5 .imgWrap {
   display: flex;
@@ -727,6 +727,96 @@ input, button {
   font-size: 22px;
   line-height: 36px;
   color: #333;
+}
+#container .cont6 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+#container .cont6 .center {
+  width: 77%;
+  height: 750px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#container .cont6 .center .textWrap .text {
+  width: 30%;
+}
+#container .cont6 .center .textWrap .text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
+}
+#container .cont6 .center .textWrap .text h2 {
+  font-size: 60px;
+  line-height: 65px;
+  padding-bottom: 80px;
+  position: relative;
+}
+#container .cont6 .center .textWrap .text h2::after {
+  content: "";
+  display: block;
+  background-color: #a50034;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 40px;
+  left: 0%;
+}
+#container .cont6 .center .textWrap .text p {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333;
+}
+#container .cont6 .swiper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52%;
+  height: 750px;
+}
+#container .cont6 .swiper .swiper-wrapper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#container .cont6 .swiper .swiper-wrapper .swiper-slide.one {
+  background-image: url(/img/index/prdSlide01.jpg);
+}
+#container .cont6 .swiper .swiper-wrapper .swiper-slide.two {
+  background-image: url(/img/index/prdSlide02.jpg);
+}
+#container .cont6 .swiper .swiper-wrapper .swiper-slide.three {
+  background-image: url(/img/index/prdSlide03.jpg);
+}
+#container .cont6 .swiper .swiper-wrapper .swiper-slide.four {
+  background-image: url(/img/index/prdSlide04.jpg);
+}
+#container .cont6 .swiper .swiper-button-prev,
+#container .cont6 .swiper .swiper-button-next {
+  top: auto;
+  bottom: 0;
+  color: #111;
+  background-color: #ddd;
+  width: 50px;
+  height: 100px;
+  transition: all 0.5s;
+}
+#container .cont6 .swiper .swiper-button-prev:hover,
+#container .cont6 .swiper .swiper-button-next:hover {
+  background-color: #a50034;
+  color: #fff;
+}
+#container .cont6 .swiper .swiper-button-prev {
+  left: 0;
+}
+#container .cont6 .swiper .swiper-button-next {
+  left: 50px;
 }
 
 #footer {
