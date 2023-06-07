@@ -561,7 +561,7 @@
                     color: #000;
                     position: absolute;
                     bottom: 50px;
-                    left: 50px;
+                    right: 50px;
                     font-size: 20px;
                     transition: all .5s;
                     &:hover {
@@ -828,6 +828,7 @@
                 }
                 .swiper-slide.three {
                     background-image: url(/img/index/prdSlide03.jpg);
+                    background-position: right;
                 }
                 .swiper-slide.four {
                     background-image: url(/img/index/prdSlide04.jpg);
@@ -837,8 +838,8 @@
             .swiper-button-next {
                 top: auto;
                 bottom: 0;
-                color: #111;
-                background-color: #ddd;
+                color: #fff;
+                background-color: #000;
                 width: 50px;
                 height: 100px;
                 transition: all .5s;
