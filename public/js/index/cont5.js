@@ -26,9 +26,9 @@ area.addEventListener("mouseup",(e)=>{
 });
 
 // 마우스가 area 바깥쪽으로 나갔을때에도 계속 움직이는 버그 제거 위함
-// area.addEventListener("mouseleave",(e)=>{
-//     isDragging = false;
-// })
+area.addEventListener("mouseleave",(e)=>{
+    isDragging = false;
+})
 
 // img태그 44장 생성
 let imgTags = "";

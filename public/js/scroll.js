@@ -5,6 +5,7 @@ const cont3Video = document.querySelector(".cont3 video");
 let cont3Top = indexCont3.offsetTop;
 let cont4Top = indexCont4.offsetTop;
 
+let isTrue = true;
 
 window.onscroll = () => {
     let scrollTop = document.documentElement.scrollTop;
@@ -29,13 +30,15 @@ window.onscroll = () => {
     }
     lastScroll = scrollTop;
 
-    // index cont3 비디오 기능
-    // if(scrollTop > cont3Top && scrollTop < cont4Top){
-    //     cont3Video.play();
-    // } else {
-    //     cont3Video.pause();
+    // cont3 비디오 기능..
+    // if(scrollTop > cont3Top){
+    //     if(isTrue){
+    //         console.log("멈춰");
+    //     }       
     // }
 }
+
+ 
 
 
 

@@ -836,8 +836,22 @@ input, button {
 #container .cont7 .imgWrap .center .view {
   width: 100%;
   height: 800px;
-  border: 1px solid #000;
   margin-bottom: 20px;
+  position: relative;
+}
+#container .cont7 .imgWrap .center .view > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#container .cont7 .imgWrap .center .view > img.show {
+  opacity: 1;
 }
 #container .cont7 .imgWrap .center .imgList {
   display: flex;

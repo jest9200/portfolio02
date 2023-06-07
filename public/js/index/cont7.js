@@ -1,15 +1,14 @@
-const swiperCont7 = new Swiper(".cont7 .mySwiper", {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-});
-const swiper2Cont7 = new Swiper(".cont7 .mySwiper2", {
-    loop: true,
-    spaceBetween: 10,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+const imgLists = document.querySelectorAll(".cont7 .imgList > a");
+const viewImgs = document.querySelectorAll(".cont7 .view img");
+
+for(let i=0; i<imgLists.length;i++){
+    imgLists[i].addEventListener("click",(e)=>{
+        e.preventDefault();
+        for(let j=0; j<imgLists.length; j++){
+            imgLists[j].classList.remove("show");
+            viewImgs[j].classList.remove("show");
+        }
+        imgLists[i].classList.add("show");
+        viewImgs[i].classList.add("show");
+    })
+}
