@@ -947,6 +947,304 @@
             }
         }
     }
+    .cont8 {
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        background-color: #fff;
+        padding: 150px 0;
+        .imgWrap {
+            display: flex;
+            justify-content: center;
+            .center {
+                width: 83%;
+                height: 600px;
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    transition: all .5s;
+                    object-fit: cover;
+                }
+                img.show {
+                    opacity: 1;
+                }
+            }
+        }
+        .tabMenu {
+            display: flex;
+            width: 900px;
+            margin: 0 auto;
+            li {
+                width: 33.333333%;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 80px;
+                    transition: all .5s;
+                    color: #444;
+                    border: 1px solid #ddd;
+                    font-weight: 600;
+                }
+                &:nth-child(2){
+                    a {
+                        border-right: none;
+                        border-left: none;
+                    }
+                }
+            }
+            li.show {
+                a {
+                    background-color: #a50034;
+                    color: #fff;
+                }
+            }
+        }
+        .wrapper {
+            .contentWrap {
+                display: none;
+                transition: all .5s;
+                position: relative;
+                border-bottom: 1px solid #ddd;
+                padding: 100px 0 0;
+                .topWrap {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 100px;
+                    .center {
+                        width: 83%;
+                        display: flex;
+                        justify-content: center;
+                        .text {
+                            width: 690px;
+                            text-align: center;
+                            h2 {
+                                font-size: 60px;
+                                line-height: 65px;
+                                padding-bottom: 80px;
+                                position: relative;
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    background-color: #a50034;
+                                    width: 60px;
+                                    height: 2px;
+                                    position: absolute;
+                                    bottom: 40px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            p {
+                                font-size: 22px;
+                                line-height: 36px;
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+                .viewMore,.viewClose {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #000;
+                    color: #fff;
+                    position: absolute;
+                    bottom: -25px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 5;
+                    i {
+                        font-size: 20px;
+                        opacity: 0;
+                        transition: all .5s;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    i.show {
+                        opacity: 1;
+                    }
+                }
+                .viewClose {
+                    display: none;
+                }
+                &:nth-child(1){
+                    .botWrap {
+                        display: flex;
+                        justify-content: center;
+                        height: 0;
+                        overflow: hidden;
+                        .center {
+                            width: 52%;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 530px;
+                                margin-bottom: 200px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .botWrap {
+                        display: flex;
+                        justify-content: center;
+                        height: 0;
+                        overflow: hidden;
+                        .center {
+                            width: 52%;
+                            .lineImgWrap {
+                                width: 100%;
+                                height: 550px;
+                                position: relative;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    opacity: 0;
+                                    transition: all .5s;
+                                }
+                                img.on {
+                                    opacity: 1;
+                                }
+                            }
+                            .lineMenu {
+                                display: flex;
+                                width: 690px;
+                                margin: 70px auto;
+                                li {
+                                    width: 20%;
+                                    border-left: 1px solid #ddd;
+                                    a {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-start;
+                                        align-items: center;
+                                        width: 100%;
+                                        height: 90px;
+                                        color: #777;
+                                        text-align: center;
+                                        transition: all .5s;
+                                        i {
+                                            font-size: 35px;
+                                        }
+                                        h5 {
+                                            padding-top: 20px;
+                                            font-size: 18px;
+                                            font-weight: 400;
+                                            line-height: 20px;
+                                        }
+                                        &:hover {
+                                            color: #a50034;
+                                        }
+                                    }
+                                    &:nth-child(1) {
+                                        border-left: none;
+                                    }
+                                    &:nth-child(4),
+                                    &:nth-child(5) {
+                                        a {
+                                            h5 {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                                li.on {
+                                    a {
+                                        color: #a50034;
+                                    }
+                                }
+                            }
+                            .lineText {
+                                width: 690px;
+                                margin: 0 auto;
+                                position: relative;
+                                .textView {
+                                    display: none;
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-bottom: 100px;
+                                    h3 {
+                                        font-size: 36px;
+                                        margin-bottom: 35px;
+                                    }
+                                    p {
+                                        color: #333;
+                                        font-size: 22px;
+                                        line-height: 36px;
+                                        padding-bottom: 30px;
+                                    }
+                                }
+                                .textView.on {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .botWrap {
+                        display: flex;
+                        justify-content: center;
+                        height: 0;
+                        overflow: hidden;
+                        .center {
+                            width: 52%;
+                            .soundImg {
+                                width: 100%;
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 680px;
+                                    object-fit: cover;
+                                }
+                            }
+                            .soundWrap {
+                                width: 690px;
+                                margin: 0 auto;
+                                text-align: center;
+                                padding: 100px 0;
+                                h3 {
+                                    font-size: 36px;
+                                    margin-bottom: 35px;
+                                }
+                                p {
+                                    color: #333;
+                                    font-size: 22px;
+                                    line-height: 36px;
+                                    padding-bottom: 30px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #999;
+                                }
+                            }
+                        }
+                    }
+                }
+                .botWrap {
+                    transition: all .8s;
+                }
+            }
+
+            .contentWrap.show {
+                display: block;
+            }
+        }
+    }
 }
 // container end
 
