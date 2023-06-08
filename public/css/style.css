@@ -1530,6 +1530,29 @@ input, button {
   background-color: #fff;
   color: #a50034;
 }
+#container .backToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #151515;
+  color: #fff;
+  transition: all 0.5s;
+  z-index: 10;
+}
+#container .backToTop:hover {
+  background-color: #a50034;
+}
+#container .backToTop.show {
+  right: 50px;
+  opacity: 1;
+}
 
 #footer {
   position: relative;

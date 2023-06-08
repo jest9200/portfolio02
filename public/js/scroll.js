@@ -1,9 +1,14 @@
 let lastScroll = 0;
+const indexCont2 = document.querySelector("#container .cont2");
 const indexCont3 = document.querySelector("#container .cont3");
 const indexCont4 = document.querySelector("#container .cont4");
 const cont3Video = document.querySelector(".cont3 video");
+let cont2Top = indexCont2.offsetTop;
 let cont3Top = indexCont3.offsetTop;
 let cont4Top = indexCont4.offsetTop;
+
+const backToTop = document.querySelector(".backToTop");
+
 
 let isTrue = true;
 
@@ -29,6 +34,21 @@ window.onscroll = () => {
         header.classList.remove("top");
     }
     lastScroll = scrollTop;
+
+    // backtotop 버튼 등장 & 기능
+    if(scrollTop > cont2Top) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+
+    backToTop.addEventListener("click",(e)=>{
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior:"smooth"
+        });
+    })
 
     // cont3 비디오 기능..
     // if(scrollTop > cont3Top){
