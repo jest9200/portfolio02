@@ -1062,15 +1062,28 @@
                     z-index: 5;
                     i {
                         font-size: 20px;
-                        opacity: 0;
+                        opacity: 1;
                         transition: all .5s;
                         position: absolute;
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%,-50%);
+                        transition: all .5s;
                     }
-                    i.show {
+                    .fa-plus,.fa-minus {
                         opacity: 1;
+                    }
+                    .fa-arrow-down-long, .fa-arrow-up-long {
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        .fa-plus,.fa-minus {
+                            opacity: 0;
+                        }
+                        .fa-arrow-down-long, .fa-arrow-up-long {
+                            opacity: 1;
+                        }
                     }
                 }
                 .viewClose {

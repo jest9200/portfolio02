@@ -1026,14 +1026,24 @@ input, button {
 }
 #container .cont8 .wrapper .contentWrap .viewMore i, #container .cont8 .wrapper .contentWrap .viewClose i {
   font-size: 20px;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 0.5s;
 }
-#container .cont8 .wrapper .contentWrap .viewMore i.show, #container .cont8 .wrapper .contentWrap .viewClose i.show {
+#container .cont8 .wrapper .contentWrap .viewMore .fa-plus, #container .cont8 .wrapper .contentWrap .viewMore .fa-minus, #container .cont8 .wrapper .contentWrap .viewClose .fa-plus, #container .cont8 .wrapper .contentWrap .viewClose .fa-minus {
+  opacity: 1;
+}
+#container .cont8 .wrapper .contentWrap .viewMore .fa-arrow-down-long, #container .cont8 .wrapper .contentWrap .viewMore .fa-arrow-up-long, #container .cont8 .wrapper .contentWrap .viewClose .fa-arrow-down-long, #container .cont8 .wrapper .contentWrap .viewClose .fa-arrow-up-long {
+  opacity: 0;
+}
+#container .cont8 .wrapper .contentWrap .viewMore:hover .fa-plus, #container .cont8 .wrapper .contentWrap .viewMore:hover .fa-minus, #container .cont8 .wrapper .contentWrap .viewClose:hover .fa-plus, #container .cont8 .wrapper .contentWrap .viewClose:hover .fa-minus {
+  opacity: 0;
+}
+#container .cont8 .wrapper .contentWrap .viewMore:hover .fa-arrow-down-long, #container .cont8 .wrapper .contentWrap .viewMore:hover .fa-arrow-up-long, #container .cont8 .wrapper .contentWrap .viewClose:hover .fa-arrow-down-long, #container .cont8 .wrapper .contentWrap .viewClose:hover .fa-arrow-up-long {
   opacity: 1;
 }
 #container .cont8 .wrapper .contentWrap .viewClose {
