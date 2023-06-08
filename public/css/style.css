@@ -1203,6 +1203,113 @@ input, button {
 #container .cont8 .wrapper .contentWrap.show {
   display: block;
 }
+#container .cont9 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: #fff;
+  padding: 150px 0;
+}
+#container .cont9 .moonWrap {
+  width: 1600px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+#container .cont9 .moonWrap .moonBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#container .cont9 .moonWrap .moonBox img {
+  width: 1600px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#container .cont9 .moonWrap .moonBox.left {
+  width: 50%;
+  overflow: hidden;
+}
+#container .cont9 .moonWrap .dragBox {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 10px;
+  height: 100%;
+  background-image: url(/img/index/bg-drag-line.png);
+  background-repeat: repeat-y;
+  background-position: center;
+}
+#container .cont9 .moonWrap .dragBox::after {
+  content: "< >";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+#container .cont9 .moonWrap .dragBox:hover::after {
+  background-color: #fff;
+  color: #000;
+}
+#container .cont9 .textWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 800px;
+}
+#container .cont9 .textWrap .center {
+  width: 83%;
+  display: flex;
+  justify-content: center;
+}
+#container .cont9 .textWrap .center .text {
+  width: 690px;
+  text-align: center;
+}
+#container .cont9 .textWrap .center .text h2 {
+  font-size: 60px;
+  line-height: 65px;
+  padding-bottom: 80px;
+  position: relative;
+}
+#container .cont9 .textWrap .center .text h2::after {
+  content: "";
+  display: block;
+  background-color: #a50034;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#container .cont9 .textWrap .center .text p {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333;
+}
 
 #footer {
   position: relative;
