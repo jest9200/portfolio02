@@ -297,7 +297,6 @@
     background-color: transparent;
     border-bottom: 1px solid transparent;
     .botHeader {
-        display: flex;
         .center .gnb > li {
             > a {
                 color: #fff;
@@ -305,7 +304,6 @@
         }
     }
     .loginWrap {
-        display: flex;
         > a{
             &::before {
                 color: #fff;
@@ -319,6 +317,12 @@
         } 
         
     }
+}
+
+#header.mtop {
+    background: none;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
     .hamMenu {
         color: #fff;
     }
@@ -329,7 +333,6 @@
     background-color: #fff;
     border-bottom: 1px solid #eee;
     .botHeader {
-        display: flex;
         .center .gnb > li {
             > a {
                 color: #000;
@@ -337,7 +340,6 @@
         }
     }
     .loginWrap {
-        display: flex;
         > a {
             &::before {
                 color: #000;
@@ -350,6 +352,12 @@
             }
         }  
     }
+}
+
+#header.mup {
+    background: none;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
     .hamMenu {
         color: #000;
     }
@@ -358,15 +366,11 @@
 #header.down {
     background: linear-gradient(180deg, #000, #000 10%, rgba(0,0,0,.2) 65%, rgba(0,0,0,.1) 80%,rgba(0,0,0,0));
     border:none;
-    .botHeader {
-        display: none;
-    }
-    .loginWrap {
-        display: none;
-    }
-    .hamMenu {
-        display: none;
-    }
+}
+
+#header.mdown {
+    background: linear-gradient(180deg, #000, #000 10%, rgba(0,0,0,.2) 65%, rgba(0,0,0,.1) 80%,rgba(0,0,0,0));
+    border:none;
 }
 
 #header.white {

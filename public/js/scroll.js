@@ -10,60 +10,153 @@ let cont4Top = indexCont4.offsetTop;
 const backToTop = document.querySelector(".backToTop");
 
 
-let isTrue = true;
+// 반응형에 따른 헤더메뉴 변화 적용
+const tablet = matchMedia("screen and (max-width:1200px)");
+const loginWrap = document.querySelector("#header .loginWrap");
+const loginLink = document.querySelectorAll("#header .loginWrap a");
 
-window.onscroll = () => {
-    let scrollTop = document.documentElement.scrollTop;
-    if(scrollTop === 0) {
-        // 스크롤이 맨위일때 헤더변경
-        logo.setAttribute("src","/img/index/logo.png");
-        header.classList.add("top");
-        header.classList.remove("up");
-        header.classList.remove("down");
-    } else if(scrollTop > lastScroll) {
-        // 스크롤 내릴때 헤더변경
-        logo.setAttribute("src","/img/index/logo.png");
-        header.classList.add("down");
-        header.classList.remove("up");
-        header.classList.remove("top");
+resizeClass();
+window.addEventListener("resize",()=>{
+    resizeClass();
+});
+function resizeClass(){
+    if(tablet.matches){
+        headerShort();
+        botHeader.style.display = "none";
+        loginWrap.style.display = "none";
+        hamMenu.style.display = "block";
     } else {
-        // 스크롤 올릴때 헤더변경
-        logo.setAttribute("src","/img/index/logo_black.png");
-        header.classList.add("up");
-        header.classList.remove("down");
-        header.classList.remove("top");
+        headerLong();
+        botHeader.style.display = "flex";
+        loginWrap.style.display = "flex";
+        hamMenu.style.display = "none";
     }
-    lastScroll = scrollTop;
-
-    // backtotop 버튼 등장 & 기능
-    if(scrollTop > cont2Top) {
-        backToTop.classList.add("show");
-    } else {
-        backToTop.classList.remove("show");
-    }
-
-    backToTop.addEventListener("click",(e)=>{
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior:"smooth"
-        });
-    })
-
-    // cont3 비디오 기능..
-    // if(scrollTop > cont3Top){
-    //     if(isTrue){
-    //         console.log("멈춰");
-    //     }       
-    // }
 }
 
- 
+
+function headerLong(){
+    window.onscroll = () => {
+        let scrollTop = document.documentElement.scrollTop;
+        if (scrollTop === 0) {
+            // 스크롤이 맨위일때 헤더변경
+            logo.setAttribute("src", "/img/index/logo.png");
+            header.classList.add("top");
+            header.classList.remove("up");
+            header.classList.remove("down");
+            header.classList.remove("mtop");
+            header.classList.remove("mup");
+            header.classList.remove("mdown");
+            botHeader.style.display = "flex";
+            loginWrap.style.display = "flex";
+            hamMenu.style.display = "none";
+        } else if (scrollTop > lastScroll) {
+            // 스크롤 내릴때 헤더변경
+            logo.setAttribute("src", "/img/index/logo.png");
+            header.classList.add("down");
+            header.classList.remove("up");
+            header.classList.remove("top");
+            header.classList.remove("mtop");
+            header.classList.remove("mup");
+            header.classList.remove("mdown");
+            botHeader.style.display = "none";
+            loginWrap.style.display = "none";
+            hamMenu.style.display = "none";
+        } else {
+            // 스크롤 올릴때 헤더변경
+            logo.setAttribute("src", "/img/index/logo_black.png");
+            header.classList.add("up");
+            header.classList.remove("down");
+            header.classList.remove("top");
+            header.classList.remove("mtop");
+            header.classList.remove("mup");
+            header.classList.remove("mdown");
+            botHeader.style.display = "flex";
+            loginWrap.style.display = "flex";
+            hamMenu.style.display = "none";
+        }
+        lastScroll = scrollTop;
+    
+        // backtotop 버튼 등장 & 기능
+        if (scrollTop > cont2Top) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    
+        backToTop.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }    
+}
+
+function headerShort(){
+    window.onscroll = () => {
+        let scrollTop = document.documentElement.scrollTop;
+        if (scrollTop === 0) {
+            // 스크롤이 맨위일때 헤더변경
+            logo.setAttribute("src", "/img/index/logo.png");
+            header.classList.add("mtop");
+            header.classList.remove("mup");
+            header.classList.remove("mdown");
+            header.classList.remove("top");
+            header.classList.remove("up");
+            header.classList.remove("down");
+            botHeader.style.display = "none";
+            loginWrap.style.display = "none";
+            hamMenu.style.display = "block";
+        } else if (scrollTop > lastScroll) {
+            // 스크롤 내릴때 헤더변경
+            logo.setAttribute("src", "/img/index/logo.png");
+            header.classList.add("mdown");
+            header.classList.remove("mup");
+            header.classList.remove("mtop");
+            header.classList.remove("top");
+            header.classList.remove("up");
+            header.classList.remove("down");
+            botHeader.style.display = "none";
+            loginWrap.style.display = "none";
+            hamMenu.style.display = "none";
+        } else {
+            // 스크롤 올릴때 헤더변경
+            logo.setAttribute("src", "/img/index/logo_black.png");
+            header.classList.add("mup");
+            header.classList.remove("mdown");
+            header.classList.remove("mtop");
+            header.classList.remove("top");
+            header.classList.remove("up");
+            header.classList.remove("down");
+            botHeader.style.display = "none";
+            loginWrap.style.display = "none";
+            hamMenu.style.display = "block";
+        }
+        lastScroll = scrollTop;
+    
+        // backtotop 버튼 등장 & 기능
+        if (scrollTop > cont2Top) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    
+        backToTop.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+}
+
 
 
 
 // 스크롤화살표 움직이기(공통)
 const scrollWrap = document.querySelector(".scrollWrap");
-setInterval(()=>{
+setInterval(() => {
     scrollWrap.classList.toggle("move");
-},1000);
+}, 1000);

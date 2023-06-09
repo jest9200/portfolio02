@@ -286,14 +286,8 @@ input, button {
   background-color: transparent;
   border-bottom: 1px solid transparent;
 }
-#header.top .botHeader {
-  display: flex;
-}
 #header.top .botHeader .center .gnb > li > a {
   color: #fff;
-}
-#header.top .loginWrap {
-  display: flex;
 }
 #header.top .loginWrap > a::before {
   color: #fff;
@@ -304,7 +298,13 @@ input, button {
 #header.top .loginWrap > a span::after {
   color: #fff;
 }
-#header.top .hamMenu {
+
+#header.mtop {
+  background: none;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
+#header.mtop .hamMenu {
   color: #fff;
 }
 
@@ -313,14 +313,8 @@ input, button {
   background-color: #fff;
   border-bottom: 1px solid #eee;
 }
-#header.up .botHeader {
-  display: flex;
-}
 #header.up .botHeader .center .gnb > li > a {
   color: #000;
-}
-#header.up .loginWrap {
-  display: flex;
 }
 #header.up .loginWrap > a::before {
   color: #000;
@@ -331,7 +325,13 @@ input, button {
 #header.up .loginWrap > a span::after {
   background-color: #000;
 }
-#header.up .hamMenu {
+
+#header.mup {
+  background: none;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+#header.mup .hamMenu {
   color: #000;
 }
 
@@ -339,14 +339,10 @@ input, button {
   background: linear-gradient(180deg, #000, #000 10%, rgba(0, 0, 0, 0.2) 65%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0));
   border: none;
 }
-#header.down .botHeader {
-  display: none;
-}
-#header.down .loginWrap {
-  display: none;
-}
-#header.down .hamMenu {
-  display: none;
+
+#header.mdown {
+  background: linear-gradient(180deg, #000, #000 10%, rgba(0, 0, 0, 0.2) 65%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0));
+  border: none;
 }
 
 #header.white {
