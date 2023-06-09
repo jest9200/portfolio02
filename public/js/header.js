@@ -45,4 +45,26 @@ gnbMenus[0].onmouseleave = () => {
     bgHeader.style.height = "0px";
 }
 
+// 모바일 메뉴 클릭시
+const hamMenu = document.querySelector("#header .hamMenu");
+const closeBtnH = document.querySelector("#header .mobileMenu .closeBtn");
+const mobileMenu = document.querySelector("#header .mobileMenu");
+const mGnb = document.querySelector("#header .gnbMenu li:first-child");
+const mGnbLink = document.querySelector("#header .gnbMenu li:first-child > a");
+
+hamMenu.addEventListener("click",(e)=>{
+    e.preventDefault();
+    mobileMenu.style.right = "0px";
+});
+
+closeBtnH.addEventListener("click",(e)=>{
+    e.preventDefault();
+    mobileMenu.style.right = "-350px";
+});
+
+mGnbLink.addEventListener("click",(e)=>{
+    e.preventDefault();
+    mGnb.classList.toggle("on");
+})
+
 
