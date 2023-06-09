@@ -498,15 +498,17 @@
             .tvWrap {
                 position: relative;
                 width: 100%;
-                img,video {
+                video {
                     position: absolute;
                     top: 0;
                     left: 0;
                     width: 100%;
                     transition: all .5s;
+                    display: block;
                 }
-
-                
+                img {
+                    display: none;
+                }
             }
         }
     }
@@ -1702,6 +1704,22 @@
                 .prdBox {
                     > div {
                         height: 250px;
+                    }
+                }
+            }
+        }
+        .cont3 {
+            padding-bottom: 0;
+            .center {
+                .textWrap {
+                    top: 30%;
+                    h3 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                    p {
+                        font-size: 12px;
+                        line-height: 22px;
                     }
                 }
             }

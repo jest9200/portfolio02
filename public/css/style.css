@@ -473,12 +473,16 @@ input, button {
   position: relative;
   width: 100%;
 }
-#container .cont3 .center .tvWrap img, #container .cont3 .center .tvWrap video {
+#container .cont3 .center .tvWrap video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   transition: all 0.5s;
+  display: block;
+}
+#container .cont3 .center .tvWrap img {
+  display: none;
 }
 #container .cont4 {
   font-family: "Poppins", sans-serif;
@@ -1633,6 +1637,20 @@ input, button {
 @media screen and (max-width: 1600px) {
   #container .cont2 .center .prdBox > div {
     height: 250px;
+  }
+  #container .cont3 {
+    padding-bottom: 0;
+  }
+  #container .cont3 .center .textWrap {
+    top: 30%;
+  }
+  #container .cont3 .center .textWrap h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  #container .cont3 .center .textWrap p {
+    font-size: 12px;
+    line-height: 22px;
   }
   #container .cont4 .imgWrap .center {
     height: 600px;
