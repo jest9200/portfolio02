@@ -330,7 +330,7 @@ input, button {
 #container .cont2 .center .prdBox {
   display: block;
   margin-bottom: 50px;
-  width: 354px;
+  width: 29.5%;
 }
 #container .cont2 .center .prdBox > div {
   position: relative;
@@ -354,7 +354,9 @@ input, button {
   top: 0;
   left: 0;
   width: 100%;
-  height: 354px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.5s;
 }
 #container .cont2 .center .prdBox > div .prdImg {
@@ -1056,7 +1058,7 @@ input, button {
   overflow: hidden;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(1) .botWrap .center {
-  width: 52%;
+  width: 990px;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(1) .botWrap .center img {
   display: block;
@@ -1073,7 +1075,7 @@ input, button {
   overflow: hidden;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center {
-  width: 52%;
+  width: 990px;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineImgWrap {
   width: 100%;
@@ -1088,6 +1090,8 @@ input, button {
   left: 0;
   opacity: 0;
   transition: all 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineImgWrap img.on {
   opacity: 1;
@@ -1164,7 +1168,7 @@ input, button {
   overflow: hidden;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center {
-  width: 52%;
+  width: 990px;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundImg {
   width: 100%;
@@ -1320,18 +1324,18 @@ input, button {
   align-items: center;
   justify-content: center;
 }
-#container .cont10 > .center {
+#container .cont10 .galleryWrap {
   width: 83%;
   height: 1110px;
   background-color: #000;
   display: flex;
   justify-content: center;
 }
-#container .cont10 > .center .imgWrap {
+#container .cont10 .galleryWrap .imgWrap {
   width: 88%;
   position: relative;
 }
-#container .cont10 > .center .imgWrap .view {
+#container .cont10 .galleryWrap .imgWrap .view {
   width: 32%;
   background-color: transparent;
   position: absolute;
@@ -1340,46 +1344,46 @@ input, button {
   transition: all 0.7s;
   background-color: #151515;
 }
-#container .cont10 > .center .imgWrap .view:nth-child(1) {
+#container .cont10 .galleryWrap .imgWrap .view:nth-child(1) {
   height: 360px;
   top: 240px;
   left: 0;
 }
-#container .cont10 > .center .imgWrap .view:nth-child(2) {
+#container .cont10 .galleryWrap .imgWrap .view:nth-child(2) {
   height: 600px;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
-#container .cont10 > .center .imgWrap .view:nth-child(3) {
+#container .cont10 .galleryWrap .imgWrap .view:nth-child(3) {
   height: 280px;
   top: 240px;
   right: 0;
 }
-#container .cont10 > .center .imgWrap .view:nth-child(4) {
+#container .cont10 .galleryWrap .imgWrap .view:nth-child(4) {
   height: 280px;
   bottom: 210px;
   left: 0;
 }
-#container .cont10 > .center .imgWrap .view:nth-child(5) {
+#container .cont10 .galleryWrap .imgWrap .view:nth-child(5) {
   height: 280px;
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
-#container .cont10 > .center .imgWrap .view:nth-child(6) {
+#container .cont10 .galleryWrap .imgWrap .view:nth-child(6) {
   height: 360px;
   bottom: 210px;
   right: 0;
 }
-#container .cont10 > .center .imgWrap .view img {
+#container .cont10 .galleryWrap .imgWrap .view img {
   width: 100%;
   height: 100%;
   transition: all 0.5s;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#container .cont10 > .center .imgWrap .view i {
+#container .cont10 .galleryWrap .imgWrap .view i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1396,13 +1400,13 @@ input, button {
   opacity: 0;
   transition: all 0.5s;
 }
-#container .cont10 > .center .imgWrap .view:hover img {
+#container .cont10 .galleryWrap .imgWrap .view:hover img {
   transform: scale(1.2);
 }
-#container .cont10 > .center .imgWrap .view:hover i {
+#container .cont10 .galleryWrap .imgWrap .view:hover i {
   opacity: 1;
 }
-#container .cont10 > .center .imgWrap .view.on {
+#container .cont10 .galleryWrap .imgWrap .view.on {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1410,10 +1414,10 @@ input, button {
   height: 910px;
   z-index: 6;
 }
-#container .cont10 > .center .imgWrap .view.on img {
+#container .cont10 .galleryWrap .imgWrap .view.on img {
   opacity: 0;
 }
-#container .cont10 > .center .imgWrap .cover {
+#container .cont10 .galleryWrap .imgWrap .cover {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1423,7 +1427,7 @@ input, button {
   opacity: 0;
   transition: all 0.7s;
 }
-#container .cont10 > .center .imgWrap .cover img {
+#container .cont10 .galleryWrap .imgWrap .cover img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1432,7 +1436,7 @@ input, button {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#container .cont10 > .center .imgWrap .cover .coverClose {
+#container .cont10 .galleryWrap .imgWrap .cover .coverClose {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1447,11 +1451,11 @@ input, button {
   right: 40px;
   transition: all 0.5s;
 }
-#container .cont10 > .center .imgWrap .cover .coverClose:hover {
+#container .cont10 .galleryWrap .imgWrap .cover .coverClose:hover {
   background-color: #fff;
   color: #000;
 }
-#container .cont10 > .center .imgWrap .cover.on {
+#container .cont10 .galleryWrap .imgWrap .cover.on {
   opacity: 1;
   z-index: 10;
   transition-delay: 0.5s;
@@ -1624,4 +1628,44 @@ input, button {
 }
 #footer .center .textWrap span {
   font-size: 12px;
+}
+
+@media screen and (max-width: 1600px) {
+  #container .cont2 .center .prdBox > div {
+    height: 250px;
+  }
+  #container .cont4 .imgWrap .center {
+    height: 600px;
+  }
+  #container .cont5 .imgWrap .center {
+    height: 600px;
+  }
+  #container .cont5 .imgWrap .center .area {
+    height: 350px;
+  }
+  #container .cont5 .imgWrap .center .titleWrap h2 {
+    font-size: 50px;
+  }
+  #container .cont6 .center {
+    height: 600px;
+  }
+  #container .cont6 .swiper {
+    height: 600px;
+  }
+  #container .cont7 .imgWrap .center .view {
+    height: 600px;
+  }
+  #container .cont7 .imgWrap .center .imgList a {
+    height: 100px;
+  }
+  #container .cont9 .moonWrap {
+    width: 1150px;
+    height: 600px;
+  }
+  #container .cont9 .moonWrap .moonBox img {
+    width: 1150px;
+  }
+  #container .cont9 .textWrap {
+    margin-top: 550px;
+  }
 }

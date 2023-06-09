@@ -350,7 +350,7 @@
             .prdBox {
                 display: block;
                 margin-bottom: 50px;
-                width: 354px;
+                width: 29.5%;
                 > div {
                     position: relative;
                     width: 100%;
@@ -372,7 +372,8 @@
                         top: 0;
                         left: 0;
                         width: 100%;
-                        height: 354px;
+                        height: 100%;
+                        object-fit: cover;
                         transition: all .5s;
                     }
                     .prdImg {
@@ -1096,7 +1097,7 @@
                         height: 0;
                         overflow: hidden;
                         .center {
-                            width: 52%;
+                            width: 990px;
                             img {
                                 display: block;
                                 width: 100%;
@@ -1114,7 +1115,7 @@
                         height: 0;
                         overflow: hidden;
                         .center {
-                            width: 52%;
+                            width: 990px;
                             .lineImgWrap {
                                 width: 100%;
                                 height: 550px;
@@ -1127,6 +1128,7 @@
                                     left: 0;
                                     opacity: 0;
                                     transition: all .5s;
+                                    object-fit: cover;
                                 }
                                 img.on {
                                     opacity: 1;
@@ -1214,7 +1216,7 @@
                         height: 0;
                         overflow: hidden;
                         .center {
-                            width: 52%;
+                            width: 990px;
                             .soundImg {
                                 width: 100%;
                                 img {
@@ -1373,7 +1375,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        > .center {
+        .galleryWrap {
             width: 83%;
             height: 1110px;
             background-color: #000;
@@ -1614,6 +1616,7 @@
 }
 // container end
 
+// footer start
 #footer {
     position: relative;
     padding: 50px 0;
@@ -1689,3 +1692,85 @@
         }
     }
 }
+// footer end
+
+// 반응형 1600이하
+@media screen and (max-width:1600px){
+    #container {
+        .cont2 {
+            .center {
+                .prdBox {
+                    > div {
+                        height: 250px;
+                    }
+                }
+            }
+        }
+        .cont4 {
+            .imgWrap {
+                .center {
+                    height: 600px;
+                }
+            }
+        }
+        .cont5 {
+            .imgWrap {
+                .center {
+                    height: 600px;
+                    .area {
+                        height: 350px;
+                    }
+                    .titleWrap {
+                        h2 {
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .cont6 {
+            .center {
+                height: 600px;
+            }
+            .swiper {
+                height: 600px;
+            }
+        }
+        .cont7 {
+            .imgWrap {
+                .center {
+                    .view {
+                        height: 600px;
+                    }
+                    .imgList {
+                        a {
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        .cont9 {
+            .moonWrap {
+                width: 1150px;
+                height: 600px;
+                .moonBox {
+                    img {
+                        width: 1150px;
+                    }
+                }
+            }
+            .textWrap {
+                margin-top: 550px;
+            }
+        }
+    }
+}
+
+// 반응형 1200이하
+@media screen and (max-width:1200px){
+    
+}
+
+// 반응형 768이하
+// @media screen and (max-width:768px){}
