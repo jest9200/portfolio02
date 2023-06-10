@@ -796,6 +796,7 @@
                     top: 50%;
                     right: 30px;
                     transform: translateY(-50%);
+                    z-index: 10;
                     &::after {
                         content: "";
                         display: block;
@@ -2015,6 +2016,9 @@
                         width: 480px;
                         top: 25%;
                     }
+                    .area {
+                        right: 15px;
+                    }
                 }
             }
         }
@@ -2169,4 +2173,410 @@
 }
 
 // 반응형 768이하
-// @media screen and (max-width:768px){}
+@media screen and (max-width:768px){
+    #container {
+        .cont1 {
+            .textWrap {
+                top: 50%;
+                bottom: auto;
+                transform: translate(-50%, -50%);
+                h2 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        .cont2 {
+            .center {
+                .prdBox {
+                    width: 100%;
+                }
+            }
+        }
+        .cont3 {
+            .center {
+                width: 90%;
+                .textWrap {
+                    h4 {
+                        font-size: 20px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                    p {
+                        font-size: 12px;
+                        line-height: 22px;
+                    }
+                    a {
+                        width: 90%;
+                    }
+                }
+                .tvWrap {
+                    height: 600px;
+                }
+            }
+        }
+        .cont4 {
+            .imgWrap {
+                .center {
+                    width: 95%;
+                    height: 280px;
+                    .play {
+                        bottom: 20px;
+                        right: 20px;
+                    }
+                }
+            }
+            .textWrap {
+                .center {
+                    width: 90%;
+                    .text {
+                        width: 100%;
+                        h2 {
+                            font-size: 40px;
+                            line-height: 45px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .cont5 {
+            .imgWrap {
+                .center {
+                    width: 95%;
+                    .area {
+                        right: 0px;
+                    }
+                }
+            }
+            .textWrap {
+                .center {
+                    width: 90%;
+                    .text {
+                        width: 100%;
+                        h2 {
+                            font-size: 40px;
+                            line-height: 45px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .cont6 {
+            .swiper {
+                width: 95%;
+                height: 350px;
+            }
+            .center {
+                .textWrap {
+                    width: 90%;
+                    .text{
+                        width: 100%;
+                        h3 {
+                            font-size: 16px;
+                        }
+                        h2 {
+                            font-size: 40px;
+                            line-height: 45px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .cont7 {
+            .imgWrap {
+                .center {
+                    width: 95%;
+                    .view {
+                        height: 280px;
+                    }
+                    .imgList {
+                        flex-wrap: wrap;
+                        a {
+                            width: 31%;
+                            &:nth-child(4),
+                            &:nth-child(5) {
+                                width: 48%;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .textWrap {
+                .center {
+                    width: 90%;
+                    .text {
+                        width: 100%;
+                        h2 {
+                            font-size: 40px;
+                            line-height: 45px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .cont8 {
+            .imgWrap {
+                .center {
+                    width: 95%;
+                    height: 280px;
+                }
+            }
+            .wrapper {
+                .contentWrap {
+                    .topWrap {
+                        .center {
+                            .text {
+                                width: 90%;
+                                h2 {
+                                    font-size: 40px;
+                                    line-height: 45px;
+                                }
+                                p {
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        .botWrap {
+                            .center {
+                                width: 95%;
+                                img {
+                                    height: 300px;
+                                    margin-top: 300px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .botWrap {
+                            .center {
+                                width: 95%;
+                                .lineImgWrap {
+                                    height: 300px;
+                                    margin-top: 200px;
+                                }
+                                .lineMenu {
+                                    width:100%;
+                                    li {
+                                        a {
+                                            i {
+                                                font-size: 25px;
+                                            }
+                                            h5 {
+                                                font-size: 15px;
+                                                line-height: 18px;
+                                            }
+                                        }
+                                        &:nth-child(4),
+                                        &:nth-child(5){
+                                            a {
+                                                h5 {
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                } 
+                                .lineText {
+                                    width: 90%;
+                                    .textView {
+                                        h3 {
+                                            font-size: 30px;
+                                        }
+                                        p {
+                                            font-size: 18px;
+                                            line-height: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        .botWrap {
+                            .center {
+                                width: 95%;
+                                .soundImg {
+                                    margin-top: 250px;
+                                    img {
+                                        height: 300px;
+                                    }
+                                }
+                                .soundWrap {
+                                    width: 95%;
+                                    h3 {
+                                        font-size: 30px;
+                                    }
+                                    p {
+                                        font-size: 18px;
+                                        line-height: 30px;
+                                    }
+                                    span {
+                                        font-size: 12px;
+                                        line-height: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cont9 {
+            .moonWrap {
+                width: 490px;
+                height: 300px;
+                .moonBox {
+                    img {
+                        width: 490px;
+                    }
+                }
+            }
+            .textWrap {
+                margin-top: 250px;
+                .center {
+                    width: 90%;
+                    .text {
+                        width: 100%;
+                        h2 {
+                            font-size: 40px;
+                            line-height: 45px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .cont10 {
+            .galleryWrap {
+                width: 95%;
+                height: 700px;
+                .imgWrap {
+                    .view {
+                        &:nth-child(1){
+                            height: 160px;
+                        }
+                        &:nth-child(2){
+                            height: 250px;
+                        }
+                        &:nth-child(3){
+                            height: 160px;
+                        }
+                        &:nth-child(4){
+                            height: 190px;
+                            bottom: 100px;
+                        }
+                        &:nth-child(5){
+                            height: 190px;
+                            bottom: 150px;
+                        }
+                        &:nth-child(6){
+                            height: 190px;
+                            bottom: 100px;
+                        }
+                    }
+                    .view.on {
+                        height: 500px;
+                    }
+                    .cover {
+                        height: 500px;
+                    }
+                }
+            }
+            .textWrap {
+                .center {
+                    .text {
+                        width: 90%;
+                        h2 {
+                            font-size: 40px;
+                            line-height: 45px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+            .bannerWrap {
+                background-position: right;
+                height: 200px;
+                position: relative;
+                .context {
+                    h3, h2 {
+                        display: none;
+                    }
+                    a {
+                        position: absolute;
+                        bottom: 10px;
+                        left: 10px;
+                        width: 180px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .backToTop.show {
+            right: 20px;
+        }
+    }
+    #footer {
+        .center {
+            width: 90%;
+            .footerMenu {
+                flex-direction: column;
+                align-items: center;
+                li {
+                    margin: 15px 0;
+                }
+            }
+            .textWrap {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// cont9 반응형 500이하
+@media screen and (max-width:550px){
+    #container {
+        .cont9 {
+            .moonWrap {
+                width: 350px;
+                .moonBox {
+                    img {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -753,6 +753,7 @@ input, button {
   top: 50%;
   right: 30px;
   transform: translateY(-50%);
+  z-index: 10;
 }
 #container .cont5 .imgWrap .center .area::after {
   content: "";
@@ -1892,6 +1893,9 @@ input, button {
     width: 480px;
     top: 25%;
   }
+  #container .cont5 .imgWrap .center .area {
+    right: 15px;
+  }
   #container .cont6 {
     display: flex;
     flex-direction: column-reverse;
@@ -1991,5 +1995,314 @@ input, button {
   }
   #footer .center {
     width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .cont1 .textWrap {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  #container .cont1 .textWrap h2 {
+    font-size: 22px;
+  }
+  #container .cont1 .textWrap p {
+    font-size: 15px;
+  }
+  #container .cont2 .center .prdBox {
+    width: 100%;
+  }
+  #container .cont3 .center {
+    width: 90%;
+  }
+  #container .cont3 .center .textWrap h4 {
+    font-size: 20px;
+  }
+  #container .cont3 .center .textWrap h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  #container .cont3 .center .textWrap p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  #container .cont3 .center .textWrap a {
+    width: 90%;
+  }
+  #container .cont3 .center .tvWrap {
+    height: 600px;
+  }
+  #container .cont4 .imgWrap .center {
+    width: 95%;
+    height: 280px;
+  }
+  #container .cont4 .imgWrap .center .play {
+    bottom: 20px;
+    right: 20px;
+  }
+  #container .cont4 .textWrap .center {
+    width: 90%;
+  }
+  #container .cont4 .textWrap .center .text {
+    width: 100%;
+  }
+  #container .cont4 .textWrap .center .text h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #container .cont4 .textWrap .center .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont5 .imgWrap .center {
+    width: 95%;
+  }
+  #container .cont5 .imgWrap .center .area {
+    right: 0px;
+  }
+  #container .cont5 .textWrap .center {
+    width: 90%;
+  }
+  #container .cont5 .textWrap .center .text {
+    width: 100%;
+  }
+  #container .cont5 .textWrap .center .text h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #container .cont5 .textWrap .center .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont6 .swiper {
+    width: 95%;
+    height: 350px;
+  }
+  #container .cont6 .center .textWrap {
+    width: 90%;
+  }
+  #container .cont6 .center .textWrap .text {
+    width: 100%;
+  }
+  #container .cont6 .center .textWrap .text h3 {
+    font-size: 16px;
+  }
+  #container .cont6 .center .textWrap .text h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #container .cont6 .center .textWrap .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont7 .imgWrap .center {
+    width: 95%;
+  }
+  #container .cont7 .imgWrap .center .view {
+    height: 280px;
+  }
+  #container .cont7 .imgWrap .center .imgList {
+    flex-wrap: wrap;
+  }
+  #container .cont7 .imgWrap .center .imgList a {
+    width: 31%;
+  }
+  #container .cont7 .imgWrap .center .imgList a:nth-child(4), #container .cont7 .imgWrap .center .imgList a:nth-child(5) {
+    width: 48%;
+    margin-top: 10px;
+  }
+  #container .cont7 .textWrap .center {
+    width: 90%;
+  }
+  #container .cont7 .textWrap .center .text {
+    width: 100%;
+  }
+  #container .cont7 .textWrap .center .text h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #container .cont7 .textWrap .center .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont8 .imgWrap .center {
+    width: 95%;
+    height: 280px;
+  }
+  #container .cont8 .wrapper .contentWrap .topWrap .center .text {
+    width: 90%;
+  }
+  #container .cont8 .wrapper .contentWrap .topWrap .center .text h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #container .cont8 .wrapper .contentWrap .topWrap .center .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(1) .botWrap .center {
+    width: 95%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(1) .botWrap .center img {
+    height: 300px;
+    margin-top: 300px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center {
+    width: 95%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineImgWrap {
+    height: 300px;
+    margin-top: 200px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineMenu {
+    width: 100%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineMenu li a i {
+    font-size: 25px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineMenu li a h5 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineMenu li:nth-child(4) a h5, #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineMenu li:nth-child(5) a h5 {
+    font-size: 12px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineText {
+    width: 90%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineText .textView h3 {
+    font-size: 30px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineText .textView p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center {
+    width: 95%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundImg {
+    margin-top: 250px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundImg img {
+    height: 300px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundWrap {
+    width: 95%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundWrap h3 {
+    font-size: 30px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundWrap p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundWrap span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #container .cont9 .moonWrap {
+    width: 490px;
+    height: 300px;
+  }
+  #container .cont9 .moonWrap .moonBox img {
+    width: 490px;
+  }
+  #container .cont9 .textWrap {
+    margin-top: 250px;
+  }
+  #container .cont9 .textWrap .center {
+    width: 90%;
+  }
+  #container .cont9 .textWrap .center .text {
+    width: 100%;
+  }
+  #container .cont9 .textWrap .center .text h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #container .cont9 .textWrap .center .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont10 .galleryWrap {
+    width: 95%;
+    height: 700px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .view:nth-child(1) {
+    height: 160px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .view:nth-child(2) {
+    height: 250px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .view:nth-child(3) {
+    height: 160px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .view:nth-child(4) {
+    height: 190px;
+    bottom: 100px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .view:nth-child(5) {
+    height: 190px;
+    bottom: 150px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .view:nth-child(6) {
+    height: 190px;
+    bottom: 100px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .view.on {
+    height: 500px;
+  }
+  #container .cont10 .galleryWrap .imgWrap .cover {
+    height: 500px;
+  }
+  #container .cont10 .textWrap .center .text {
+    width: 90%;
+  }
+  #container .cont10 .textWrap .center .text h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #container .cont10 .textWrap .center .text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #container .cont10 .bannerWrap {
+    background-position: right;
+    height: 200px;
+    position: relative;
+  }
+  #container .cont10 .bannerWrap .context h3, #container .cont10 .bannerWrap .context h2 {
+    display: none;
+  }
+  #container .cont10 .bannerWrap .context a {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 180px;
+    font-size: 12px;
+  }
+  #container .backToTop.show {
+    right: 20px;
+  }
+  #footer .center {
+    width: 90%;
+  }
+  #footer .center .footerMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .center .footerMenu li {
+    margin: 15px 0;
+  }
+  #footer .center .textWrap p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #container .cont9 .moonWrap {
+    width: 350px;
+  }
+  #container .cont9 .moonWrap .moonBox img {
+    width: 350px;
   }
 }
