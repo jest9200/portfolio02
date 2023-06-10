@@ -382,6 +382,7 @@ input, button {
 }
 #container .cont1 .textWrap {
   position: absolute;
+  width: 80%;
   bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
@@ -679,12 +680,12 @@ input, button {
   justify-content: center;
 }
 #container .cont4 .textWrap .center {
-  width: 83%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 #container .cont4 .textWrap .center .text {
-  width: 690px;
+  width: 650px;
   text-align: center;
 }
 #container .cont4 .textWrap .center .text h2 {
@@ -747,7 +748,7 @@ input, button {
 }
 #container .cont5 .imgWrap .center .area {
   width: 60px;
-  height: 450px;
+  height: 400px;
   position: absolute;
   top: 50%;
   right: 30px;
@@ -801,12 +802,12 @@ input, button {
   justify-content: center;
 }
 #container .cont5 .textWrap .center {
-  width: 83%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 #container .cont5 .textWrap .center .text {
-  width: 690px;
+  width: 650px;
   text-align: center;
 }
 #container .cont5 .textWrap .center .text h2 {
@@ -985,12 +986,12 @@ input, button {
   justify-content: center;
 }
 #container .cont7 .textWrap .center {
-  width: 83%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 #container .cont7 .textWrap .center .text {
-  width: 690px;
+  width: 650px;
   text-align: center;
 }
 #container .cont7 .textWrap .center .text h2 {
@@ -1084,7 +1085,7 @@ input, button {
   margin-bottom: 100px;
 }
 #container .cont8 .wrapper .contentWrap .topWrap .center {
-  width: 83%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -1199,7 +1200,7 @@ input, button {
 }
 #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineMenu {
   display: flex;
-  width: 690px;
+  width: 650px;
   margin: 70px auto;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineMenu li {
@@ -1239,7 +1240,7 @@ input, button {
   color: #a50034;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineText {
-  width: 690px;
+  width: 650px;
   margin: 0 auto;
   position: relative;
 }
@@ -1282,7 +1283,7 @@ input, button {
      object-fit: cover;
 }
 #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundWrap {
-  width: 690px;
+  width: 650px;
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
@@ -1385,12 +1386,12 @@ input, button {
   margin-top: 800px;
 }
 #container .cont9 .textWrap .center {
-  width: 83%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 #container .cont9 .textWrap .center .text {
-  width: 690px;
+  width: 650px;
   text-align: center;
 }
 #container .cont9 .textWrap .center .text h2 {
@@ -1567,12 +1568,12 @@ input, button {
   margin-top: 100px;
 }
 #container .cont10 .textWrap .center {
-  width: 83%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 #container .cont10 .textWrap .center .text {
-  width: 900px;
+  width: 650px;
   text-align: center;
 }
 #container .cont10 .textWrap .center .text h2 {
@@ -1755,8 +1756,8 @@ input, button {
   #container .cont5 .imgWrap .center {
     height: 600px;
   }
-  #container .cont5 .imgWrap .center .area {
-    height: 350px;
+  #container .cont5 .imgWrap .center .titleWrap {
+    width: 550px;
   }
   #container .cont5 .imgWrap .center .titleWrap h2 {
     font-size: 50px;
@@ -1820,5 +1821,175 @@ input, button {
   }
   #header .hamMenu {
     display: block;
+  }
+  #container .cont2 .center {
+    width: 80%;
+  }
+  #container .cont2 .center .prdBox {
+    width: 48%;
+  }
+  #container .cont2 .center .prdBox > div {
+    height: 300px;
+  }
+  #container .cont3 {
+    height: auto;
+    padding: 150px 0 100px;
+  }
+  #container .cont3 .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #container .cont3 .center .textWrap {
+    position: static;
+    padding-left: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #container .cont3 .center .textWrap h4 {
+    font-size: 24px;
+  }
+  #container .cont3 .center .textWrap h2 {
+    font-size: 100px;
+  }
+  #container .cont3 .center .textWrap h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #container .cont3 .center .textWrap p {
+    font-size: 14px;
+  }
+  #container .cont3 .center .textWrap a {
+    width: 550px;
+    height: 55px;
+  }
+  #container .cont3 .center .tvWrap {
+    position: static;
+    width: 100%;
+    height: 800px;
+  }
+  #container .cont3 .center .tvWrap video {
+    display: none;
+  }
+  #container .cont3 .center .tvWrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #container .cont4 .imgWrap .center {
+    width: 90%;
+    height: 400px;
+  }
+  #container .cont5 .imgWrap .center {
+    width: 90%;
+    height: 450px;
+  }
+  #container .cont5 .imgWrap .center .titleWrap {
+    width: 480px;
+    top: 25%;
+  }
+  #container .cont6 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #container .cont6 .center {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #container .cont6 .center .textWrap .text {
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #container .cont6 .center .textWrap .text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #container .cont6 .swiper {
+    position: relative;
+    width: 90%;
+    height: 600px;
+    margin-bottom: 100px;
+  }
+  #container .cont7 .imgWrap .center {
+    width: 90%;
+  }
+  #container .cont7 .imgWrap .center .view {
+    height: 400px;
+  }
+  #container .cont8 .imgWrap .center {
+    width: 90%;
+    height: 400px;
+  }
+  #container .cont8 .tabMenu {
+    width: 80%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(1) .botWrap .center {
+    width: 90%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(1) .botWrap .center img {
+    height: 400px;
+    margin-top: 200px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center {
+    width: 90%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(2) .botWrap .center .lineImgWrap {
+    height: 400px;
+    margin-top: 100px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center {
+    width: 90%;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundImg {
+    margin-top: 100px;
+  }
+  #container .cont8 .wrapper .contentWrap:nth-child(3) .botWrap .center .soundImg img {
+    height: 500px;
+  }
+  #container .cont9 .moonWrap {
+    width: 900px;
+    height: 500px;
+  }
+  #container .cont9 .moonWrap .moonBox img {
+    width: 900px;
+  }
+  #container .cont9 .textWrap {
+    margin-top: 450px;
+  }
+  #container .cont10 .galleryWrap {
+    width: 90%;
+  }
+  #container .cont10 .bannerWrap {
+    width: 90%;
+    height: 300px;
+  }
+  #container .cont10 .bannerWrap .context {
+    padding: 35px;
+  }
+  #footer .center {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #container .cont9 .moonWrap {
+    width: 700px;
+    height: 400px;
+  }
+  #container .cont9 .moonWrap .moonBox img {
+    width: 700px;
+  }
+  #container .cont9 .textWrap {
+    margin-top: 350px;
+  }
+  #footer .center {
+    width: 85%;
   }
 }

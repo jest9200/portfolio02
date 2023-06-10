@@ -417,6 +417,7 @@
         }
         .textWrap {
             position: absolute;
+            width: 80%;
             bottom: 120px;
             left: 50%;
             transform: translateX(-50%);
@@ -723,11 +724,11 @@
             display: flex;
             justify-content: center;
             .center {
-                width: 83%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 .text {
-                    width: 690px;
+                    width: 650px;
                     text-align: center;
                     h2 {
                         font-size: 60px;
@@ -790,7 +791,7 @@
                 }
                 .area {
                     width: 60px;
-                    height: 450px;
+                    height: 400px;
                     position: absolute;
                     top: 50%;
                     right: 30px;
@@ -845,11 +846,11 @@
             display: flex;
             justify-content: center;
             .center {
-                width: 83%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 .text {
-                    width: 690px;
+                    width: 650px;
                     text-align: center;
                     h2 {
                         font-size: 60px;
@@ -1030,11 +1031,11 @@
             display: flex;
             justify-content: center;
             .center {
-                width: 83%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 .text {
-                    width: 690px;
+                    width: 650px;
                     text-align: center;
                     h2 {
                         font-size: 60px;
@@ -1132,7 +1133,7 @@
                     justify-content: center;
                     margin-bottom: 100px;
                     .center {
-                        width: 83%;
+                        width: 100%;
                         display: flex;
                         justify-content: center;
                         .text {
@@ -1250,7 +1251,7 @@
                             }
                             .lineMenu {
                                 display: flex;
-                                width: 690px;
+                                width: 650px;
                                 margin: 70px auto;
                                 li {
                                     width: 20%;
@@ -1297,7 +1298,7 @@
                                 }
                             }
                             .lineText {
-                                width: 690px;
+                                width: 650px;
                                 margin: 0 auto;
                                 position: relative;
                                 .textView {
@@ -1341,7 +1342,7 @@
                                 }
                             }
                             .soundWrap {
-                                width: 690px;
+                                width: 650px;
                                 margin: 0 auto;
                                 text-align: center;
                                 padding: 100px 0;
@@ -1448,11 +1449,11 @@
             justify-content: center;
             margin-top: 800px;
             .center {
-                width: 83%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 .text {
-                    width: 690px;
+                    width: 650px;
                     text-align: center;
                     h2 {
                         font-size: 60px;
@@ -1634,11 +1635,11 @@
             justify-content: center;
             margin-top: 100px;
             .center {
-                width: 83%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 .text {
-                    width:900px;
+                    width:650px;
                     text-align: center;
                     h2 {
                         font-size: 60px;
@@ -1847,10 +1848,8 @@
             .imgWrap {
                 .center {
                     height: 600px;
-                    .area {
-                        height: 350px;
-                    }
                     .titleWrap {
+                        width: 550px;
                         h2 {
                             font-size: 50px;
                         }
@@ -1937,6 +1936,234 @@
         .loginWrap {display: none;}
         .hamMenu {
             display: block;
+        }
+    }
+    #container {
+        .cont2 {
+            .center {
+                width: 80%;
+                .prdBox {
+                    width: 48%;
+                    > div {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        .cont3 {
+            height: auto;
+            padding: 150px 0 100px;
+            .center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .textWrap{
+                    position: static;
+                    padding-left: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    h4 {
+                        font-size: 24px;
+                    }
+                    h2 {
+                        font-size: 100px;
+                    }
+                    h3 {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    a {
+                        width: 550px;
+                        height: 55px;
+                    }
+                }
+                .tvWrap{
+                    position: static;
+                    width: 100%;
+                    height: 800px;
+                    video {
+                        display: none;
+                    }
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .cont4 {
+            .imgWrap {
+                .center {
+                    width: 90%;
+                    height: 400px;
+                }
+            }
+        }
+        .cont5 {
+            .imgWrap {
+                .center {
+                    width: 90%;
+                    height: 450px;
+                    .titleWrap {
+                        width: 480px;
+                        top: 25%;
+                    }
+                }
+            }
+        }
+        .cont6 {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            .center {
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .textWrap{
+                    .text {
+                        width: 650px;
+                        text-align: center;
+                        margin: 0 auto;
+                        h2 {
+                            &::after {
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper {
+                position: relative;
+                width: 90%;
+                height: 600px;
+                margin-bottom: 100px;
+            }
+        }
+        .cont7 {
+            .imgWrap {
+                .center {
+                    width: 90%;
+                    .view {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+        .cont8 {
+            .imgWrap {
+                .center {
+                    width: 90%;
+                    height: 400px;
+                }
+            }
+            .tabMenu {
+                width: 80%;
+            }
+            .wrapper {
+                .contentWrap {
+                    &:nth-child(1){
+                        .botWrap {
+                            .center {
+                                width: 90%;
+                                img {
+                                    height: 400px;
+                                    margin-top: 200px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .botWrap {
+                            .center {
+                                width: 90%;
+                                .lineImgWrap {
+                                    height: 400px;
+                                    margin-top: 100px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        .botWrap {
+                            .center {
+                                width: 90%;
+                                .soundImg {
+                                    margin-top: 100px;
+                                    img {
+                                        height: 500px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cont9 {
+            .moonWrap {
+                width: 900px;
+                height: 500px;
+                .moonBox {
+                    img {
+                        width: 900px;
+                    }
+                }
+            }
+            .textWrap {
+                margin-top: 450px;
+            }
+        }
+        .cont10 {
+            .galleryWrap {
+                width: 90%;
+            }
+            .bannerWrap {
+                width: 90%;
+                height: 300px;
+                .context {
+                    padding: 35px;
+                }
+            }
+        }
+    }
+
+    #footer {
+        .center {
+            width: 75%;
+        }
+    }
+}
+
+// cont9/footer만 반응형 950이하
+@media screen and (max-width:950px){
+    #container {
+        .cont9 {
+            .moonWrap {
+                width: 700px;
+                height: 400px;
+                .moonBox {
+                    img {
+                        width: 700px;
+                    }
+                }
+            }
+            .textWrap {
+                margin-top: 350px;
+            }
+        }
+    }
+    #footer {
+        .center {
+            width: 85%;
         }
     }
 }
