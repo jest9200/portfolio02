@@ -2189,6 +2189,7 @@
             }
         }
         .cont2 {
+            margin-top: 100vh;
             .center {
                 .prdBox {
                     width: 100%;
@@ -2215,7 +2216,8 @@
                     }
                 }
                 .tvWrap {
-                    height: 600px;
+                    // height: 400px;
+                    display: none;
                 }
             }
         }
@@ -2311,7 +2313,7 @@
                             width: 31%;
                             &:nth-child(4),
                             &:nth-child(5) {
-                                width: 48%;
+                                width: 47%;
                                 margin-top: 10px;
                             }
                         }

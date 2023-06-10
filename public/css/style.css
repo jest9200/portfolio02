@@ -2009,6 +2009,9 @@ input, button {
   #container .cont1 .textWrap p {
     font-size: 15px;
   }
+  #container .cont2 {
+    margin-top: 100vh;
+  }
   #container .cont2 .center .prdBox {
     width: 100%;
   }
@@ -2030,7 +2033,7 @@ input, button {
     width: 90%;
   }
   #container .cont3 .center .tvWrap {
-    height: 600px;
+    display: none;
   }
   #container .cont4 .imgWrap .center {
     width: 95%;
@@ -2108,7 +2111,7 @@ input, button {
     width: 31%;
   }
   #container .cont7 .imgWrap .center .imgList a:nth-child(4), #container .cont7 .imgWrap .center .imgList a:nth-child(5) {
-    width: 48%;
+    width: 47%;
     margin-top: 10px;
   }
   #container .cont7 .textWrap .center {
