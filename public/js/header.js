@@ -59,7 +59,7 @@ hamMenu.addEventListener("click",(e)=>{
 
 closeBtnH.addEventListener("click",(e)=>{
     e.preventDefault();
-    mobileMenu.style.right = "-350px";
+    mobileMenu.style.right = "-351px";
 });
 
 mGnbLink.addEventListener("click",(e)=>{

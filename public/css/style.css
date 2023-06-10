@@ -27,6 +27,11 @@ input, button {
   outline: none;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #header {
   font-family: "Poppins", sans-serif;
   position: fixed;
@@ -2302,10 +2307,26 @@ input, button {
   }
 }
 @media screen and (max-width: 550px) {
+  #header .topHeader .logo a img {
+    width: 200px;
+  }
+  #container .cont3 .center .textWrap h2 {
+    font-size: 70px;
+  }
+  #container .cont7 .imgWrap .center .imgList a:nth-child(1), #container .cont7 .imgWrap .center .imgList a:nth-child(2), #container .cont7 .imgWrap .center .imgList a:nth-child(3) {
+    width: 28%;
+  }
+  #container .cont7 .imgWrap .center .imgList a:nth-child(4), #container .cont7 .imgWrap .center .imgList a:nth-child(5) {
+    width: 44%;
+  }
   #container .cont9 .moonWrap {
-    width: 350px;
+    width: 300px;
+    height: 200px;
   }
   #container .cont9 .moonWrap .moonBox img {
-    width: 350px;
+    width: 300px;
+  }
+  #container .cont9 .textWrap {
+    margin-top: 150px;
   }
 }
