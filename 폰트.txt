@@ -1,4 +1,2 @@
 font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Poppins', sans-serif;
-
-color => #a50034

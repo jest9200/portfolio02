@@ -4,8 +4,6 @@ const indexCont3 = document.querySelector("#container .cont3");
 const indexCont4 = document.querySelector("#container .cont4");
 const cont3Video = document.querySelector(".cont3 video");
 let cont2Top = indexCont2.offsetTop;
-let cont3Top = indexCont3.offsetTop;
-let cont4Top = indexCont4.offsetTop;
 
 const backToTop = document.querySelector(".backToTop");
 
