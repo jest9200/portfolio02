@@ -26,3 +26,15 @@ app.get("/",(req,res)=>{
 app.get("/brand",(req,res)=>{
     res.render("brand.ejs")
 })
+
+app.get("/magazine",(req,res)=>{
+    res.render("magazine.ejs")
+})
+
+app.get("/lounge",(req,res)=>{
+    res.render("lounge.ejs")
+})
+
+app.get("/inspiration",(req,res)=>{
+    res.render("inspiration.ejs")
+})

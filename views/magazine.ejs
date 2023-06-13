@@ -1,0 +1,45 @@
+<%- include("header",{ title:"MAGAZINE | LG SIGNATURE", cssFiles:["magazine.css"], jsFiles:["header.js","scroll.js","magazine/cont2.js"] })
+    %>
+    <div id="container">
+        <div class="cont1">
+            <div class="vidWrap">
+                <video muted autoplay loop>
+                    <source src="/img/magazine/magazine_vid.mp4">
+                </video>
+            </div>
+            <div class="textWrap">
+                <h2>A CURATED COLLECTION OF IDEAS</h2>
+                <p>Delve into articles that highlight the craftsmanship, innovation, and authenticity of LG SIGNATURE.
+                </p>
+            </div>
+            <div class="scrollWrap">
+                <img src="/img/index/scroll_icon.png">
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="topWrap">
+                <div class="titleWrap">
+                    <h2>LG SIGNATURE MAGAZINE</h2>
+                    <p>We deliver NEWS about LG SIGNATURE in various cultural fields for you.</p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one"></div>
+                    <div class="swiper-slide two"></div>
+                    <div class="swiper-slide three"></div>
+                    <div class="swiper-slide four"></div>
+                    <div class="swiper-slide five"></div>
+                    <div class="swiper-slide six"></div>
+                    <div class="swiper-slide seven"></div>
+                    <div class="swiper-slide eight"></div>
+                    <div class="swiper-slide nine"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <a href="#" class="backToTop"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <%- include("footer")%>
