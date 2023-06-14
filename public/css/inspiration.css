@@ -27,12 +27,6 @@ input, button {
   outline: none;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 #header {
   font-family: "Poppins", sans-serif;
   position: fixed;
@@ -368,85 +362,6 @@ body {
   color: #000;
 }
 
-#container .cont1 {
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-#container .cont1 .vidWrap {
-  width: 100%;
-  height: 100%;
-}
-#container .cont1 .vidWrap video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#container .cont1 .textWrap {
-  position: absolute;
-  width: 80%;
-  bottom: 140px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: #fff;
-}
-#container .cont1 .textWrap h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-#container .cont1 .textWrap p {
-  font-size: 18px;
-  line-height: 30px;
-}
-#container .cont1 .scrollWrap {
-  position: absolute;
-  bottom: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 1s;
-}
-#container .cont1 .scrollWrap img {
-  width: 31px;
-}
-#container .cont1 .scrollWrap.move {
-  bottom: 30px;
-}
-#container .cont2 {
-  position: relative;
-  margin-top: 120vh;
-  background-color: #000;
-  font-family: "Poppins", sans-serif;
-  padding: 150px 0;
-}
-#container .backToTop {
-  position: fixed;
-  bottom: 50px;
-  right: 0px;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #151515;
-  color: #fff;
-  transition: all 0.5s;
-  z-index: 10;
-}
-#container .backToTop:hover {
-  background-color: #a50034;
-}
-#container .backToTop.show {
-  right: 50px;
-  opacity: 1;
-}
-
 #footer {
   position: relative;
   padding: 50px 0;
@@ -517,4 +432,337 @@ body {
 }
 #footer .center .textWrap span {
   font-size: 12px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#container .cont1 {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#container .cont1 .vidWrap {
+  width: 100%;
+  height: 100%;
+}
+#container .cont1 .vidWrap video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#container .cont1 .textWrap {
+  position: absolute;
+  width: 80%;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+#container .cont1 .textWrap h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#container .cont1 .textWrap p {
+  font-size: 18px;
+  line-height: 30px;
+}
+#container .cont1 .scrollWrap {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+#container .cont1 .scrollWrap img {
+  width: 31px;
+}
+#container .cont1 .scrollWrap.move {
+  bottom: 30px;
+}
+#container .cont2 {
+  position: relative;
+  margin-top: 120vh;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 150px 0;
+}
+#container .cont2 .titleWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+#container .cont2 .titleWrap .center {
+  width: 36%;
+  text-align: center;
+}
+#container .cont2 .titleWrap .center h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+#container .cont2 .titleWrap .center p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+#container .cont2 .listWrap {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #4f4f4f;
+}
+#container .cont2 .listWrap .listBar {
+  width: 1px;
+  height: 100%;
+  background-color: #4f4f4f;
+  position: absolute;
+  top: 0;
+}
+#container .cont2 .listWrap .listBar.one {
+  left: 25%;
+}
+#container .cont2 .listWrap .listBar.two {
+  left: 50%;
+}
+#container .cont2 .listWrap .listBar.three {
+  left: 75%;
+}
+#container .cont2 .listWrap .listInner {
+  display: flex;
+  flex-wrap: wrap;
+}
+#container .cont2 .listWrap .listInner li {
+  width: 25%;
+  border-top: 1px solid #4f4f4f;
+  cursor: pointer;
+  position: relative;
+}
+#container .cont2 .listWrap .listInner li:nth-child(1), #container .cont2 .listWrap .listInner li:nth-child(2), #container .cont2 .listWrap .listInner li:nth-child(3), #container .cont2 .listWrap .listInner li:nth-child(4) {
+  border-top: none;
+}
+#container .cont2 .listWrap .listInner li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#container .cont2 .listWrap .listInner li:hover::after {
+  opacity: 1;
+}
+#container .cont2 .listWrap .listInner li .wrap {
+  text-align: center;
+  padding: 50px 20px 70px;
+}
+#container .cont2 .listWrap .listInner li .wrap h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 20px 0;
+}
+#container .cont2 .listWrap .listInner li .wrap h4 {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+#container .cont2 .listWrap .listInner li .wrap span {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+#container .cont3 {
+  position: relative;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0;
+}
+#container .cont3 .titleWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+#container .cont3 .titleWrap .center {
+  width: 36%;
+  text-align: center;
+}
+#container .cont3 .titleWrap .center h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+#container .cont3 .titleWrap .center p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+#container .cont3 .listWrap {
+  display: flex;
+  justify-content: center;
+}
+#container .cont3 .listWrap .listMenu {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+}
+#container .cont3 .listWrap .listMenu li {
+  width: 19%;
+  height: 540px;
+  position: relative;
+  cursor: pointer;
+}
+#container .cont3 .listWrap .listMenu li:nth-child(2), #container .cont3 .listWrap .listMenu li:nth-child(4) {
+  margin-top: 50px;
+}
+#container .cont3 .listWrap .listMenu li img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+#container .cont3 .listWrap .listMenu li img:nth-child(1) {
+  display: block;
+}
+#container .cont3 .listWrap .listMenu li img:nth-child(2) {
+  opacity: 0;
+}
+#container .cont3 .listWrap .listMenu li:hover img:nth-child(2) {
+  opacity: 1;
+}
+#container .cont3 .listWrap .listMenu li .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 30px 0;
+}
+#container .cont3 .listWrap .listMenu li .text h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+#container .cont3 .listWrap .listMenu li .text h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 5px 0 20px;
+  color: #fff;
+}
+#container .cont3 .listWrap .listMenu li .text span {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+#container .cont4 {
+  position: relative;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0;
+}
+#container .cont4 .titleWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+#container .cont4 .titleWrap .center {
+  width: 36%;
+  text-align: center;
+}
+#container .cont4 .titleWrap .center h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+#container .cont4 .titleWrap .center p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+#container .cont4 .swiper {
+  width: 70%;
+}
+#container .cont4 .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+}
+#container .cont4 .swiper .swiper-wrapper .swiper-slide .imgWrap img {
+  width: 100%;
+}
+#container .cont4 .swiper .swiper-wrapper .swiper-slide h2 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #fff;
+}
+#container .cont4 .swiper .swiper-wrapper .swiper-slide span {
+  color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+#container .cont4 .swiper .swiper-button-prev,
+#container .cont4 .swiper .swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 10%;
+}
+#container .cont4 .swiper .swiper-button-prev::after,
+#container .cont4 .swiper .swiper-button-next::after {
+  font-size: 14px;
+}
+#container .cont4 .swiper .swiper-button-prev {
+  left: 10px;
+}
+#container .cont4 .swiper .swiper-button-next {
+  right: 10px;
+}
+#container .backToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #151515;
+  color: #fff;
+  transition: all 0.5s;
+  z-index: 10;
+}
+#container .backToTop:hover {
+  background-color: #a50034;
+}
+#container .backToTop.show {
+  right: 50px;
+  opacity: 1;
 }

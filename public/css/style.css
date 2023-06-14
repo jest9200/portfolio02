@@ -27,11 +27,6 @@ input, button {
   outline: none;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 #header {
   font-family: "Poppins", sans-serif;
   position: fixed;
@@ -365,6 +360,83 @@ html, body {
 }
 #header.white .hamMenu {
   color: #000;
+}
+
+#footer {
+  position: relative;
+  padding: 50px 0;
+  background-color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+#footer .center {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .center > ul {
+  margin-bottom: 30px;
+}
+#footer .center .sns {
+  display: flex;
+}
+#footer .center .sns li {
+  margin: 0 20px;
+}
+#footer .center .sns li a {
+  font-size: 22px;
+  color: #777;
+  transition: all 0.5s;
+}
+#footer .center .sns li a:hover {
+  color: #fff;
+}
+#footer .center .footerMenu {
+  display: flex;
+  width: 100%;
+}
+#footer .center .footerMenu li {
+  width: 16.666666%;
+}
+#footer .center .footerMenu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#footer .center .footerMenu li a span {
+  font-size: 17px;
+}
+#footer .center .footerMenu li a span::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  margin-top: 3px;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+#footer .center .footerMenu li a:hover span::after {
+  transform: scale(1);
+}
+#footer .center .textWrap {
+  text-align: center;
+  color: #a6a6a6;
+}
+#footer .center .textWrap p {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+#footer .center .textWrap span {
+  font-size: 12px;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #container .cont1 {
@@ -1664,78 +1736,6 @@ html, body {
 #container .backToTop.show {
   right: 50px;
   opacity: 1;
-}
-
-#footer {
-  position: relative;
-  padding: 50px 0;
-  background-color: #0c0c0c;
-  display: flex;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
-}
-#footer .center {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#footer .center > ul {
-  margin-bottom: 30px;
-}
-#footer .center .sns {
-  display: flex;
-}
-#footer .center .sns li {
-  margin: 0 20px;
-}
-#footer .center .sns li a {
-  font-size: 22px;
-  color: #777;
-  transition: all 0.5s;
-}
-#footer .center .sns li a:hover {
-  color: #fff;
-}
-#footer .center .footerMenu {
-  display: flex;
-  width: 100%;
-}
-#footer .center .footerMenu li {
-  width: 16.666666%;
-}
-#footer .center .footerMenu li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-#footer .center .footerMenu li a span {
-  font-size: 17px;
-}
-#footer .center .footerMenu li a span::after {
-  content: "";
-  display: block;
-  background-color: #fff;
-  width: 100%;
-  height: 2px;
-  margin-top: 3px;
-  transition: all 0.5s;
-  transform: scale(0);
-}
-#footer .center .footerMenu li a:hover span::after {
-  transform: scale(1);
-}
-#footer .center .textWrap {
-  text-align: center;
-  color: #a6a6a6;
-}
-#footer .center .textWrap p {
-  margin-bottom: 20px;
-  line-height: 25px;
-}
-#footer .center .textWrap span {
-  font-size: 12px;
 }
 
 @media screen and (max-width: 1600px) {

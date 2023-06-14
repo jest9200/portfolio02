@@ -1,0 +1,90 @@
+#footer {
+    position: relative;
+    padding: 50px 0;
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+    .center {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >ul {
+            margin-bottom: 30px;
+        }
+
+        .sns {
+            display: flex;
+
+            li {
+                margin: 0 20px;
+
+                a {
+                    font-size: 22px;
+                    color: #777;
+                    transition: all .5s;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .footerMenu {
+            display: flex;
+            width: 100%;
+
+            li {
+                width: 16.666666%;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+
+                    span {
+                        font-size: 17px;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            background-color: #fff;
+                            width: 100%;
+                            height: 2px;
+                            margin-top: 3px;
+                            transition: all .5s;
+                            transform: scale(0);
+                        }
+                    }
+
+                    &:hover {
+                        span {
+                            &::after {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .textWrap {
+            text-align: center;
+            color: #a6a6a6;
+
+            p {
+                margin-bottom: 20px;
+                line-height: 25px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}

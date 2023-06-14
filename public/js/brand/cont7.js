@@ -1,5 +1,5 @@
-const botImgs = document.querySelectorAll(".cont4 .botImgs > img");
-const topImgs = document.querySelectorAll(".cont4 .topImgs > img");
+const botImgs = document.querySelectorAll(".cont7 .botImgs > img");
+const topImgs = document.querySelectorAll(".cont7 .topImgs > img");
 
 for(let i=0; i<botImgs.length; i++){
     botImgs[i].addEventListener("click",()=>{
