@@ -434,12 +434,6 @@ input, button {
   font-size: 12px;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 #container .cont1 {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -515,7 +509,53 @@ body {
 }
 #container .cont2 {
   font-family: "Poppins", sans-serif;
-  height: 1000px;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  padding: 170px 0 250px;
+}
+#container .cont2 .center {
+  width: 71%;
+}
+#container .cont2 .center h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+#container .cont2 .center ul {
+  display: flex;
+  width: 100%;
+}
+#container .cont2 .center ul li {
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+#container .cont2 .center ul li img {
+  width: 70px;
+  height: 70px;
+}
+#container .cont2 .center ul li p {
+  color: #fff;
+  margin-top: 45px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#container .cont2 .center ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 76px;
+  background-color: #545454;
+}
+#container .cont2 .center ul li:nth-child(4)::after {
+  display: none;
 }
 #container .backToTop {
   position: fixed;
@@ -539,4 +579,10 @@ body {
 #container .backToTop.show {
   right: 50px;
   opacity: 1;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
