@@ -2,33 +2,39 @@
     const prdData = [{
         title:"Rollable OLED TV",
         prdImg:"index/product01.jpg",
-        prdhoverImg:"index/product01_hover.jpg"
+        prdhoverImg:"index/product01_hover.jpg",
+        prdLink:"/"
     },{
         title:"OLED 8K",
         prdImg:"index/product02.jpg",
-        prdhoverImg:"index/product02_hover.jpg"
+        prdhoverImg:"index/product02_hover.jpg",
+        prdLink:"/product/oled_8k"
     },{
         title:"REFRIGERATOR",
         prdImg:"index/product03.jpg",
-        prdhoverImg:"index/product03_hover.jpg"
+        prdhoverImg:"index/product03_hover.jpg",
+        prdLink:"/product/refrigerator"
     },{
         title:"WINE CELLAR",
         prdImg:"index/product04.jpg",
-        prdhoverImg:"index/product04_hover.jpg"
+        prdhoverImg:"index/product04_hover.jpg",
+        prdLink:"/product/wine_cellar"
     },{
         title:"WASHING MACHINE",
         prdImg:"index/product05.jpg",
-        prdhoverImg:"index/product05_hover.jpg"
+        prdhoverImg:"index/product05_hover.jpg",
+        prdLink:"/product/washing_machine"
     },{
         title:"AIR PURIFIER",
         prdImg:"index/product06.jpg",
-        prdhoverImg:"index/product06_hover.jpg"
+        prdhoverImg:"index/product06_hover.jpg",
+        prdLink:"/product/air_purifier"
     }]
 %>
 
 <!-- prdBox a태그 경로 변경 필요 => 데이터에 차후 추가할것 -->
 <% for( let i=0; i<prdData.length; i++) { %>
-    <a class="prdBox" href="/">
+    <a class="prdBox" href="<%- prdData[i].prdLink %>">
         <div>
             <img class="prdImg" src="/img/<%- prdData[i].prdImg %>">
             <img class="prdhoverImg" src="/img/<%- prdData[i].prdhoverImg %>">

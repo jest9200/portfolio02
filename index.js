@@ -38,3 +38,23 @@ app.get("/lounge",(req,res)=>{
 app.get("/inspiration",(req,res)=>{
     res.render("inspiration.ejs")
 })
+
+app.get("/product/oled_8k",(req,res)=>{
+    res.render("prd_oled8k.ejs")
+})
+
+app.get("/product/refrigerator",(req,res)=>{
+    res.render("prd_refrigerator.ejs")
+})
+
+app.get("/product/wine_cellar",(req,res)=>{
+    res.render("prd_winecellar.ejs")
+})
+
+app.get("/product/washing_machine",(req,res)=>{
+    res.render("prd_washingmachine.ejs")
+})
+
+app.get("/product/air_purifier",(req,res)=>{
+    res.render("prd_airpurifier.ejs")
+})
