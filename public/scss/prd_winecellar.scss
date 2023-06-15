@@ -7,3 +7,112 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+#container {
+    .cont1 {
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        height: 100vh;
+        .vidWrap {
+            width: 100%;
+            height: 100%;
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .textWrap {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            z-index: 5;
+            .center {
+                width: 70%;
+                span {
+                    display: inline-block;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: 1px solid;
+                    border-image: linear-gradient(135deg, #ffffff 0%, #A4A4A450  50%, #ffffff70 100%) 1;
+                }
+                h2 {
+                    margin: 25px 0 60px;
+                    color: #fff;
+                    font-size: 45px;
+                    font-weight: 600;
+                    line-height: 55px;
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 45px;
+                    font-weight: 500;
+                    border: 1px solid #fff;
+                    background-color: #fff;
+                    color: #000;
+                    transition: all .5s;
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .scrollWrap {
+            position: absolute;
+            bottom: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 1s;
+
+            img {
+                width: 31px;
+            }
+        }
+
+        .scrollWrap.move {
+            bottom: 30px;
+        }
+    }
+
+    .cont2 {
+        font-family: 'Poppins', sans-serif;
+        height: 1000px; //임의로
+    }
+
+    .backToTop {
+        position: fixed;
+        bottom: 50px;
+        right: 0px;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #151515;
+        color: #fff;
+        transition: all .5s;
+        z-index: 10;
+
+        &:hover {
+            background-color: #a50034;
+        }
+    }
+
+    .backToTop.show {
+        right: 50px;
+        opacity: 1;
+    }
+}
