@@ -17,7 +17,7 @@ for(let i=0; i<tabMenus.length; i++){
 // cont8 모바일메뉴 기능
 const detailMenus = document.querySelectorAll(".cont8 .detailMenu > li");
 const detailDepth2 = document.querySelectorAll(".cont8 .detailMenu > li .depth2");
-let menuHeight = [445,466,203,203];
+let menuHeight = [404,425,162,162];
 
 for(let i=0; i<detailMenus.length; i++){
     detailMenus[i].addEventListener("click",(e)=>{
@@ -25,13 +25,16 @@ for(let i=0; i<detailMenus.length; i++){
         if(detailMenus[i].classList.contains("on")){
             detailMenus[i].classList.remove("on");
             detailDepth2[i].style.height = 0;
+            detailDepth2[i].style.paddingBottom = 0;
         } else {
             for(let j=0; j<detailMenus.length; j++){
                 detailMenus[j].classList.remove("on");
                 detailDepth2[j].style.height = 0;
+                detailDepth2[j].style.paddingBottom = 0;
             }
             detailMenus[i].classList.add("on");
             detailDepth2[i].style.height = menuHeight[i] + "px";
+            detailDepth2[i].style.paddingBottom = "50px";
         }
     })
 }
