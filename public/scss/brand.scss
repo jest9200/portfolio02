@@ -127,18 +127,23 @@ body {
 
                 li {
                     width: 28%;
-                    border-bottom: 2px solid #262626;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 70px;
-                    color: #777;
-                    font-size: 20px;
+                    a {
+                        width: 100%;
+                        border-bottom: 2px solid #262626;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 70px;
+                        color: #777;
+                        font-size: 20px;
+                    }
                 }
 
                 li.on {
-                    border-bottom: 2px solid #fff;
-                    color: #fff;
+                    a {
+                        border-bottom: 2px solid #fff;
+                        color: #fff;
+                    }
                 }
             }
         }

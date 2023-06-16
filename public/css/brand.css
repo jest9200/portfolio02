@@ -543,6 +543,9 @@ body {
 }
 #container .cont3 .tabWrap .tabMenu li {
   width: 28%;
+}
+#container .cont3 .tabWrap .tabMenu li a {
+  width: 100%;
   border-bottom: 2px solid #262626;
   display: flex;
   justify-content: center;
@@ -551,7 +554,7 @@ body {
   color: #777;
   font-size: 20px;
 }
-#container .cont3 .tabWrap .tabMenu li.on {
+#container .cont3 .tabWrap .tabMenu li.on a {
   border-bottom: 2px solid #fff;
   color: #fff;
 }
