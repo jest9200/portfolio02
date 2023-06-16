@@ -17,7 +17,7 @@ for(let i=0; i<tabMenus.length; i++){
 // cont8 모바일메뉴 기능
 const detailMenus = document.querySelectorAll(".cont8 .detailMenu > li");
 const detailDepth2 = document.querySelectorAll(".cont8 .detailMenu > li .depth2");
-let menuHeight = [404,425,162,162];
+let menuHeight = [202,243,668];
 
 for(let i=0; i<detailMenus.length; i++){
     detailMenus[i].addEventListener("click",(e)=>{

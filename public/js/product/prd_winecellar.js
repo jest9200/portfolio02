@@ -1,6 +1,6 @@
-// cont5 탭메뉴 기능
-const tabMenus = document.querySelectorAll(".cont5 .tabMenu li");
-const contents = document.querySelectorAll(".cont5 .tabWrap .contentWrap");
+// cont4 탭메뉴 기능
+const tabMenus = document.querySelectorAll(".cont4 .tabMenu li");
+const contents = document.querySelectorAll(".cont4 .tabWrap .contentWrap");
 
 for(let i=0; i<tabMenus.length; i++){
     tabMenus[i].addEventListener("click",(e)=>{
@@ -14,10 +14,10 @@ for(let i=0; i<tabMenus.length; i++){
     })
 }
 
-// cont8 모바일메뉴 기능
-const detailMenus = document.querySelectorAll(".cont8 .detailMenu > li");
-const detailDepth2 = document.querySelectorAll(".cont8 .detailMenu > li .depth2");
-let menuHeight = [404,425,162,162];
+// cont7 모바일메뉴 기능
+const detailMenus = document.querySelectorAll(".cont7 .detailMenu > li");
+const detailDepth2 = document.querySelectorAll(".cont7 .detailMenu > li .depth2");
+let menuHeight = [404,524,202];
 
 for(let i=0; i<detailMenus.length; i++){
     detailMenus[i].addEventListener("click",(e)=>{

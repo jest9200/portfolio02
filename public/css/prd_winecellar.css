@@ -586,3 +586,389 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+#container .cont3 {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+}
+#container .cont3 .center {
+  width: 71%;
+}
+#container .cont3 .center .topWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 250px;
+}
+#container .cont3 .center .topWrap .vidWrap {
+  width: 49%;
+}
+#container .cont3 .center .topWrap .vidWrap video {
+  width: 100%;
+  height: auto;
+}
+#container .cont3 .center .topWrap .textWrap {
+  width: 40%;
+  color: #fff;
+  padding-left: 100px;
+}
+#container .cont3 .center .topWrap .textWrap h3 {
+  margin-bottom: 15px;
+}
+#container .cont3 .center .topWrap .textWrap h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+#container .cont3 .center .topWrap .textWrap p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+#container .cont3 .center .topWrap .textWrap span {
+  color: #9e9e9e;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+#container .cont3 .center .botWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container .cont3 .center .botWrap .textWrap {
+  width: 35%;
+  color: #fff;
+  padding-right: 50px;
+}
+#container .cont3 .center .botWrap .textWrap h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+#container .cont3 .center .botWrap .textWrap h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+#container .cont3 .center .botWrap .textWrap p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+#container .cont3 .center .botWrap .textWrap span {
+  color: #9e9e9e;
+  font-size: 14px;
+  line-height: 20px;
+}
+#container .cont3 .center .botWrap .vidWrap {
+  width: 58%;
+}
+#container .cont3 .center .botWrap .vidWrap video {
+  width: 100%;
+  height: auto;
+}
+#container .cont4 {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+}
+#container .cont4 .center {
+  width: 71%;
+}
+#container .cont4 .center .tabMenu {
+  display: flex;
+  justify-content: space-between;
+}
+#container .cont4 .center .tabMenu li {
+  width: 24%;
+}
+#container .cont4 .center .tabMenu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #767676;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #767676;
+}
+#container .cont4 .center .tabMenu li.on a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+#container .cont4 .center .tabWrap .contentWrap {
+  display: none;
+}
+#container .cont4 .center .tabWrap .contentWrap .textWrap {
+  color: #fff;
+}
+#container .cont4 .center .tabWrap .contentWrap .textWrap h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 60px 0 30px;
+}
+#container .cont4 .center .tabWrap .contentWrap .textWrap p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+#container .cont4 .center .tabWrap .contentWrap .imgWrap {
+  margin-bottom: 20px;
+}
+#container .cont4 .center .tabWrap .contentWrap .imgWrap img {
+  width: 100%;
+}
+#container .cont4 .center .tabWrap .contentWrap.on {
+  display: block;
+}
+#container .cont5 {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+}
+#container .cont5 .center {
+  width: 71%;
+}
+#container .cont5 .center h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 100px;
+}
+#container .cont5 .center .imgWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+#container .cont5 .center .imgWrap .gallery {
+  width: 32%;
+  cursor: pointer;
+}
+#container .cont5 .center .imgWrap .gallery > div {
+  overflow: hidden;
+}
+#container .cont5 .center .imgWrap .gallery > div img {
+  display: block;
+  width: 100%;
+  transition: all 0.5s;
+}
+#container .cont5 .center .imgWrap .gallery > div:hover img {
+  transform: scale(1.1);
+}
+#container .cont5 .center .imgWrap .gallery.one,
+#container .cont5 .center .imgWrap .gallery.three {
+  padding-top: 100px;
+}
+#container .cont5 .center .imgWrap .gallery.one > div,
+#container .cont5 .center .imgWrap .gallery.three > div {
+  margin-bottom: 22px;
+}
+#container .cont6 {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+}
+#container .cont6 .center {
+  width: 71%;
+}
+#container .cont6 .center .titleWrap {
+  color: #fff;
+  text-align: center;
+}
+#container .cont6 .center .titleWrap span {
+  font-weight: 500;
+}
+#container .cont6 .center .titleWrap h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 10px 0 50px;
+}
+#container .cont6 .center .articleWrap {
+  display: flex;
+  justify-content: space-between;
+}
+#container .cont6 .center .articleWrap .article {
+  width: 31%;
+  cursor: pointer;
+}
+#container .cont6 .center .articleWrap .article .imgWrap {
+  width: 100%;
+  overflow: hidden;
+}
+#container .cont6 .center .articleWrap .article .imgWrap img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#container .cont6 .center .articleWrap .article h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #959595;
+  margin-top: 20px;
+}
+#container .cont6 .center .articleWrap .article h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+  margin: 10px 0 20px;
+}
+#container .cont6 .center .articleWrap .article p {
+  font-size: 15px;
+  color: #fff;
+}
+#container .cont6 .center .articleWrap .article p span {
+  padding-right: 15px;
+}
+#container .cont7 {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #000, #161616);
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+}
+#container .cont7 .center {
+  width: 62.5%;
+}
+#container .cont7 .center .topWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+#container .cont7 .center .topWrap .imgWrap {
+  width: 300px;
+}
+#container .cont7 .center .topWrap .imgWrap img {
+  width: 100%;
+}
+#container .cont7 .center .topWrap .linkWrap {
+  width: 50%;
+  position: relative;
+}
+#container .cont7 .center .topWrap .linkWrap .text {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#container .cont7 .center .topWrap .linkWrap .text h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+#container .cont7 .center .topWrap .linkWrap .text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+#container .cont7 .center .topWrap .linkWrap .text p:hover {
+  background-color: #000;
+  color: #fff;
+}
+#container .cont7 .center .botWrap {
+  margin: 0 auto;
+  width: 90%;
+}
+#container .cont7 .center .botWrap .detailMenu > li {
+  width: 100%;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+#container .cont7 .center .botWrap .detailMenu > li > a {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+#container .cont7 .center .botWrap .detailMenu > li > a::before, #container .cont7 .center .botWrap .detailMenu > li > a::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#container .cont7 .center .botWrap .detailMenu > li > a::before {
+  content: "-";
+  opacity: 0;
+}
+#container .cont7 .center .botWrap .detailMenu > li > a::after {
+  content: "+";
+}
+#container .cont7 .center .botWrap .detailMenu > li:last-child {
+  border-bottom: 1px solid #fff;
+}
+#container .cont7 .center .botWrap .detailMenu > li .depth2 {
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: all 0.5s;
+  padding-bottom: 0px;
+}
+#container .cont7 .center .botWrap .detailMenu > li .depth2 li {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 30px 20px;
+  border-bottom: 1px solid #5e5e5e;
+}
+#container .cont7 .center .botWrap .detailMenu > li .depth2 li h4 {
+  line-height: 20px;
+  font-weight: 500;
+}
+#container .cont7 .center .botWrap .detailMenu > li .depth2 li p {
+  line-height: 20px;
+  font-weight: 300;
+  text-align: end;
+}
+#container .cont7 .center .botWrap .detailMenu > li.on > a {
+  background-color: #383838;
+  border-bottom: 1px solid #fff;
+}
+#container .cont7 .center .botWrap .detailMenu > li.on > a::before {
+  opacity: 1;
+}
+#container .cont7 .center .botWrap .detailMenu > li.on > a::after {
+  opacity: 0;
+}

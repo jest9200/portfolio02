@@ -908,10 +908,6 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.5s;
-}
-#container .cont7 .center .articleWrap .article:hover .imgWrap img {
-  transform: scale(1.1);
 }
 #container .cont7 .center .articleWrap .article h3 {
   font-size: 12px;
@@ -966,7 +962,7 @@ body {
   transform: translate(-50%, -50%);
 }
 #container .cont8 .center .topWrap .linkWrap .text h2 {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 40px;
@@ -1025,7 +1021,7 @@ body {
 #container .cont8 .center .botWrap .detailMenu > li > a::after {
   content: "+";
 }
-#container .cont8 .center .botWrap .detailMenu > li:nth-child(4) {
+#container .cont8 .center .botWrap .detailMenu > li:last-child {
   border-bottom: 1px solid #fff;
 }
 #container .cont8 .center .botWrap .detailMenu > li .depth2 {
