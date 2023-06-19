@@ -1,14 +1,62 @@
-<%- include("header",{ title:"JOIN | LG SIGNATURE", cssFiles:["join.css"], jsFiles:["header.js","login_join/scroll.js"] }) %>
+<%- include("header",{ title:"JOIN | LG SIGNATURE", cssFiles:["join.css"], jsFiles:["header.js","login_join/scroll.js"]
+    }) %>
     <div id="container">
         <div class="cont1">
             <div class="center">
-                <h2>JOIN</h2>
-                <form id="join_form" action="/joindb" method="post">
-                    <input type="text" name="memberid">
-                    <input type="password" name="memberpass">
-                    <button type="submit">JOIN</button>
-                    <a href="/">취소</a>
-                </form>
+                <div class="leftWrap">
+                    <h2>CREATE ACCOUNT</h2>
+                    <form id="join" action="/joindb" method="post">
+                        <div class="member_infor">
+                            <div class="form_control">
+                                <label for="userId"><i class="fa-solid fa-id-card"></i>ID</label>
+                                <input type="text" id="userId" name="userId" placeholder="Please enter your ID">
+                                <span class="error_msg"></span>
+                            </div>
+                            <div class="form_control">
+                                <label for="userPass"><i class="fa-solid fa-lock"></i>Password</label>
+                                <input type="text" id="userPass" name="userPass"
+                                    placeholder="Please enter your password">
+                                <span class="error_msg"></span>
+                            </div>
+                            <div class="form_control">
+                                <label for="userPassCheck"><i class="fa-solid fa-unlock"></i>Password Check</label>
+                                <input type="text" id="userPassCheck" name="userPassCheck"
+                                    placeholder="Please check your password">
+                                <span class="error_msg"></span>
+                            </div>
+                            <div class="form_control">
+                                <label for="userName"><i class="fa-solid fa-pen-nib"></i>Name</label>
+                                <input type="text" id="userName" name="userName" placeholder="Please enter your name">
+                                <span class="error_msg"></span>
+                            </div>
+                            <div class="form_control">
+                                <label for="userBirth"><i class="fa-solid fa-cake-candles"></i>Birth</label>
+                                <input type="text" id="userBirth" name="userBirth"
+                                    placeholder="Please enter your date of birth">
+                                <span class="error_msg"></span>
+                            </div>
+                            <div class="form_control">
+                                <label for="userEmail"><i class="fa-solid fa-envelope-open-text"></i>E-mail</label>
+                                <input type="text" id="userEmail" name="userEmail"
+                                    placeholder="Please enter your e-mail address">
+                                <span class="error_msg"></span>
+                            </div>
+                            <div class="form_control">
+                                <label for="userPhone"><i class="fa-solid fa-mobile-button"></i>Phone</label>
+                                <input type="text" id="userPhone" name="userPhone"
+                                    placeholder="Please enter your phone number">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="join_ok" type="submit">JOIN</button>
+                            <button class="reset_ok" type="reset">RESET</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="rightWrap">
+                    <img src="/img/index/joinBg.jpg">
+                </div>
             </div>
         </div>
     </div>

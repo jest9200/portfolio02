@@ -1,16 +1,32 @@
-<%- include("header",{ title:"LOGIN | LG SIGNATURE", cssFiles:["login.css"], jsFiles:["header.js","login_join/scroll.js"] }) %>
+<%- include("header",{ title:"LOGIN | LG SIGNATURE", cssFiles:["login.css"],
+    jsFiles:["header.js","login_join/scroll.js"] }) %>
     <div id="container">
         <div class="cont1">
             <div class="center">
-                <h2>LOGIN</h2>
-                <form id="login_form" action="/logincheck" method="post">
-                    <input type="text" name="memberid" placeholder="Please enter your ID">
-                    <input type="password" name="memberpass" placeholder="Please enter your Password">
-                    <div class="linkWrap">
-                        <button type="submit">LOGIN</button>
-                        <a href="/join">JOIN</a>
+                <div class="leftWrap">
+                    <img src="/img/index/loginBg.jpg">
+                </div>
+                <div class="rightWrap">
+                    <div class="subtext">
+                        <p>Don't you have an account?</p>
+                        <a href="/join">Create Account</a>
                     </div>
-                </form>
+                    <h2>SIGN IN<br/><span>LG SIGNATURE</span></h2>
+                    <form id="login_form" action="/logincheck" method="post">
+                        <div class="idWrap">
+                            <i class="fa-regular fa-id-card"></i>
+                            <input type="text" name="memberid" placeholder="Please enter your ID">
+                        </div>
+                        <div class="passWrap">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" name="memberpass" placeholder="Please enter your Password">
+                        </div>
+                        <div class="linkWrap">
+                            <button type="submit">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
