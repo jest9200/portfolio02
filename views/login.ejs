@@ -1,0 +1,17 @@
+<%- include("header",{ title:"LOGIN | LG SIGNATURE", cssFiles:["login.css"], jsFiles:["header.js","login_join/scroll.js"] }) %>
+    <div id="container">
+        <div class="cont1">
+            <div class="center">
+                <h2>LOGIN</h2>
+                <form id="login_form" action="/logincheck" method="post">
+                    <input type="text" name="memberid" placeholder="Please enter your ID">
+                    <input type="password" name="memberpass" placeholder="Please enter your Password">
+                    <div class="linkWrap">
+                        <button type="submit">LOGIN</button>
+                        <a href="/join">JOIN</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include("footer")%>

@@ -1,0 +1,19 @@
+@import "reset";
+@import "header";
+@import "footer";
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#container {
+    .cont1 {
+        background-color: #141416;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        padding-top: 250px;
+    }
+}

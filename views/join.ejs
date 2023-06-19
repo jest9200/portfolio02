@@ -1,0 +1,15 @@
+<%- include("header",{ title:"JOIN | LG SIGNATURE", cssFiles:["join.css"], jsFiles:["header.js","login_join/scroll.js"] }) %>
+    <div id="container">
+        <div class="cont1">
+            <div class="center">
+                <h2>JOIN</h2>
+                <form id="join_form" action="/joindb" method="post">
+                    <input type="text" name="memberid">
+                    <input type="password" name="memberpass">
+                    <button type="submit">JOIN</button>
+                    <a href="/">취소</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include("footer")%>
