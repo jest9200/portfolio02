@@ -15,13 +15,14 @@
                 <h1>Customer<br/>Review</h1>
                 <div class="listWrap">
                     <% for( let i=0; i<data.length; i++ ) { %>
-                        <a href="#" class="list">
+                        <a href="/notice/review/detail/<%- data[i].num %>" class="list">
                             <div class="imgWrap">
-                                <img src="/upload/<%- data[i].attachfile %>">
+                                <img src="/upload/<%- data[i].attachfile[0] %>">
                             </div>
                             <div class="titleWrap">
                                 <h3><%- data[i].category %> • <%- data[i].date %></h3>
                                 <h2><%- data[i].title %></h2>
+                                <p><span><%- data[i].hashtag %></span><span><%- data[i].author %></span></p>
                             </div>
                         </a>
                     <% } %>
@@ -29,7 +30,11 @@
             </div>
         </div>
         <div class="cont3">
+            <% if(login){ %>
             <a href="/notice/review/insert">Write</a>
+            <% } else { %>
+            <a href="/login">Login to Write</a>
+            <% } %>
         </div>
     </div>
     <%- include("footer")%>

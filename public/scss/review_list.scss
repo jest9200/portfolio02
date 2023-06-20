@@ -74,24 +74,42 @@ body {
                     justify-content: space-between;
                     align-items: center;
                     width: 100%;
+                    border: 1px solid #e9e9e9;
+                    transition: all .5s;
+                    margin-bottom: 40px;
+                    &:hover {
+                        box-shadow: 7px 10px 10px #e9e9e9;
+                    }
                     .imgWrap {
                         width: 28%;
+                        height: 200px;
                         img {
                             width: 100%;
+                            height: 100%;
                             object-fit: cover;
                         }
                     }
                     .titleWrap {
-                        width: 70%;
+                        width: 69%;
+                        
                         h3 {
-                            font-size: 18px;
+                            font-size: 16px;
                             font-weight: 500;
                             color: #a50034;
+                            margin-bottom: 10px;
                         }
                         h2 {
                             font-size: 20px;
                             font-weight: 500;
                             color: #141416;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            span {
+                                color: #777;
+                                font-size: 14px;
+                                margin-right: 15px;
+                            }
                         }
                     }
                 }

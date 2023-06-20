@@ -5,26 +5,38 @@
             <div class="bg"></div>
             <div class="wrap">
                 <div class="center">
+                    <div class="titleWrap">
+                        <h2>Please write your review</h2>
+                        <a href="/notice/review/list">back to the list</a>
+                    </div>
                     <form id="upload" action="/dbupload" method="post" enctype="multipart/form-data">
-                        <input type="text" name="title">
-                        <input type="date" name="date">
-                        <select name="category">
-                            <option value="Rollable OLED TV">Rollable OLED TV</option>
-                            <option value="OLED TV">OLED TV</option>
-                            <option value="Refrigerator">Refrigerator</option>
-                            <option value="Wine Cellar">Wine Cellar</option>
-                            <option value="Washing Machine">Washing Machine</option>
-                            <option value="Air Purifier">Air Purifier</option>
-                        </select>
-                        <textarea name="context"></textarea>
-                        <input id="file" type="file" name="thumbnail" multiple>
+                        <div class="line01">
+                            <select name="category" required>
+                                <option value="Rollable OLED TV">Rollable OLED TV</option>
+                                <option value="OLED TV">OLED TV</option>
+                                <option value="Refrigerator">Refrigerator</option>
+                                <option value="Wine Cellar">Wine Cellar</option>
+                                <option value="Washing Machine">Washing Machine</option>
+                                <option value="Air Purifier">Air Purifier</option>
+                            </select>
+                            <input type="date" name="date" required>
+                        </div>
+                        <div class="line02">
+                            <input type="text" name="title" placeholder="Please enter the title" required>
+                            <input type="text" name="author" placeholder="Please enter your id" required>
+                        </div>
+                        <div class="line03">
+                            <textarea name="context" placeholder="Please enter the contents" required></textarea>
+                        </div>
+                        <div class="line04">
+                            <input type="text" name="hashtag" placeholder="Please enter the hashtag (ex. #lg #signature)" required>
+                            <input id="file" type="file" name="thumbnail" multiple>
+                        </div>
                         <button id="submit" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="cont2">
-            <a href="/notice/review/list">back to the list</a>
-        </div>
+            
     </div>
     <%- include("footer")%>

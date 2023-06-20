@@ -143,28 +143,44 @@ app.get("/notice/review/list",(req,res)=>{
     })
 })
 
+// 게시판 review 글 작성 페이지
 app.get("/notice/review/insert",(req,res)=>{
     res.render("review_insert.ejs",{login:req.user});
 })
 
+// 게시판에 사진 여러장 첨부 버전
 app.post("/dbupload",upload.array("thumbnail"),(req,res)=>{
+
+    let fileNames = [];
+    for(let i=0; i<req.files.length; i++){
+        fileNames[i] = req.files[i].filename
+        // 첨부한 파일들의 파일명만 뽑아서 배열에 옮김
+    }
+
     db.collection("count").findOne({name:"글번호"},(err,countResult)=>{
         db.collection("review").insertOne({
             num:countResult.reviewCount,
             title:req.body.title,
+            author:req.body.author,
             date:req.body.date,
             category:req.body.category,
             context:req.body.context,
-            attachfile:req.files.filename
+            hashtag:req.body.hashtag,
+            attachfile:fileNames
         },(err,result)=>{
             db.collection("count").updateOne({name:"글번호"},{$inc:{reviewCount:1}},(err,result)=>{
-                console.log(req.files);
-                // res.redirect("/notice/review/list") //여기 상세페이지로 수정 필요 `${}`사용
+                res.redirect(`/notice/review/detail/${countResult.reviewCount}`);
             })
         })
     })
 })
 
+// 게시판 review 상세페이지
+app.get("/notice/review/detail/:num",(req,res)=>{
+    db.collection("review").findOne({num:Number(req.params.num)},(err,result)=>{
+        res.render("review_detail.ejs",{data:result,login:req.user});
+    })
+})
 
 
 // 회원가입
