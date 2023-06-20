@@ -24,7 +24,7 @@ body {
                 width: 40%;
                 background-color: #fff;
                 h2 {
-                    font-size: 44px;
+                    font-size: 38px;
                     text-align: center;
                     padding-top: 70px;
                 }
@@ -52,11 +52,25 @@ body {
                                 border: none;
                                 border-bottom: 1px solid #141416;
                             }
-                            span {
-                                display: block;
-                                width: 100%;
+                            .error_msg {
+                                display: none;
                             }
-                        }   
+                        }
+                        .form_control.ok {
+                            input {
+                                border-bottom: 1px solid #141416;
+                            }
+                        }
+                        .form_control.no {
+                            input {
+                                border-bottom: 1px solid #a50034;
+                            }
+                            .error_msg {
+                                display: block;
+                                margin-top: 5px;
+                                color: #a50034;
+                            }
+                        }
                     }
                     .btns {
                         display: flex;

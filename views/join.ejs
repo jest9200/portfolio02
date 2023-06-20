@@ -1,4 +1,4 @@
-<%- include("header",{ title:"JOIN | LG SIGNATURE", cssFiles:["join.css"], jsFiles:["header.js","login_join/scroll.js"]
+<%- include("header",{ title:"JOIN | LG SIGNATURE", cssFiles:["join.css"], jsFiles:["header.js","login_join/scroll.js","login_join/joincheck.js"]
     }) %>
     <div id="container">
         <div class="cont1">
@@ -8,43 +8,43 @@
                     <form id="join" action="/joindb" method="post">
                         <div class="member_infor">
                             <div class="form_control">
-                                <label for="userId"><i class="fa-solid fa-id-card"></i>ID</label>
-                                <input type="text" id="userId" name="userId" placeholder="Please enter your ID">
+                                <label for="memberid"><i class="fa-solid fa-id-card"></i>ID</label>
+                                <input type="text" id="memberid" name="memberid" placeholder="Please enter your ID">
                                 <span class="error_msg"></span>
                             </div>
                             <div class="form_control">
-                                <label for="userPass"><i class="fa-solid fa-lock"></i>Password</label>
-                                <input type="text" id="userPass" name="userPass"
+                                <label for="memberpass"><i class="fa-solid fa-lock"></i>Password</label>
+                                <input type="password" id="memberpass" name="memberpass"
                                     placeholder="Please enter your password">
                                 <span class="error_msg"></span>
                             </div>
                             <div class="form_control">
-                                <label for="userPassCheck"><i class="fa-solid fa-unlock"></i>Password Check</label>
-                                <input type="text" id="userPassCheck" name="userPassCheck"
+                                <label for="memberpasschk"><i class="fa-solid fa-unlock"></i>Password Check</label>
+                                <input type="password" id="memberpasschk" name="memberpasschk"
                                     placeholder="Please check your password">
                                 <span class="error_msg"></span>
                             </div>
                             <div class="form_control">
-                                <label for="userName"><i class="fa-solid fa-pen-nib"></i>Name</label>
-                                <input type="text" id="userName" name="userName" placeholder="Please enter your name">
+                                <label for="membername"><i class="fa-solid fa-pen-nib"></i>Name</label>
+                                <input type="text" id="membername" name="membername" placeholder="Please enter your name">
                                 <span class="error_msg"></span>
                             </div>
                             <div class="form_control">
-                                <label for="userBirth"><i class="fa-solid fa-cake-candles"></i>Birth</label>
-                                <input type="text" id="userBirth" name="userBirth"
-                                    placeholder="Please enter your date of birth">
+                                <label for="memberbirth"><i class="fa-solid fa-cake-candles"></i>Birth</label>
+                                <input type="text" id="memberbirth" name="memberbirth"
+                                    placeholder="ex) 2000-01-01">
                                 <span class="error_msg"></span>
                             </div>
                             <div class="form_control">
-                                <label for="userEmail"><i class="fa-solid fa-envelope-open-text"></i>E-mail</label>
-                                <input type="text" id="userEmail" name="userEmail"
-                                    placeholder="Please enter your e-mail address">
+                                <label for="memberemail"><i class="fa-solid fa-envelope-open-text"></i>E-mail</label>
+                                <input type="text" id="memberemail" name="memberemail"
+                                    placeholder="ex) test1234@google.com">
                                 <span class="error_msg"></span>
                             </div>
                             <div class="form_control">
-                                <label for="userPhone"><i class="fa-solid fa-mobile-button"></i>Phone</label>
-                                <input type="text" id="userPhone" name="userPhone"
-                                    placeholder="Please enter your phone number">
+                                <label for="memberphone"><i class="fa-solid fa-mobile-button"></i>Phone</label>
+                                <input type="text" id="memberphone" name="memberphone"
+                                    placeholder="ex) 010-1234-5678">
                                 <span class="error_msg"></span>
                             </div>
                         </div>

@@ -30,4 +30,28 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const linkWrapBtn = document.querySelector(".linkWrap button");
+        const idWrap = document.querySelector(".idWrap input");
+        const passWrap = document.querySelector(".passWrap input")
+
+        linkWrapBtn.onclick = function(e){
+            
+                
+              axios.post('/user', {
+                memberid: idWrap.value,
+                memberpass: passWrap.value
+            })
+            .then(function (response) {
+                e.preventDefault();
+                console.log(response);
+                alert("로그인 실패");
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+        }
+    </script>
     <%- include("footer")%>

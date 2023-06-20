@@ -1,3 +1,36 @@
-<%- include("header",{ title:"CUSTOMER REVIEW | LG SIGNATURE", cssFiles:["review_list.css"], jsFiles:["header.js","scroll.js"] }) %>
-    <div id="container"></div>
+<%- include("header",{ title:"NOTICE REVIEW | LG SIGNATURE", cssFiles:["review_list.css"], jsFiles:["header.js","login_join/scroll.js"] }) %>
+    <div id="container">
+        <div class="cont1">
+            <div class="bg"></div>
+            <div class="tabWrap">
+                <ul class="tabMenu">
+                    <li class="on"><a href="#">Customer Review</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="center">
+                <h1>Customer<br/>Review</h1>
+                <div class="listWrap">
+                    <% for( let i=0; i<data.length; i++ ) { %>
+                        <a href="#" class="list">
+                            <div class="imgWrap">
+                                <img src="/upload/<%- data[i].attachfile[0] %>">
+                            </div>
+                            <div class="titleWrap">
+                                <h3><%- data[i].category %> • <%- data[i].date %></h3>
+                                <h2><%- data[i].title %></h2>
+                                <p><%- login.memberid %></p>
+                            </div>
+                        </a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="cont3">
+            <a href="/notice/review/insert">Write</a>
+        </div>
+    </div>
     <%- include("footer")%>

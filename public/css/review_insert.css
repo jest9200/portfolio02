@@ -441,5 +441,24 @@ body {
 }
 
 #container .cont1 {
-  padding-top: 200px;
+  font-family: "Poppins", sans-serif;
+}
+#container .cont1 .bg {
+  height: 151px;
+  background-color: #141416;
+}
+#container .cont1 .wrap {
+  display: flex;
+  justify-content: center;
+}
+#container .cont1 .wrap .center {
+  width: 62.5%;
+}
+#container .cont2 {
+  display: flex;
+  justify-content: center;
+}
+#container .cont2 a {
+  display: flex;
+  margin: 20px auto;
 }

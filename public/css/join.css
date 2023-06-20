@@ -458,7 +458,7 @@ body {
   background-color: #fff;
 }
 #container .cont1 .center .leftWrap h2 {
-  font-size: 44px;
+  font-size: 38px;
   text-align: center;
   padding-top: 70px;
 }
@@ -487,9 +487,19 @@ body {
   border: none;
   border-bottom: 1px solid #141416;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control span {
+#container .cont1 .center .leftWrap #join .member_infor .form_control .error_msg {
+  display: none;
+}
+#container .cont1 .center .leftWrap #join .member_infor .form_control.ok input {
+  border-bottom: 1px solid #141416;
+}
+#container .cont1 .center .leftWrap #join .member_infor .form_control.no input {
+  border-bottom: 1px solid #a50034;
+}
+#container .cont1 .center .leftWrap #join .member_infor .form_control.no .error_msg {
   display: block;
-  width: 100%;
+  margin-top: 5px;
+  color: #a50034;
 }
 #container .cont1 .center .leftWrap #join .btns {
   display: flex;

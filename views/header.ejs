@@ -80,9 +80,15 @@
             </div>
         </div>
         <div class="loginWrap">
-            <a href="/login"><span>LOGIN</span></a>
-            <a href="/join"><span>JOIN</span></a>
-            <a href="/notice/news/list"><span>NOTICE</span></a>
+            <% if (login) { %>
+                <a href="/mypage"><span><%- login.memberid %></span></a>
+                <a href="/logout"><span>LOGOUT</span></a>
+                <a href="/notice/review/list"><span>NOTICE</span></a>
+            <% } else { %>
+                <a href="/login"><span>LOGIN</span></a>
+                <a href="/join"><span>JOIN</span></a>
+                <a href="/notice/review/list"><span>NOTICE</span></a>
+            <% } %>
         </div>
         <a href="#" class="hamMenu"><i class="fa-solid fa-bars"></i></a>
         <div class="mobileMenu">
@@ -103,9 +109,15 @@
                 <li><a href="/lounge">LOUNGE</a></li>
                 <li><a href="/inspiration">INSPIRATION</a></li>
                 <li>
-                    <a href="/login">LOGIN</a>
-                    <a href="/join">JOIN</a>
-                    <a href="/notice/news/list">NOTICE</a>
+                     <% if (login) { %>
+                        <a href="/mypage"><%- login.memberid %></a>
+                        <a href="/logout">LOGOUT</a>
+                        <a href="/notice/review/list">NOTICE</a>
+                    <% } else { %>
+                        <a href="/login">LOGIN</a>
+                        <a href="/join">JOIN</a>
+                        <a href="/notice/review/list">NOTICE</a>
+                    <% } %>
                 </li>
             </ul>
             <a href="#" class="closeBtn"><i class="fa-solid fa-xmark"></i></a>

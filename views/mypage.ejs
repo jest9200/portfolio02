@@ -1,0 +1,51 @@
+<%- include("header",{ title:"MY PAGE | LG SIGNATURE", cssFiles:["mypage.css"],
+    jsFiles:["header.js","login_join/scroll.js"] }) %>
+    <div id="container">
+        <div class="cont1">
+            <div class="center">
+                <h1>My Infomation</h1>
+                <div class="myInfo">
+                    <h2>My ID</h2>
+                    <p><%- login.memberid %></p>
+                </div>
+                <div class="myInfo">
+                    <h2>My ID number</h2>
+                    <p><%- login.memberno %></p>
+                </div>
+                <div class="myInfo">
+                    <h2>My Name</h2>
+                    <p><%- login.membername %></p>
+                </div>
+                <div class="myInfo">
+                    <h2>Date of birth</h2>
+                    <p><%- login.memberbirth %></p>
+                </div>
+                <div class="myInfo">
+                    <h2>E-mail adress</h2>
+                    <p><%- login.memberemail %></p>
+                </div>
+                <div class="myInfo">
+                    <h2>Phone number</h2>
+                    <p><%- login.memberphone %></p>
+                </div>
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="center">
+                <h2>Change Your Password    </h2>
+                <form action="/myupdate" method="post">
+                    <div class="wrap">
+                        <label for="originPass">Original Password</label>
+                        <input id="originPass" type="password" name="originPass" placeholder="Please enter your original password">
+                    </div>
+                    <div class="wrap">
+                        <label for="changePass">Changing Password</label>
+                        <input id="changePass" type="password" name="changePass" placeholder="Please enter the password you want to change">
+                    </div>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include("footer")%>
