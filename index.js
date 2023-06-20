@@ -147,6 +147,24 @@ app.get("/notice/review/insert",(req,res)=>{
     res.render("review_insert.ejs",{login:req.user});
 })
 
+app.post("/dbupload",upload.array("thumbnail"),(req,res)=>{
+    db.collection("count").findOne({name:"글번호"},(err,countResult)=>{
+        db.collection("review").insertOne({
+            num:countResult.reviewCount,
+            title:req.body.title,
+            date:req.body.date,
+            category:req.body.category,
+            context:req.body.context,
+            attachfile:req.files.filename
+        },(err,result)=>{
+            db.collection("count").updateOne({name:"글번호"},{$inc:{reviewCount:1}},(err,result)=>{
+                console.log(req.files);
+                // res.redirect("/notice/review/list") //여기 상세페이지로 수정 필요 `${}`사용
+            })
+        })
+    })
+})
+
 
 
 // 회원가입

@@ -17,12 +17,11 @@
                     <% for( let i=0; i<data.length; i++ ) { %>
                         <a href="#" class="list">
                             <div class="imgWrap">
-                                <img src="/upload/<%- data[i].attachfile[0] %>">
+                                <img src="/upload/<%- data[i].attachfile %>">
                             </div>
                             <div class="titleWrap">
                                 <h3><%- data[i].category %> • <%- data[i].date %></h3>
                                 <h2><%- data[i].title %></h2>
-                                <p><%- login.memberid %></p>
                             </div>
                         </a>
                     <% } %>

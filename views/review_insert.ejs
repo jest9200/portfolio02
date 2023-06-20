@@ -1,4 +1,4 @@
-<%- include("header",{ title:"NOTICE REVIEW | LG SIGNATURE", cssFiles:["review_insert.css"], jsFiles:["header.js","scroll.js"] })
+<%- include("header",{ title:"NOTICE REVIEW | LG SIGNATURE", cssFiles:["review_insert.css"], jsFiles:["header.js","login_join/scroll.js","notice/upload.js"] })
     %>
     <div id="container">
         <div class="cont1">
@@ -16,6 +16,7 @@
                             <option value="Washing Machine">Washing Machine</option>
                             <option value="Air Purifier">Air Purifier</option>
                         </select>
+                        <textarea name="context"></textarea>
                         <input id="file" type="file" name="thumbnail" multiple>
                         <button id="submit" type="submit">Submit</button>
                     </form>
