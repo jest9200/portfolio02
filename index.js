@@ -395,6 +395,11 @@ app.post("/logincheck", passport.authenticate('local', { failureRedirect: '/logi
     res.redirect("/"); //로그인 성공시 메인페이지로 이동
 })
 
+// 로그인하지않고 notice 들어갔을때 경고창 띄우기
+app.get("/noticelogin",(req,res)=>{
+    res.send("<script>alert('You need to login in.'); location.href = '/login'</script>")
+})
+
 
 // 로그아웃
 app.get("/logout", (req, res) => {

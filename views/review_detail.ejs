@@ -13,7 +13,7 @@
                         <div class="linkWrap">
                             <span><%- data.hashtag %></span>
                             <% if (login.memberid === data.author || login.memberid === "admin") { %>
-                                <a class="update" href="/notice/review/update/<%- data.num %>">Update</a>
+                                <a class="update" href="/notice/review/update/<%- data.num %>">Modify</a>
                                 <a class="delete" href="/dbdelete/<%- data.num %>">Delete</a>
                             <% } %>
                         </div>
