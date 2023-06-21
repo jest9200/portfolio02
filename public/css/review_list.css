@@ -542,10 +542,75 @@ body {
   margin-right: 15px;
 }
 #container .cont3 {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
 }
-#container .cont3 a {
+#container .cont3 .center {
+  width: 62.5%;
+  padding: 50px 0;
   display: flex;
-  margin: 20px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container .cont3 .center .paging {
+  margin-bottom: 30px;
+  display: flex;
+}
+#container .cont3 .center .paging li {
+  margin: 0 20px;
+}
+#container .cont3 .center .paging li a {
+  color: #141416;
+}
+#container .cont3 .center .paging li.highlight a {
+  color: #a50034;
+  font-weight: 600;
+}
+#container .cont3 .center form {
+  display: flex;
+  align-items: center;
+}
+#container .cont3 .center form select {
+  width: 140px;
+  padding: 10px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+#container .cont3 .center form input {
+  width: 180px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #ddd;
+}
+#container .cont3 .center form button {
+  border: 1px solid #141416;
+  background-color: #141416;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#container .cont3 .center form a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #141416;
+  background-color: #141416;
+  color: #fff;
+  font-size: 15px;
+  height: 40px;
+  padding: 0 10px;
+  transition: all 0.5s;
+}
+#container .cont3 .center form a:hover {
+  background: #fff;
+  color: #141416;
+}
+#container .cont3 .center form .back {
+  margin-right: 10px;
 }

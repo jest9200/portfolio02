@@ -10,6 +10,132 @@ body {
 
 #container {
     .cont1 {
-        padding-top: 200px;
+        font-family: 'Poppins', sans-serif;
+        .bg {
+            height: 151px;
+            background-color: #141416;
+        }
+        .wrap {
+            display: flex;
+            justify-content: center;
+            .center {
+                width: 50%;
+                padding: 150px 0;
+                .titleWrap {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    h2 {
+                        font-size: 40px;
+                    }
+                    a {
+                        width: 200px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #141416;
+                        background-color: #141416;
+                        color: #fff;
+                        transition: all .5s;
+                        &:hover {
+                            background-color: #fff;
+                            color: #141416;
+                        }
+                    }
+                }
+                form {
+                    .line01 {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        select {
+                            font-family: 'Poppins', sans-serif;
+                            width: 61%;
+                            padding: 10px;
+                            border: 1px solid #ddd;
+                            outline: none;
+                        }
+                        input {
+                            width: 35%;
+                            padding: 10px;
+                            border: 1px solid #ddd;
+                        }
+                    }
+                    .line02 {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        input {
+                            font-family: 'Poppins', sans-serif;
+                            padding: 10px;
+                            border: 1px solid #ddd;
+                            width: 100%;
+                        }
+                    }
+                    .line03 {
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        textarea {
+                            font-family: 'Poppins', sans-serif;
+                            padding: 25px;
+                            border: 1px solid #ddd;
+                            width: 100%;
+                            height: 400px;
+                            outline: none;
+                            white-space: pre-wrap;
+                        }
+                    }
+                    .line04 {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-bottom: 50px;
+                        input {
+                            padding: 10px;
+                            font-family: 'Poppins', sans-serif;
+                            border: 1px solid #ddd;
+                            &:nth-child(1) {
+                                width: 70%;
+                            }
+                            &:nth-child(2) {
+                                width: 24%;
+                            }
+                        }
+                    }
+                    button {
+                        margin: 0 auto;
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        height: 50px;
+                        border: 1px solid #141416;
+                        background-color: #141416;
+                        color: #fff;
+                        transition: all .5s;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #fff;
+                            color: #141416;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cont2 {
+        display: flex;
+        justify-content: center;
+        a {
+            display: flex;
+            margin: 20px auto;
+        }
     }
 }

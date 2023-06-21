@@ -483,7 +483,8 @@ body {
   font-size: 16px;
   line-height: 25px;
   color: #141416;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
 }
 #container .cont1 .wrap .center .textWrap .linkWrap {
   display: flex;
@@ -500,7 +501,7 @@ body {
   color: #a50034;
 }
 #container .cont1 .wrap .center .textWrap .back {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,7 +1,41 @@
 <%- include("header",{ title:"NOTICE REVIEW | LG SIGNATURE", cssFiles:["review_update.css"], jsFiles:["header.js","login_join/scroll.js","notice/upload.js"] }) %>
-    <div id="container">
-        <div class="cont1">
-            리뷰 수정 페이지
+<div id="container">
+    <div class="cont1">
+        <div class="bg"></div>
+        <div class="wrap">
+            <div class="center">
+                <div class="titleWrap">
+                    <h2>Please modify your review</h2>
+                    <a href="/notice/review/list">back to the list</a>
+                </div>
+                <form id="upload" action="/dbupdate" method="post" enctype="multipart/form-data">
+                    <div class="line01">
+                        <input type="hidden" name="num" value="<%- data.num %>">
+                        <select name="category" required>
+                            <option value="Rollable OLED TV" <%- (data.category === "Rollable OLED TV") ? "selected" : null %>>Rollable OLED TV</option>
+                            <option value="OLED TV" <%- (data.category === "OLED TV") ? "selected" : null %>>OLED TV</option>
+                            <option value="Refrigerator" <%- (data.category === "Refrigerator") ? "selected" : null %>>Refrigerator</option>
+                            <option value="Wine Cellar" <%- (data.category === "Wine Cellar") ? "selected" : null %>>Wine Cellar</option>
+                            <option value="Washing Machine" <%- (data.category === "Washing Machine") ? "selected" : null %>>Washing Machine</option>
+                            <option value="Air Purifier" <%- (data.category === "Air Purifier") ? "selected" : null %>>Air Purifier</option>
+                        </select>
+                        <input type="date" name="date" value="<%- data.date %>" required>
+                    </div>
+                    <div class="line02">
+                        <input type="text" name="title" placeholder="Please enter the title" value="<%- data.title %>" required>
+                    </div>
+                    <div class="line03">
+                        <textarea name="context" placeholder="Please enter the contents" required><%- data.context %></textarea>
+                    </div>
+                    <div class="line04">
+                        <input type="text" name="hashtag" placeholder="Please enter the hashtag (ex. #lg #signature)" value="<%- data.hashtag %>" required>
+                        <input id="file" type="file" name="thumbnail" multiple>
+                    </div>
+                    <button id="submit" type="submit">Modified</button>
+                </form>
+            </div>
         </div>
     </div>
+        
+</div>
     <%- include("footer")%>

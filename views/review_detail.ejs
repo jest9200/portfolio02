@@ -12,16 +12,17 @@
                         <p class="context"><%- data.context %></p>
                         <div class="linkWrap">
                             <span><%- data.hashtag %></span>
-                            <% if (login) { %>
-                                <a class="update" href="#">Update</a>
-                                <a class="delete" href="#">Delete</a>
+                            <% if (login.memberid === data.author || login.memberid === "manager") { %>
+                                <a class="update" href="/notice/review/update/<%- data.num %>">Update</a>
+                                <a class="delete" href="/dbdelete/<%- data.num %>">Delete</a>
                             <% } %>
                         </div>
                         <a class="back" href="/notice/review/list">back to the list</a>
                     </div>
                     <div class="imgWrap">
                         <% for( let i=0; i<data.attachfile.length; i++) { %>
-                            <div>
+                           
+                            <div class="<%- (i === 0) ? "on" : null %>">
                                 <img src="/upload/<%- data.attachfile[i] %>">
                                 <a href="/upload/<%- data.attachfile[i] %>" download>Download</a>
                             </div>

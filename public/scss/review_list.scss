@@ -117,11 +117,78 @@ body {
         }
     }
     .cont3 {
+        font-family: 'Poppins', sans-serif;
         display: flex;
         justify-content: center;
-        a {
+        .center {
+            width: 62.5%;
+            padding: 50px 0;
             display: flex;
-            margin: 20px auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .paging {
+                margin-bottom: 30px;
+                display: flex;
+                li {
+                    margin: 0 20px;
+                    a {
+                        color: #141416;
+                    }
+                }
+                li.highlight {
+                    a {
+                        color: #a50034;
+                        font-weight: 600;
+                    }
+                }
+            }
+            form {
+                display: flex;
+                align-items: center;
+                select {
+                    width: 140px;
+                    padding: 10px;
+                    outline: none;
+                    font-family: 'Poppins', sans-serif;
+                    border: 1px solid #ddd;
+                    margin-right: 10px;
+                }
+                input {
+                    width: 180px;
+                    padding: 10px;
+                    font-family: 'Poppins', sans-serif;
+                    border: 1px solid #ddd;
+                }
+                button {
+                    border: 1px solid #141416;
+                    background-color: #141416;
+                    font-family: 'Poppins', sans-serif;
+                    color: #fff;
+                    padding: 10px 15px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #141416;
+                    background-color: #141416;
+                    color: #fff;
+                    font-size: 15px;
+                    height: 40px;
+                    padding: 0 10px;
+                    transition: all .5s;
+                    &:hover {
+                        background: #fff;
+                        color: #141416;
+                    }
+                }
+                .back {
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }

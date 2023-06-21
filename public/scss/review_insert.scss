@@ -73,12 +73,7 @@ body {
                             font-family: 'Poppins', sans-serif;
                             padding: 10px;
                             border: 1px solid #ddd;
-                            &:nth-child(1) {
-                                width: 70%;
-                            }
-                            &:nth-child(2) {
-                                width: 24%;
-                            }
+                            width: 100%;
                         }
                     }
                     .line03 {

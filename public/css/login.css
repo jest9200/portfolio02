@@ -505,10 +505,14 @@ body {
   font-size: 60px;
   line-height: 35px;
   text-align: center;
-  margin: 60px 0 30px;
+  margin: 60px 0 10px;
 }
 #container .cont1 .center .rightWrap h2 span {
   font-size: 30px;
+}
+#container .cont1 .center .rightWrap p {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 #container .cont1 .center .rightWrap form {
   width: 100%;

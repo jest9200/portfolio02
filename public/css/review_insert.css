@@ -507,12 +507,7 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 10px;
   border: 1px solid #ddd;
-}
-#container .cont1 .wrap .center form .line02 input:nth-child(1) {
-  width: 70%;
-}
-#container .cont1 .wrap .center form .line02 input:nth-child(2) {
-  width: 24%;
+  width: 100%;
 }
 #container .cont1 .wrap .center form .line03 {
   display: flex;

@@ -1,4 +1,4 @@
-<%- include("header",{ title:"NOTICE REVIEW | LG SIGNATURE", cssFiles:["review_list.css"], jsFiles:["header.js","login_join/scroll.js"] }) %>
+<%- include("header",{ title:"NOTICE REVIEW | LG SIGNATURE", cssFiles:["review_list.css"], jsFiles:["header.js","login_join/scroll.js","notice/search.js"] }) %>
     <div id="container">
         <div class="cont1">
             <div class="bg"></div>
@@ -22,7 +22,7 @@
                             <div class="titleWrap">
                                 <h3><%- data[i].category %> • <%- data[i].date %></h3>
                                 <h2><%- data[i].title %></h2>
-                                <p><span><%- data[i].hashtag %></span><span><%- data[i].author %></span></p>
+                                <p><span><%- data[i].hashtag %></span><span>Reviewed by <%- data[i].author %></span></p>
                             </div>
                         </a>
                     <% } %>
@@ -30,11 +30,47 @@
             </div>
         </div>
         <div class="cont3">
-            <% if(login){ %>
-            <a href="/notice/review/insert">Write</a>
-            <% } else { %>
-            <a href="/login">Login to Write</a>
-            <% } %>
+            <div class="center">
+                <!-- 페이징 번호 생성된 구간  처음 이전 1,2,3 다음 마지막-->
+
+                <% if(text === "") { %>
+                <ul class="paging">
+                    <!-- 이전버튼 생성작업 -->
+                    <% if (blockStart > totalBlock) { %>
+                        <li><a href="?page=<%- blockStart - 1 %>">prev</a></li>
+                    <% } %>
+
+                    <!-- 페이지 시작번호값서부터 끝 번호까지 li태그 생성 -->
+                    <% for( let i=blockStart; i<=blockEnd; i++) { %>
+                        <!-- 현재 보고있는 페이지 번호인 경우 색상 활성화 -->
+                        <% if (pageNumber == i) { %>
+                            <li class="highlight"><a href="?page=<%- i %>"><%- i %></a></li>
+                        <% } else { %>
+                            <li><a href="?page=<%- i %>"><%- i %></a></li>
+                        <% } %>
+                    <% } %>
+
+                    <!-- 다음버튼 생성작업 -->
+                    <% if (blockNum < totalBlock) { %>
+                        <li><a href="?page=<%- blockEnd + 1 %>">next</a></li>
+                    <% } %>
+                </ul>
+                <% } %>
+                <form id="searchForm" action="/search" method="get">
+                    <select name="search">
+                        <option value="category">category</option>
+                        <option value="hashtag">hashtag</option>
+                    </select>
+                    <input id="inputText" type="text" name="inputText">
+                    <button id="searchBtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a class="back" href="/notice/review/list">Back to the list</a>
+                    <% if(login){ %>
+                        <a href="/notice/review/insert">Write</a>
+                    <% } else { %>
+                        <a href="/login">Login to write</a>
+                    <% } %>
+                </form>
+            </div>
         </div>
     </div>
     <%- include("footer")%>

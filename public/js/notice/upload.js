@@ -32,7 +32,7 @@ submitBtn.addEventListener("click", (e) => {
         upload.submit();
     } else {
         validCount = 0;
-        alert("이미지 파일들만 올릴 수 있습니다")
+        alert("You must upload at least one file in image format.")
         e.preventDefault();
     }
 });
