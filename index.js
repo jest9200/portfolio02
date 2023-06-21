@@ -135,6 +135,14 @@ app.get("/product/air_purifier", (req, res) => {
     res.render("prd_airpurifier.ejs", { login: req.user })
 })
 
+app.get("/notice/legal",(req,res)=>{
+    res.render("notice_legal.ejs",{login:req.user})
+})
+
+app.get("/notice/privacy",(req,res)=>{
+    res.render("notice_privacy.ejs",{login:req.user})
+})
+
 
 // 게시판 review 목록페이지 (페이징 추가완료)
 app.get("/notice/review/list", (req, res) => {
@@ -144,7 +152,7 @@ app.get("/notice/review/list", (req, res) => {
         // 웹브라우저 주소창에 몇번 페이징 번호로 접속했는지 체크
         let pageNumber = (req.query.page == null) ? 1 : Number(req.query.page)
         // 게시판에 보여줄 게시글 갯수
-        let perPage = 4;
+        let perPage = 5;
         // 블록당 보여줄 페이징 번호 갯수
         let blockCount = 5;
         // 이전,다음 블록간 이동을 하기위한 현재 페이지 블록 구해보기
@@ -210,10 +218,49 @@ app.get("/search", (req, res) => {
 
     db.collection("review").aggregate(check).toArray((err, total) => {
       
-        res.render("review_list.ejs", {
-            data: total, //검색결과에 부합하는 게시글들
-            login: req.user, //로그인정보
-            text: req.query.inputText,  //검색입력단어값   
+         // 게시글 전체 갯수값 알아내기
+         let totalData = total.length;
+         // 웹브라우저 주소창에 몇번 페이징 번호로 접속했는지 체크
+         let pageNumber = (req.query.page == null) ? 1 : Number(req.query.page)
+         // 게시판에 보여줄 게시글 갯수
+         let perPage = 5;
+         // 블록당 보여줄 페이징 번호 갯수
+         let blockCount = 5;
+         // 이전,다음 블록간 이동을 하기위한 현재 페이지 블록 구해보기
+         let blockNum = Math.ceil(pageNumber / blockCount);
+         // 블록안에 페이지 번호 시작값 알아내기
+         let blockStart = ((blockNum - 1) * blockCount) + 1;
+         // 블록안에 페이지 번호 끝값 알아내기
+         let blockEnd = blockStart + blockCount - 1;
+ 
+         // 게시글 전체 갯수 토대로 전체페이지 번호가 몇개가 만들어져서 표시되어야하는지
+         let totalPaging = Math.ceil(totalData / perPage);
+ 
+         // 블록(그룹)에서 마지막 페이지번호가 끝번호보다 크다면 페이지의 끝번호를 강제로 고정
+         if (blockEnd > totalPaging) {
+             blockEnd = totalPaging;
+         }
+ 
+         // 블록(그룹)의 총 갯수값 구하기
+         let totalBlock = Math.ceil(totalPaging / blockCount);
+ 
+         // db에서 3개씩 게시글을 뽑아서 가지고 오기위한 순서값을 정해줌
+         let startFrom = (pageNumber - 1) * perPage;
+
+
+         db.collection("review").aggregate(check).sort({ num: -1 }).skip(startFrom).limit(perPage).toArray((err, result) => {
+            res.render("review_list.ejs", {
+                data: result, //find로 찾아온 게시글 데이터들 3개 보내줌
+                totalPaging: totalPaging, //페이지 번호 총갯수값
+                blockStart: blockStart, //블록안에 페이지 시작번호값
+                blockEnd: blockEnd, //블록안에 페이지 끝번호값
+                blockNum: blockNum, //보고있는 페이지의 블록(그룹)번호
+                totalBlock: totalBlock, //블록(그룹)의 총갯수값
+                pageNumber: pageNumber, //현재 보고있는 페이지 번호값
+                text:req.query.inputText, //검색창에 value값 표시(검색어 표시)
+                select:req.query.search,//셀렉트 태그에서 고른 항목값 (카테고리 내지는 / 해시태그)
+                login: req.user //로그인 정보
+            })
         })
     })
 })

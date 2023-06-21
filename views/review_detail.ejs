@@ -12,7 +12,7 @@
                         <p class="context"><%- data.context %></p>
                         <div class="linkWrap">
                             <span><%- data.hashtag %></span>
-                            <% if (login.memberid === data.author || login.memberid === "manager") { %>
+                            <% if (login.memberid === data.author || login.memberid === "admin") { %>
                                 <a class="update" href="/notice/review/update/<%- data.num %>">Update</a>
                                 <a class="delete" href="/dbdelete/<%- data.num %>">Delete</a>
                             <% } %>

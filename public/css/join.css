@@ -458,15 +458,15 @@ body {
   background-color: #fff;
 }
 #container .cont1 .center .leftWrap h2 {
-  font-size: 38px;
+  font-size: 35px;
   text-align: center;
   padding-top: 70px;
 }
 #container .cont1 .center .leftWrap #join {
-  padding: 50px 70px 70px;
+  padding: 50px;
 }
 #container .cont1 .center .leftWrap #join .member_infor .form_control {
-  margin: 0px auto 40px;
+  margin: 0px auto 35px;
 }
 #container .cont1 .center .leftWrap #join .member_infor .form_control label {
   font-size: 20px;

@@ -4,15 +4,15 @@
             <div class="bg"></div>
             <div class="tabWrap">
                 <ul class="tabMenu">
-                    <li class="on"><a href="#">Customer Review</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Privacy</a></li>
+                    <li class="on"><a href="/notice/review/list">Review</a></li>
+                    <li><a href="/notice/legal">Legal</a></li>
+                    <li><a href="/notice/privacy">Privacy</a></li>
                 </ul>
             </div>
         </div>
         <div class="cont2">
             <div class="center">
-                <h1>Customer<br/>Review</h1>
+                <h1>Client Review</h1>
                 <div class="listWrap">
                     <% for( let i=0; i<data.length; i++ ) { %>
                         <a href="/notice/review/detail/<%- data[i].num %>" class="list">
@@ -22,7 +22,7 @@
                             <div class="titleWrap">
                                 <h3><%- data[i].category %> • <%- data[i].date %></h3>
                                 <h2><%- data[i].title %></h2>
-                                <p><span><%- data[i].hashtag %></span><span>Reviewed by <%- data[i].author %></span></p>
+                                <p><span><%- data[i].hashtag %></span><span>•</span><span>Reviewed by <%- data[i].author %></span></p>
                             </div>
                         </a>
                     <% } %>
@@ -55,13 +55,36 @@
                         <li><a href="?page=<%- blockEnd + 1 %>">next</a></li>
                     <% } %>
                 </ul>
+                <% } else {%>
+                    <ul class="paging">
+                        <!-- 이전버튼 생성작업 -->
+                        <% if (blockStart > totalBlock) { %>
+                            <!-- localhost:3000/notice/search?page=2&search=서버에서보내준값select&inputText=text-->
+                            <li><a href="?page=<%- blockStart - 1 %>&search=<%- select %>&inputText=<%- text %>">prev</a></li>
+                        <% } %>
+    
+                        <!-- 페이지 시작번호값서부터 끝 번호까지 li태그 생성 -->
+                        <% for( let i=blockStart; i<=blockEnd; i++) { %>
+                            <!-- 현재 보고있는 페이지 번호인 경우 색상 활성화 -->
+                            <% if (pageNumber == i) { %>
+                                <li class="highlight"><a href="?page=<%- i %>&search=<%- select %>&inputText=<%- text %>"><%- i %></a></li>
+                            <% } else { %>
+                                <li><a href="?page=<%- i %>&search=<%- select %>&inputText=<%- text %>"><%- i %></a></li>
+                            <% } %>
+                        <% } %>
+    
+                        <!-- 다음버튼 생성작업 -->
+                        <% if (blockNum < totalBlock) { %>
+                            <li><a href="?page=<%- blockEnd + 1 %>&search=<%- select %>&inputText=<%- text %>">next</a></li>
+                        <% } %>
+                    </ul>
                 <% } %>
                 <form id="searchForm" action="/search" method="get">
                     <select name="search">
                         <option value="category">category</option>
                         <option value="hashtag">hashtag</option>
                     </select>
-                    <input id="inputText" type="text" name="inputText">
+                    <input id="inputText" type="text" name="inputText" value="<%- text %>">
                     <button id="searchBtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <a class="back" href="/notice/review/list">Back to the list</a>
                     <% if(login){ %>
