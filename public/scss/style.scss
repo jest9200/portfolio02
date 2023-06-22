@@ -2140,17 +2140,35 @@ html, body { max-width: 100%; overflow-x: hidden; }
         }
         .cont9 {
             .moonWrap {
-                width: 300px;
-                height: 200px;
+                width: 440px;
+                height: 280px;
                 .moonBox {
                     img {
-                        width: 300px;
+                        width: 440px;
                     }
                 }
             }
             .textWrap {
-                margin-top: 150px;
+                margin-top: 200px;
             }
+        }
+    }
+}
+
+// cont9 반응형 450이하
+@media screen and (max-width:450px) {
+    .cont9 {
+        .moonWrap {
+            width: 350px;
+            height: 250px;
+            .moonBox {
+                img {
+                    width: 350px;
+                }
+            }
+        }
+        .textWrap {
+            margin-top: 150px;
         }
     }
 }

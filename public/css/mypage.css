@@ -446,99 +446,163 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 250px 0 50px;
+  padding: 220px 0 200px;
 }
 #container .cont1 .center {
-  width: 50%;
+  width: 62.5%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+}
+#container .cont1 .center .leftWrap {
+  width: 33%;
+  background-image: url(/img/index/test.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#container .cont1 .center .leftWrap .coverWrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 22, 0.6784313725);
   position: relative;
 }
-#container .cont1 .center h1 {
+#container .cont1 .center .leftWrap .coverWrap img {
   position: absolute;
-  top: -40px;
-  left: 50%;
+  width: 180px;
+  top: 35px;
+  left: 30px;
+}
+#container .cont1 .center .leftWrap .coverWrap .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+#container .cont1 .center .leftWrap .coverWrap .title h2 {
   color: #fff;
-  font-size: 30px;
-  transform: translateX(-50%);
-}
-#container .cont1 .center .myInfo {
-  width: 31%;
-  height: 100px;
-  margin: 15px 0;
+  font-size: 45px;
+  line-height: 48px;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #fff;
-  color: #141416;
 }
-#container .cont1 .center .myInfo h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-#container .cont1 .center .myInfo p {
+#container .cont1 .center .leftWrap .coverWrap .title p {
   font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+  margin: 10px 0 50px;
 }
-#container .cont1 .center .edit {
+#container .cont1 .center .leftWrap .coverWrap .title .privacy {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 40px;
-  background-color: #fff;
-  border: 1px solid #fff;
-  color: #141416;
-  position: absolute;
-  bottom: -45px;
-  right: 0px;
+  margin-bottom: 30px;
+}
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li a {
+  font-size: 14px;
+  color: #fff;
   transition: all 0.5s;
 }
-#container .cont1 .center .edit:hover {
-  background-color: #141416;
-  color: #fff;
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li:hover a {
+  color: #a50034;
 }
-#container .cont2 {
-  font-family: "Poppins", sans-serif;
-  background-color: #f5f5f5;
+#container .cont1 .center .rightWrap {
+  width: 67%;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#container .cont2 .center {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  padding: 50px 0 100px;
+#container .cont1 .center .rightWrap .mypageWrap {
+  width: 70%;
+  padding: 150px 0;
 }
-#container .cont2 .center h2 {
+#container .cont1 .center .rightWrap .mypageWrap > h2 {
   font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 20px;
   color: #141416;
-  margin-bottom: 50px;
-  text-align: center;
 }
-#container .cont2 .center form {
+#container .cont1 .center .rightWrap .mypageWrap > h2 span {
+  padding-left: 10px;
+  color: #777;
+  font-weight: 400;
+  font-size: 15px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .myInfo {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border: 1px solid #ddd;
+  padding: 12px 10px;
 }
-#container .cont2 .center form .wrap label {
+#container .cont1 .center .rightWrap .mypageWrap .myInfo h2 {
+  font-weight: 600;
+}
+#container .cont1 .center .rightWrap .mypageWrap .myInfo p {
+  color: #777;
+  font-size: 14px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line01 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line01 > .myInfo {
+  width: 45.5%;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line01 > .myInfo .name {
+  font-family: "Noto Sans KR", sans-serif;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line02, #container .cont1 .center .rightWrap .mypageWrap .line03, #container .cont1 .center .rightWrap .mypageWrap .line04 {
+  margin-bottom: 7px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 {
+  margin-top: 40px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 h2 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 7px;
   color: #141416;
 }
-#container .cont2 .center form .wrap input {
-  font-family: "Poppins", sans-serif;
-  display: block;
-  width: 400px;
-  padding: 10px;
-  margin: 10px 0 20px;
+#container .cont1 .center .rightWrap .mypageWrap .line05 p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #777;
 }
-#container .cont2 .center form button {
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .wrap {
+  margin-bottom: 10px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .wrap label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .wrap input {
   font-family: "Poppins", sans-serif;
-  width: 425px;
-  height: 40px;
-  margin-top: 10px;
+  padding: 10px;
+  width: 96%;
+  border: 1px solid #ddd;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .btn button {
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+  border: 1px solid #141416;
+  background-color: #141416;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .btn button:hover {
+  background-color: #a50034;
 }

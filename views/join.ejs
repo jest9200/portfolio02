@@ -4,58 +4,90 @@
         <div class="cont1">
             <div class="center">
                 <div class="leftWrap">
-                    <h2>CREATE ACCOUNT</h2>
-                    <form id="join" action="/joindb" method="post">
-                        <div class="member_infor">
-                            <div class="form_control">
-                                <label for="memberid"><i class="fa-solid fa-id-card"></i>ID</label>
-                                <input type="text" id="memberid" name="memberid" placeholder="Please enter your ID">
-                                <span class="error_msg"></span>
-                            </div>
-                            <div class="form_control">
-                                <label for="memberpass"><i class="fa-solid fa-lock"></i>Password</label>
-                                <input type="password" id="memberpass" name="memberpass"
-                                    placeholder="Please enter your password">
-                                <span class="error_msg"></span>
-                            </div>
-                            <div class="form_control">
-                                <label for="memberpasschk"><i class="fa-solid fa-unlock"></i>Password Check</label>
-                                <input type="password" id="memberpasschk" name="memberpasschk"
-                                    placeholder="Please check your password">
-                                <span class="error_msg"></span>
-                            </div>
-                            <div class="form_control">
-                                <label for="membername"><i class="fa-solid fa-pen-nib"></i>Name</label>
-                                <input type="text" id="membername" name="membername" placeholder="Please enter your name">
-                                <span class="error_msg"></span>
-                            </div>
-                            <div class="form_control">
-                                <label for="memberbirth"><i class="fa-solid fa-cake-candles"></i>Birth</label>
-                                <input type="text" id="memberbirth" name="memberbirth"
-                                    placeholder="ex) 2000-01-01">
-                                <span class="error_msg"></span>
-                            </div>
-                            <div class="form_control">
-                                <label for="memberemail"><i class="fa-solid fa-envelope-open-text"></i>E-mail</label>
-                                <input type="text" id="memberemail" name="memberemail"
-                                    placeholder="ex) test1234@google.com">
-                                <span class="error_msg"></span>
-                            </div>
-                            <div class="form_control">
-                                <label for="memberphone"><i class="fa-solid fa-mobile-button"></i>Phone</label>
-                                <input type="text" id="memberphone" name="memberphone"
-                                    placeholder="ex) 010-1234-5678">
-                                <span class="error_msg"></span>
-                            </div>
+                    <div class="coverWrap">
+                        <img src="/img/index/logo.png">
+                        <div class="title">
+                            <h2>Let's Get SIGNATURE</h2>
+                            <p>This is LG Electronics' brand slogan that allows everyone to get the "signature" that fully provides precious experiences through products and technology.</p>
+                            <ul class="privacy">
+                                <li><a href="/notice/privacy">Privacy Policy</a></li>
+                                <li><a href="/notice/legal">Legal</a></li>
+                                <li>© 2023 LG Elecs.</li>
+                            </ul>
                         </div>
-                        <div class="btns">
-                            <button class="join_ok" type="submit">JOIN</button>
-                            <button class="reset_ok" type="reset">RESET</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="rightWrap">
-                    <img src="/img/index/joinBg.jpg">
+                    <div class="joinWrap">
+                        <h2>Register your information</h2>
+                        <form id="join" action="/joindb" method="post">
+                            <div class="member_infor">
+                                <div class="line01">
+                                    <div class="form_control name">
+                                        <label for="membername"><i class="fa-solid fa-pen-nib"></i></label>
+                                        <input type="text" id="membername" name="membername" placeholder="Name">
+                                        <span class="error_msg"></span>
+                                    </div>
+                                    <div class="form_control birth">
+                                        <label for="memberbirth"><i class="fa-solid fa-cake-candles"></i></label>
+                                        <input type="text" id="memberbirth" name="memberbirth"
+                                            placeholder="Birth (ex. 2000-01-01)">
+                                        <span class="error_msg"></span>
+                                    </div>
+                                </div>
+                                <div class="line02">
+                                    <div class="form_control email">
+                                        <label for="memberemail"><i class="fa-solid fa-envelope-open-text"></i></label>
+                                        <input type="text" id="memberemail" name="memberemail"
+                                            placeholder="E-mail (ex. lg_signature@lg.com)">
+                                        <span class="error_msg"></span>
+                                    </div>
+                                </div>
+                                <div class="line03">
+                                    <div class="form_control phone">
+                                        <label for="memberphone"><i class="fa-solid fa-mobile-button"></i></label>
+                                        <input type="text" id="memberphone" name="memberphone"
+                                            placeholder="Phone (ex. 010-1234-5678)">
+                                        <span class="error_msg"></span>
+                                    </div>
+                                    <p>Please provide a valid phone number in order to verify your account. We will send you a verification code in order to confirm you own a phone number</p>
+                                </div>
+                                <div class="line04">
+                                    <div class="form_control id">
+                                        <label for="memberid"><i class="fa-solid fa-id-card"></i></label>
+                                        <input type="text" id="memberid" name="memberid" placeholder="Create ID">
+                                        <span class="error_msg"></span>
+                                    </div>
+                                </div>
+                                <div class="line05">
+                                    <div class="form_control pass">
+                                        <label for="memberpass"><i class="fa-solid fa-lock"></i></label>
+                                        <input type="password" id="memberpass" name="memberpass"
+                                            placeholder="Password">
+                                        <span class="error_msg"></span>
+                                    </div>
+                                    <div class="form_control passchk">
+                                        <label for="memberpasschk"><i class="fa-solid fa-unlock"></i></label>
+                                        <input type="password" id="memberpasschk" name="memberpasschk"
+                                            placeholder="Confirm Password">
+                                        <span class="error_msg"></span>
+                                    </div>
+                                </div>
+                                <div class="line06">
+                                    <h3>LG SIGNATURE's Privacy Policy</h3>
+                                    <div class="policy">LG Electronics Terms of Service Thank you to all of you (hereinafter referred to as “ Users ”) who have chosen the products and services of LG Electronics Co., Ltd. (hereinafter referred to as the “ Company ”).<br/><br/>The LG Electronics Terms of Service (hereinafter referred to as the “Terms of Use”) stipulates the Company’s products, smart devices, and related services provided by the Company, such as various mobile applications and websites (including customized services based on the preferences of some users) (generic).<br/><br/>For this reason, the following examples are included to be aware of when using “LG Electronics Services”) (ThinQ App, LG SmartWorld (aka “LG Store”), LGE.com, Best Shop site, membership app ).• The user's procedure for using LG Electronics' service and the company's service provision method<br/><br/>• Rights/obligations and usage rules between the company and users regarding users' use of LG Electronics services<br/>• Intellectual property rights of content and software available in LG Electronics services and their rights<br/>• Other legal rights the user has in relation to the use of LG Electronics services.</div>
+                                    <div class="checkWrap">
+                                        <input id="confirm" type="checkbox">
+                                        <label for="confirm">I read and agree to <a href="/notice/privacy">privacy policy</a></label>
+                                    </div>
+                                    
+                                </div>  
+                            </div>
+                            <div class="btns">
+                                <button class="signup" type="submit" disabled>SIGN UP</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,43 +4,72 @@
         <div class="cont1">
             <div class="center">
                 <div class="leftWrap">
-                    <img src="/img/index/loginBg.jpg">
+                    <div class="coverWrap">
+                        <img src="/img/index/logo.png">
+                        <div class="title">
+                            <h2>Life's Good</h2>
+                            <p>This is LG Electronics' brand slogan that allows everyone to enjoy a "good life" that fully enjoys precious moments through products and services.</p>
+                            <ul class="sns">
+                                <li><a href="https://www.facebook.com/LGSIGNATURE" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/lg_signature" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/lg_signature/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <ul class="privacy">
+                                <li><a href="/notice/privacy">Privacy Policy</a></li>
+                                <li><a href="/notice/legal">Legal</a></li>
+                                <li>© 2023 LG Elecs.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="rightWrap">
-                    <div class="subtext">
-                        <p>Don't you have an account?</p>
-                        <a href="/join">Create Account</a>
+                    <div class="loginWrap">
+                        <h2><span>Welcome to</span> <img src="/img/index/logo_black.png"></h2>
+                        <p>Sign in by entering the informations below</p>
+                        <form id="login_form" action="/logincheck" method="post">
+                            <!-- <input type="hidden" name="referer"> -->
+                            <div class="idWrap">
+                                <label for="userId">ID</label>
+                                <input id="userId" type="text" name="memberid" placeholder="Please enter your ID">
+                            </div>
+                            <div class="passWrap">
+                                <label for="userPw">Password</label>
+                                <input id="userPw" type="password" name="memberpass" placeholder="Please enter your Password">
+                            </div>
+                            <div class="btnWrap">
+                                <button type="submit" disabled><i class="fa-solid fa-unlock-keyhole"></i>SIGN IN</button>
+                            </div>
+                            <div class="linkWrap">
+                                <a href="/join">Join Us</a>
+                                <a href="/">Go Back</a>
+                            </div>
+                        </form>
                     </div>
-                    <h2>SIGN IN<br/><span>LG SIGNATURE</span></h2>
-                    <p>Please log in first to use NOTICE</p>
-                    <form id="login_form" action="/logincheck" method="post">
-                        <input type="hidden" name="referer">
-                        <div class="idWrap">
-                            <i class="fa-regular fa-id-card"></i>
-                            <input type="text" name="memberid" placeholder="Please enter your ID">
-                        </div>
-                        <div class="passWrap">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" name="memberpass" placeholder="Please enter your Password">
-                        </div>
-                        <div class="linkWrap">
-                            <button type="submit">LOGIN</button>
-                        </div>
-                    </form>
                 </div>
-
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        const linkWrapBtn = document.querySelector(".linkWrap button");
+        const btnWrapBtn = document.querySelector(".btnWrap button");
         const idWrap = document.querySelector(".idWrap input");
-        const passWrap = document.querySelector(".passWrap input")
+        const passWrap = document.querySelector(".passWrap input");
+        const inputTags = document.querySelectorAll("form input");
 
-        linkWrapBtn.onclick = function(e){
-            
-                
+        // 로그인버튼 활성화 비활성화(아이디/비번 작성유무에 따라)
+        for(let i=0; i<inputTags.length; i++){
+            inputTags[i].addEventListener("keyup",()=>{
+                if(idWrap.value === "" || passWrap.value === ""){
+                    btnWrapBtn.disabled = true;
+                } else {
+                    btnWrapBtn.disabled = false;
+                }
+            })
+        }
+        
+
+        btnWrapBtn.onclick = function(e){
+
               axios.post('/user', {
                 memberid: idWrap.value,
                 memberpass: passWrap.value
@@ -48,7 +77,7 @@
             .then(function (response) {
                 e.preventDefault();
                 console.log(response);
-                alert("로그인 실패");
+                alert("Please check your ID and password.");
             })
             .catch(function (error) {
                 console.log(error);

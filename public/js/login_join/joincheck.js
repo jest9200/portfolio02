@@ -10,6 +10,18 @@ const memberphone = document.querySelector("#memberphone");
 const memberbirth = document.querySelector("#memberbirth");
 const membername = document.querySelector("#membername");
 
+const checkInput = document.querySelector(".checkWrap input");
+const signupBtn = document.querySelector(".signup");
+
+checkInput.addEventListener("click",()=>{
+    if(checkInput.checked){
+        signupBtn.disabled = false;
+    } else {
+        signupBtn.disabled = true;
+    }
+});
+
+
 join.addEventListener("submit", (e) => {
     
     const idValue = memberid.value;
@@ -42,7 +54,7 @@ join.addEventListener("submit", (e) => {
     } else {
         e.preventDefault();
         memberid.parentElement.className = "form_control no";
-        memberid.parentElement.querySelector(".error_msg").innerText = "8~12자리의 영문,숫자,_ 만 입력 가능합니다."
+        memberid.parentElement.querySelector(".error_msg").innerText = "Only 8 to 12 English words, number, and _ are allowed."
     }
 
     //비밀번호 체크
@@ -51,7 +63,7 @@ join.addEventListener("submit", (e) => {
     } else {
         e.preventDefault();
         memberpass.parentElement.className = "form_control no";
-        memberpass.parentElement.querySelector(".error_msg").innerText = "12~16자리의 영문,숫자,_,!,$,&,- 만 입력 가능합니다."
+        memberpass.parentElement.querySelector(".error_msg").innerText = "Only 12 to 16 English words, numbers, _,!,$,&,- can be entered."
     }
 
     //비밀번호확인 체크 -> 정규표현식을 굳이 돌릴필요가 없다
@@ -60,7 +72,7 @@ join.addEventListener("submit", (e) => {
     } else {
         e.preventDefault();s
         memberpasschk.parentElement.className = "form_control no";
-        memberpasschk.parentElement.querySelector(".error_msg").innerText = "비밀번호가 일치하지 않습니다."
+        memberpasschk.parentElement.querySelector(".error_msg").innerText = "Password does not match."
     }
 
     //이메일 체크
@@ -69,7 +81,7 @@ join.addEventListener("submit", (e) => {
     } else {
         e.preventDefault();
         memberemail.parentElement.className = "form_control no";
-        memberemail.parentElement.querySelector(".error_msg").innerText = "이메일 입력 방식이 올바르지 않습니다."
+        memberemail.parentElement.querySelector(".error_msg").innerText = "Email input method is not valid."
     }
 
     //연락처 체크
@@ -78,7 +90,7 @@ join.addEventListener("submit", (e) => {
     } else {
         e.preventDefault();
         memberphone.parentElement.className = "form_control no";
-        memberphone.parentElement.querySelector(".error_msg").innerText = "연락처 입력 방식이 올바르지 않습니다."
+        memberphone.parentElement.querySelector(".error_msg").innerText = "Phone number input method is not valid."
     }
 
     //생년월일 체크
@@ -87,7 +99,7 @@ join.addEventListener("submit", (e) => {
     } else {
         e.preventDefault();
         memberbirth.parentElement.className = "form_control no";
-        memberbirth.parentElement.querySelector(".error_msg").innerText = "생년월일 입력 방식이 올바르지 않습니다."
+        memberbirth.parentElement.querySelector(".error_msg").innerText = "The date of birth entry method is not valid."
     }
 
     //이름 체크
@@ -96,6 +108,6 @@ join.addEventListener("submit", (e) => {
     } else {
         e.preventDefault();
         membername.parentElement.className = "form_control no";
-        membername.parentElement.querySelector(".error_msg").innerText = "2~4자리의 한글만 입력가능합니다."
+        membername.parentElement.querySelector(".error_msg").innerText = "Only 2 to 4 Korean words can be entered."
     }
 });

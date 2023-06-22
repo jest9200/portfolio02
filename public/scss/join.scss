@@ -15,92 +15,203 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 220px 0 150px;
-        color: #141416;
+        padding: 220px 0 200px;
         .center {
-            width: 72%;
+            width: 62.5%;
             display: flex;
             .leftWrap {
-                width: 40%;
-                background-color: #fff;
-                h2 {
-                    font-size: 35px;
-                    text-align: center;
-                    padding-top: 70px;
-                }
-                #join {
-                    padding: 50px;
-                    .member_infor {
-                        .form_control {
-                            margin: 0px auto 35px;
-                            label {
-                                font-size: 20px;
-                                display: flex;
-                                i {
-                                    font-size: 18px;
-                                    padding-right: 10px;
-                                }
-                            }
-                            input {
-                                color: #141416;
-                                display: block;
-                                margin-top: 5px;
-                                font-family: 'Poppins', sans-serif;
-                                width: 95%;
-                                padding: 10px;
-                                background-color: transparent;
-                                border: none;
-                                border-bottom: 1px solid #141416;
-                            }
-                            .error_msg {
-                                display: none;
-                            }
-                        }
-                        .form_control.ok {
-                            input {
-                                border-bottom: 1px solid #141416;
-                            }
-                        }
-                        .form_control.no {
-                            input {
-                                border-bottom: 1px solid #a50034;
-                            }
-                            .error_msg {
-                                display: block;
-                                margin-top: 5px;
-                                color: #a50034;
-                            }
-                        }
-                    }
-                    .btns {
-                        display: flex;
-                        justify-content: space-between;
-                        button {
-                            width: 49%;
-                            height: 50px;
-                            font-size: 15px;
-                            background-color: #141416;
-                            color: #fff;
-                            border: 1px solid #141416;
-                            transition: all .5s;
-                            cursor: pointer;
-                            &:hover {
-                                background-color: #fff;
-                                color: #141416;
-                            }
-                        }
-                    }
-                }
-            }
-            .rightWrap {
-                width: 60%;
-                img {
+                width: 33%;
+                background-image: url(/img/index/joinBg.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .coverWrap {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    background-color: #141416ad;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        width: 180px;
+                        top: 35px;
+                        left: 30px;
+                    }
+                    .title {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        padding: 30px;
+                        h2 {
+                            color: #fff;
+                            font-size: 45px;
+                            line-height: 48px;
+                            font-weight: 600;
+                            display: flex;
+                        }
+                        p {
+                            font-size: 15px;
+                            font-weight: 300;
+                            line-height: 20px;
+                            color: #fff;
+                            margin: 10px 0 50px;
+                        }
+                        .privacy {
+                            display: flex;
+                            margin-bottom: 30px;
+                            li {
+                                margin-right: 20px;
+                                font-size: 14px;
+                                color: #fff;
+                                a {
+                                    font-size: 14px;
+                                    color: #fff;
+                                    transition: all .5s;
+                                }
+                                &:hover {
+                                    a {
+                                        color: #a50034;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .rightWrap {
+                width: 67%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .joinWrap {
+                    width: 70%;
+                    padding: 150px 0;
+                    > h2 {
+                        font-size: 30px;
+                        line-height: 35px;
+                        margin-bottom: 20px;
+                        color: #141416;
+                    }
+                    form {
+                        .member_infor {
+                            
+                            .form_control {
+                                border: 1px solid #ddd;
+                                padding: 10px;
+                                label {
+                                    padding-right: 10px;
+                                }
+                                input {
+                                    border: none;
+                                    font-family: 'Poppins', sans-serif;
+                                }
+                                span {
+                                    display: block;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    color: #a50034;
+                                }
+                            }
+                            .line01 {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 7px;
+                                .form_control {
+                                    width: 45.5%;
+                                }
+                            }
+                            .line02 {
+                                margin-bottom: 7px;
+                                .form_control {
+                                    input {
+                                        width: 90%;
+                                    }
+                                }
+                            }
+                            .line03 {
+                                margin-bottom: 7px;
+                                .form_control {
+                                    input {
+                                        width: 90%;
+                                    }
+                                }
+                                p {
+                                    padding: 5px 0 10px;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    color: #777;
+                                }
+                            }
+                            .line04 {
+                                margin-bottom: 7px;
+                            }
+                            .line05 {
+                                display: flex;
+                                justify-content: space-between;
+                                .form_control {
+                                    width: 45.5%;
+                                }
+                            }
+                            .line06 {
+                                margin-bottom: 50px;
+                                h3 {
+                                    font-size: 18px;
+                                    color: #141416;
+                                    margin: 20px 0 10px;
+                                }
+                                .policy {
+                                    overflow:auto;
+                                    white-space: pre-wrap;
+                                    border: 1px solid #ddd;
+                                    width: 96%;
+                                    height: 50px;
+                                    padding: 10px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #777;
+                                }
+                                .checkWrap {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 7px;
+                                    #confirm {
+                                        margin-right: 10px;
+                                    }
+                                    label {
+                                        font-size: 14px;
+                                        color: #141416;
+                                        a {
+                                            color: #a50034;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .btns {
+                            display: flex;
+                            justify-content: center;
+                            button {
+                                font-family: 'Poppins', sans-serif;
+                                width: 70%;
+                                border: 1px solid #141416;
+                                background-color: #141416;
+                                color: #fff;
+                                padding: 10px;
+                                cursor: pointer;
+                                transition: all .5s;
+                                &:hover {
+                                    background-color: #a50034;
+                                }
+                                &:disabled {
+                                    border: 1px solid #bbb;
+                                    background-color: #bbb;
+                                }
+                            }
+                        }
+                    }
                 }
             }
-            
         }
     }
 }

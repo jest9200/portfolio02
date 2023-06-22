@@ -2320,13 +2320,25 @@ html, body {
     width: 44%;
   }
   #container .cont9 .moonWrap {
-    width: 300px;
-    height: 200px;
+    width: 440px;
+    height: 280px;
   }
   #container .cont9 .moonWrap .moonBox img {
-    width: 300px;
+    width: 440px;
   }
   #container .cont9 .textWrap {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cont9 .moonWrap {
+    width: 350px;
+    height: 250px;
+  }
+  .cont9 .moonWrap .moonBox img {
+    width: 350px;
+  }
+  .cont9 .textWrap {
     margin-top: 150px;
   }
 }

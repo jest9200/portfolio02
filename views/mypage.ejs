@@ -3,48 +3,70 @@
     <div id="container">
         <div class="cont1">
             <div class="center">
-                <h1>My Infomation</h1>
-                <div class="myInfo">
-                    <h2>My ID</h2>
-                    <p><%- login.memberid %></p>
-                </div>
-                <div class="myInfo">
-                    <h2>My ID number</h2>
-                    <p><%- login.memberno %></p>
-                </div>
-                <div class="myInfo">
-                    <h2>My Name</h2>
-                    <p><%- login.membername %></p>
-                </div>
-                <div class="myInfo">
-                    <h2>Date of birth</h2>
-                    <p><%- login.memberbirth %></p>
-                </div>
-                <div class="myInfo">
-                    <h2>E-mail address</h2>
-                    <p><%- login.memberemail %></p>
-                </div>
-                <div class="myInfo">
-                    <h2>Phone number</h2>
-                    <p><%- login.memberphone %></p>
-                </div>
-            </div>
-        </div>
-        <div class="cont2">
-            <div class="center">
-                <h2>Change Your Password    </h2>
-                <form action="/myupdate" method="post">
-                    <div class="wrap">
-                        <label for="originPass">Original Password</label>
-                        <input id="originPass" type="password" name="originPass" placeholder="Please enter your original password">
+                <div class="leftWrap">
+                    <div class="coverWrap">
+                        <img src="/img/index/logo.png">
+                        <div class="title">
+                            <h2><%- login.memberid %>'s<br/>My Page</h2>
+                            <p>This is My Page where you can check your personal information. It is recommended that you change your password periodically to maintain security.</p>
+                            <ul class="privacy">
+                                <li><a href="/notice/privacy">Privacy Policy</a></li>
+                                <li><a href="/notice/legal">Legal</a></li>
+                                <li>© 2023 LG Elecs.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="wrap">
-                        <label for="changePass">Changing Password</label>
-                        <input id="changePass" type="password" name="changePass" placeholder="Please enter the password you want to change">
+                </div>
+                <div class="rightWrap">
+                    <div class="mypageWrap">
+                        <h2>My Infomation<span>(ID No.<%- (login.memberno < 10) ? "0" + login.memberno : login.memberno %>)</span></h2>
+                        <div class="line01">
+                            <div class="myInfo">
+                                <h2>My Name</h2>
+                                <p class="name"><%- login.membername %></p>
+                            </div>
+                            <div class="myInfo">
+                                <h2>Date of birth</h2>
+                                <p><%- login.memberbirth %></p>
+                            </div>
+                        </div>
+                        <div class="line02">
+                            <div class="myInfo">
+                                <h2>My LG SIGNATURE ID</h2>
+                                <p><%- login.memberid %></p>
+                            </div>
+                        </div>
+                        <div class="line03">
+                            <div class="myInfo">
+                                <h2>E-mail Address</h2>
+                                <p><%- login.memberemail %></p>
+                            </div>
+                        </div>
+                        <div class="line04">
+                            <div class="myInfo">
+                                <h2>Phone Number</h2>
+                                <p><%- login.memberphone %></p>
+                            </div>
+                        </div>
+                        <div class="line05">
+                            <h2>Change Your Password</h2>
+                            <p>You must change your password periodically to maintain security.</p>
+                            <form action="/myupdate" method="post">
+                                <div class="wrap">
+                                    <label for="originPass">Original Password</label>
+                                    <input id="originPass" type="password" name="originPass" placeholder="Please enter your original password">
+                                </div>
+                                <div class="wrap">
+                                    <label for="changePass">Changing Password</label>
+                                    <input id="changePass" type="password" name="changePass" placeholder="Please enter the password you want to change">
+                                </div>
+                                <div class="btn">
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    
-                    <button type="submit">Submit</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>

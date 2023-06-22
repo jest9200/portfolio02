@@ -446,116 +446,166 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 220px 0 200px;
 }
 #container .cont1 .center {
-  width: 72%;
+  width: 62.5%;
   display: flex;
-  padding-top: 100px;
 }
 #container .cont1 .center .leftWrap {
-  width: 65%;
-  height: 600px;
+  width: 33%;
+  background-image: url(/img/index/loginBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#container .cont1 .center .leftWrap img {
+#container .cont1 .center .leftWrap .coverWrap {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#container .cont1 .center .rightWrap {
-  width: 35%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(20, 20, 22, 0.6784313725);
   position: relative;
 }
-#container .cont1 .center .rightWrap .subtext {
+#container .cont1 .center .leftWrap .coverWrap img {
   position: absolute;
-  top: 30px;
-  right: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+  width: 180px;
+  top: 35px;
+  left: 30px;
 }
-#container .cont1 .center .rightWrap .subtext p {
-  font-size: 15px;
-  margin-bottom: 10px;
+#container .cont1 .center .leftWrap .coverWrap .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
 }
-#container .cont1 .center .rightWrap .subtext a {
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 40px;
-  background-color: #a50034;
+#container .cont1 .center .leftWrap .coverWrap .title h2 {
   color: #fff;
-  border: 1px solid #a50034;
-  transition: all 0.5s;
+  font-size: 45px;
+  font-weight: 600;
+  display: flex;
 }
-#container .cont1 .center .rightWrap .subtext a:hover {
-  background-color: #fff;
-  color: #a50034;
+#container .cont1 .center .leftWrap .coverWrap .title p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+  margin: 10px 0 50px;
 }
-#container .cont1 .center .rightWrap h2 {
-  color: #141416;
-  font-size: 60px;
-  line-height: 35px;
-  text-align: center;
-  margin: 60px 0 10px;
-}
-#container .cont1 .center .rightWrap h2 span {
-  font-size: 30px;
-}
-#container .cont1 .center .rightWrap p {
-  font-size: 18px;
+#container .cont1 .center .leftWrap .coverWrap .title .sns, #container .cont1 .center .leftWrap .coverWrap .title .privacy {
+  display: flex;
   margin-bottom: 30px;
 }
-#container .cont1 .center .rightWrap form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#container .cont1 .center .leftWrap .coverWrap .title .sns li, #container .cont1 .center .leftWrap .coverWrap .title .privacy li {
+  margin-right: 20px;
+  color: #fff;
 }
-#container .cont1 .center .rightWrap form .idWrap, #container .cont1 .center .rightWrap form .passWrap {
-  width: 70%;
+#container .cont1 .center .leftWrap .coverWrap .title .sns li a, #container .cont1 .center .leftWrap .coverWrap .title .privacy li a {
+  color: #fff;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+#container .cont1 .center .leftWrap .coverWrap .title .sns li:hover a, #container .cont1 .center .leftWrap .coverWrap .title .privacy li:hover a {
+  color: #a50034;
+}
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li {
+  font-size: 14px;
+}
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li a {
+  font-size: 14px;
+}
+#container .cont1 .center .rightWrap {
+  width: 67%;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #141416;
 }
-#container .cont1 .center .rightWrap form .idWrap i, #container .cont1 .center .rightWrap form .passWrap i {
-  font-size: 22px;
-  margin-right: 10px;
+#container .cont1 .center .rightWrap .loginWrap {
+  width: 58%;
+  padding: 150px 0;
 }
-#container .cont1 .center .rightWrap form .idWrap input, #container .cont1 .center .rightWrap form .passWrap input {
-  width: 90%;
-  border: none;
-  background-color: transparent;
+#container .cont1 .center .rightWrap .loginWrap h2 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 5px;
+  color: #141416;
+  display: flex;
+  align-items: center;
+}
+#container .cont1 .center .rightWrap .loginWrap h2 span {
+  white-space: nowrap;
+}
+#container .cont1 .center .rightWrap .loginWrap p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  color: #777;
+}
+#container .cont1 .center .rightWrap .loginWrap form .idWrap label,
+#container .cont1 .center .rightWrap .loginWrap form .passWrap label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
   padding: 10px;
-  font-family: "Poppins", sans-serif;
+  padding-left: 0;
 }
-#container .cont1 .center .rightWrap form .linkWrap {
-  display: flex;
-  justify-content: center;
-}
-#container .cont1 .center .rightWrap form .linkWrap button {
-  margin-top: 40px;
+#container .cont1 .center .rightWrap .loginWrap form .idWrap input,
+#container .cont1 .center .rightWrap .loginWrap form .passWrap input {
   font-family: "Poppins", sans-serif;
-  width: 220px;
-  height: 50px;
+  display: block;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+#container .cont1 .center .rightWrap .loginWrap form .idWrap input::-moz-placeholder, #container .cont1 .center .rightWrap .loginWrap form .passWrap input::-moz-placeholder {
+  color: #ccc;
+}
+#container .cont1 .center .rightWrap .loginWrap form .idWrap input::placeholder,
+#container .cont1 .center .rightWrap .loginWrap form .passWrap input::placeholder {
+  color: #ccc;
+}
+#container .cont1 .center .rightWrap .loginWrap form .btnWrap {
+  padding: 10px 0 40px;
+}
+#container .cont1 .center .rightWrap .loginWrap form .btnWrap button {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 600;
+  padding: 10px;
+  border: 1px solid #141416;
   background-color: #141416;
   color: #fff;
-  border: 1px solid #141416;
-  font-size: 16px;
   cursor: pointer;
   transition: all 0.5s;
 }
-#container .cont1 .center .rightWrap form .linkWrap button:hover {
+#container .cont1 .center .rightWrap .loginWrap form .btnWrap button:hover {
+  background-color: #a50034;
+}
+#container .cont1 .center .rightWrap .loginWrap form .btnWrap button i {
+  padding-right: 10px;
+}
+#container .cont1 .center .rightWrap .loginWrap form .btnWrap button:disabled {
+  border: 1px solid #bbb;
+  background-color: #bbb;
+}
+#container .cont1 .center .rightWrap .loginWrap form .linkWrap {
+  display: flex;
+  justify-content: space-between;
+}
+#container .cont1 .center .rightWrap .loginWrap form .linkWrap > a {
+  border: 1px solid #ddd;
   background-color: #fff;
   color: #141416;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  height: 40px;
+  transition: all 0.5s;
+}
+#container .cont1 .center .rightWrap .loginWrap form .linkWrap > a:hover {
+  background-color: #141416;
+  color: #fff;
 }

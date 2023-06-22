@@ -446,85 +446,190 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 220px 0 150px;
-  color: #141416;
+  padding: 220px 0 200px;
 }
 #container .cont1 .center {
-  width: 72%;
+  width: 62.5%;
   display: flex;
 }
 #container .cont1 .center .leftWrap {
-  width: 40%;
-  background-color: #fff;
+  width: 33%;
+  background-image: url(/img/index/joinBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#container .cont1 .center .leftWrap h2 {
-  font-size: 35px;
-  text-align: center;
-  padding-top: 70px;
+#container .cont1 .center .leftWrap .coverWrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 22, 0.6784313725);
+  position: relative;
 }
-#container .cont1 .center .leftWrap #join {
-  padding: 50px;
+#container .cont1 .center .leftWrap .coverWrap img {
+  position: absolute;
+  width: 180px;
+  top: 35px;
+  left: 30px;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control {
-  margin: 0px auto 35px;
+#container .cont1 .center .leftWrap .coverWrap .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control label {
-  font-size: 20px;
+#container .cont1 .center .leftWrap .coverWrap .title h2 {
+  color: #fff;
+  font-size: 45px;
+  line-height: 48px;
+  font-weight: 600;
   display: flex;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control label i {
-  font-size: 18px;
-  padding-right: 10px;
+#container .cont1 .center .leftWrap .coverWrap .title p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+  margin: 10px 0 50px;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control input {
-  color: #141416;
-  display: block;
-  margin-top: 5px;
-  font-family: "Poppins", sans-serif;
-  width: 95%;
-  padding: 10px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #141416;
+#container .cont1 .center .leftWrap .coverWrap .title .privacy {
+  display: flex;
+  margin-bottom: 30px;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control .error_msg {
-  display: none;
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #fff;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control.ok input {
-  border-bottom: 1px solid #141416;
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li a {
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.5s;
 }
-#container .cont1 .center .leftWrap #join .member_infor .form_control.no input {
-  border-bottom: 1px solid #a50034;
-}
-#container .cont1 .center .leftWrap #join .member_infor .form_control.no .error_msg {
-  display: block;
-  margin-top: 5px;
+#container .cont1 .center .leftWrap .coverWrap .title .privacy li:hover a {
   color: #a50034;
 }
-#container .cont1 .center .leftWrap #join .btns {
+#container .cont1 .center .rightWrap {
+  width: 67%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container .cont1 .center .rightWrap .joinWrap {
+  width: 70%;
+  padding: 150px 0;
+}
+#container .cont1 .center .rightWrap .joinWrap > h2 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  color: #141416;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .form_control {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .form_control label {
+  padding-right: 10px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .form_control input {
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .form_control span {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a50034;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 .form_control {
+  width: 45.5%;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line02 {
+  margin-bottom: 7px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line02 .form_control input {
+  width: 90%;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line03 {
+  margin-bottom: 7px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line03 .form_control input {
+  width: 90%;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line03 p {
+  padding: 5px 0 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #777;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line04 {
+  margin-bottom: 7px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 {
   display: flex;
   justify-content: space-between;
 }
-#container .cont1 .center .leftWrap #join .btns button {
-  width: 49%;
-  height: 50px;
-  font-size: 15px;
-  background-color: #141416;
-  color: #fff;
-  border: 1px solid #141416;
-  transition: all 0.5s;
-  cursor: pointer;
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 .form_control {
+  width: 45.5%;
 }
-#container .cont1 .center .leftWrap #join .btns button:hover {
-  background-color: #fff;
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 {
+  margin-bottom: 50px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 h3 {
+  font-size: 18px;
+  color: #141416;
+  margin: 20px 0 10px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 .policy {
+  overflow: auto;
+  white-space: pre-wrap;
+  border: 1px solid #ddd;
+  width: 96%;
+  height: 50px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 .checkWrap {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 .checkWrap #confirm {
+  margin-right: 10px;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 .checkWrap label {
+  font-size: 14px;
   color: #141416;
 }
-#container .cont1 .center .rightWrap {
-  width: 60%;
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 .checkWrap label a {
+  color: #a50034;
 }
-#container .cont1 .center .rightWrap img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+#container .cont1 .center .rightWrap .joinWrap form .btns {
+  display: flex;
+  justify-content: center;
+}
+#container .cont1 .center .rightWrap .joinWrap form .btns button {
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+  border: 1px solid #141416;
+  background-color: #141416;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#container .cont1 .center .rightWrap .joinWrap form .btns button:hover {
+  background-color: #a50034;
+}
+#container .cont1 .center .rightWrap .joinWrap form .btns button:disabled {
+  border: 1px solid #bbb;
+  background-color: #bbb;
 }
