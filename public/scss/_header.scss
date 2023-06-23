@@ -282,7 +282,8 @@
                     a {
                         width: auto;
                         display: flex;
-                        font-size: 18px;
+                        justify-content: space-between;
+                        font-size: 16px;
 
                         &:nth-child(2),
                         &:nth-child(3) {
@@ -290,8 +291,20 @@
                                 content: "|";
                                 display: block;
                                 color: #000;
-                                font-size: 18px;
+                                font-size: 16px;
                                 margin-right: 20px;
+                            }
+                        }
+                    }
+                    .before {
+                        font-size: 16px;
+                    }
+                    .after {
+                        font-size: 13px;
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            &::before {
+                                font-size: 13px;
                             }
                         }
                     }
@@ -434,5 +447,11 @@
 
     .hamMenu {
         color: #000;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    #header .botHeader .center .gnb > li .depth2 {
+        width: 100%;
     }
 }

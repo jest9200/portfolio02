@@ -11,7 +11,7 @@ searchBtn.addEventListener("click",(e)=>{
 
     if(result === ""){
         // 입력값이 없으면 넘어가지 않게
-        alert("검색어를 입력하세요");
+        alert("Please enter a search word");
         e.preventDefault();
     } else {
         // 입력값이 있으면 넘어가게 하고 /search

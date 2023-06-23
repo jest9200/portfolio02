@@ -258,14 +258,24 @@ input, button {
 #header .mobileMenu .gnbMenu > li:nth-child(6) a {
   width: auto;
   display: flex;
-  font-size: 18px;
+  justify-content: space-between;
+  font-size: 16px;
 }
 #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(3)::before {
   content: "|";
   display: block;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 20px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .before {
+  font-size: 16px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after {
+  font-size: 13px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(3)::before {
+  font-size: 13px;
 }
 #header .mobileMenu .gnbMenu > li.on i {
   transform: rotate(180deg);
@@ -362,6 +372,11 @@ input, button {
   color: #000;
 }
 
+@media screen and (max-width: 1600px) {
+  #header .botHeader .center .gnb > li .depth2 {
+    width: 100%;
+  }
+}
 #footer {
   position: relative;
   padding: 50px 0;
@@ -434,6 +449,31 @@ input, button {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1200px) {
+  #footer .center {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #footer .center {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .center {
+    width: 90%;
+  }
+  #footer .center .footerMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .center .footerMenu li {
+    margin: 15px 0;
+  }
+  #footer .center .textWrap p {
+    font-size: 14px;
+  }
+}
 html,
 body {
   max-width: 100%;
@@ -454,7 +494,7 @@ body {
 }
 #container .cont1 .center .leftWrap {
   width: 33%;
-  background-image: url(/img/index/test.jpg);
+  background-image: url(/img/index/mypageBg.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,12 +565,6 @@ body {
   margin-bottom: 20px;
   color: #141416;
 }
-#container .cont1 .center .rightWrap .mypageWrap > h2 span {
-  padding-left: 10px;
-  color: #777;
-  font-weight: 400;
-  font-size: 15px;
-}
 #container .cont1 .center .rightWrap .mypageWrap .myInfo {
   display: flex;
   justify-content: space-between;
@@ -588,6 +622,21 @@ body {
   width: 96%;
   border: 1px solid #ddd;
 }
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .wrap span {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a50034;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .wrap.ok input {
+  border: 1px solid #ddd;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .wrap.ok .err_msg {
+  display: none;
+}
+#container .cont1 .center .rightWrap .mypageWrap .line05 form .wrap.no input {
+  border: 1px solid #a50034;
+}
 #container .cont1 .center .rightWrap .mypageWrap .line05 form .btn {
   display: flex;
   justify-content: center;
@@ -605,4 +654,35 @@ body {
 }
 #container .cont1 .center .rightWrap .mypageWrap .line05 form .btn button:hover {
   background-color: #a50034;
+}
+
+@media screen and (max-width: 1600px) {
+  #container .cont1 .center {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container .cont1 .center {
+    width: 95%;
+  }
+  #container .cont1 .center .leftWrap {
+    display: none;
+  }
+  #container .cont1 .center .rightWrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .cont1 .center .rightWrap .mypageWrap {
+    width: 85%;
+  }
+  #container .cont1 .center .rightWrap .mypageWrap .line01 {
+    display: block;
+  }
+  #container .cont1 .center .rightWrap .mypageWrap .line01 .myInfo {
+    width: 95%;
+  }
+  #container .cont1 .center .rightWrap .mypageWrap .line01 .myInfo:nth-child(1) {
+    margin-bottom: 7px;
+  }
 }

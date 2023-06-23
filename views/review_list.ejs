@@ -80,18 +80,23 @@
                     </ul>
                 <% } %>
                 <form id="searchForm" action="/search" method="get">
-                    <select name="search">
-                        <option value="category">category</option>
-                        <option value="hashtag">hashtag</option>
-                    </select>
-                    <input id="inputText" type="text" name="inputText" value="<%- text %>">
-                    <button id="searchBtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <a class="back" href="/notice/review/list">Back to the list</a>
-                    <% if(login){ %>
-                        <a href="/notice/review/insert">Write</a>
-                    <% } else { %>
-                        <a href="/login">Login to write</a>
-                    <% } %>
+                    <div>
+                        <select name="search">
+                            <option value="category">category</option>
+                            <option value="hashtag">hashtag</option>
+                        </select>
+                        <input id="inputText" type="text" name="inputText" value="<%- text %>">
+                        <button id="searchBtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div>
+                        <a class="back" href="/notice/review/list">Return</a>
+                        <% if(login){ %>
+                            <a href="/notice/review/insert">Write</a>
+                        <% } else { %>
+                            <a href="/login">Login to write</a>
+                        <% } %>
+                    </div>
+                    
                 </form>
             </div>
         </div>

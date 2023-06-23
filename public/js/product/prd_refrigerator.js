@@ -18,6 +18,8 @@ for(let i=0; i<tabMenus.length; i++){
 const detailMenus = document.querySelectorAll(".cont8 .detailMenu > li");
 const detailDepth2 = document.querySelectorAll(".cont8 .detailMenu > li .depth2");
 let menuHeight = [202,405,283,567];
+let smallerHeight = [404,810,526,1053];
+const mobile = matchMedia("screen and (max-width:768px)");
 
 for(let i=0; i<detailMenus.length; i++){
     detailMenus[i].addEventListener("click",(e)=>{
@@ -33,8 +35,12 @@ for(let i=0; i<detailMenus.length; i++){
                 detailDepth2[j].style.paddingBottom = 0;
             }
             detailMenus[i].classList.add("on");
-            detailDepth2[i].style.height = menuHeight[i] + "px";
             detailDepth2[i].style.paddingBottom = "50px";
+            if(mobile.matches){
+                detailDepth2[i].style.height = smallerHeight[i] + "px";
+            } else {
+                detailDepth2[i].style.height = menuHeight[i] + "px";
+            }
         }
     })
 }

@@ -139,3 +139,32 @@ body {
         }
     }
 }
+
+// 반응형
+@media screen and (max-width:1600px){
+    #container {
+        .cont1 {
+            .wrap {
+                .center {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #container {
+        .cont1 {
+            .wrap {
+                .center {
+                    .titleWrap {
+                        h2 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

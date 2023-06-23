@@ -258,14 +258,24 @@ input, button {
 #header .mobileMenu .gnbMenu > li:nth-child(6) a {
   width: auto;
   display: flex;
-  font-size: 18px;
+  justify-content: space-between;
+  font-size: 16px;
 }
 #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(3)::before {
   content: "|";
   display: block;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 20px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .before {
+  font-size: 16px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after {
+  font-size: 13px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(3)::before {
+  font-size: 13px;
 }
 #header .mobileMenu .gnbMenu > li.on i {
   transform: rotate(180deg);
@@ -362,6 +372,11 @@ input, button {
   color: #000;
 }
 
+@media screen and (max-width: 1600px) {
+  #header .botHeader .center .gnb > li .depth2 {
+    width: 100%;
+  }
+}
 #footer {
   position: relative;
   padding: 50px 0;
@@ -434,6 +449,31 @@ input, button {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1200px) {
+  #footer .center {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #footer .center {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .center {
+    width: 90%;
+  }
+  #footer .center .footerMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .center .footerMenu li {
+    margin: 15px 0;
+  }
+  #footer .center .textWrap p {
+    font-size: 14px;
+  }
+}
 html,
 body {
   max-width: 100%;
@@ -542,6 +582,15 @@ body {
   line-height: 15px;
   color: #a50034;
 }
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .form_control.ok {
+  border: 1px solid #ddd;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .form_control.ok span {
+  display: none;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .form_control.no {
+  border: 1px solid #a50034;
+}
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 {
   display: flex;
   justify-content: space-between;
@@ -550,17 +599,20 @@ body {
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 .form_control {
   width: 45.5%;
 }
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 .form_control input {
+  width: 75%;
+}
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line02 {
   margin-bottom: 7px;
 }
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line02 .form_control input {
-  width: 90%;
+  width: 75%;
 }
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line03 {
   margin-bottom: 7px;
 }
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line03 .form_control input {
-  width: 90%;
+  width: 75%;
 }
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line03 p {
   padding: 5px 0 10px;
@@ -571,12 +623,18 @@ body {
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line04 {
   margin-bottom: 7px;
 }
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line04 .form_control input {
+  width: 75%;
+}
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 {
   display: flex;
   justify-content: space-between;
 }
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 .form_control {
   width: 45.5%;
+}
+#container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 .form_control input {
+  width: 75%;
 }
 #container .cont1 .center .rightWrap .joinWrap form .member_infor .line06 {
   margin-bottom: 50px;
@@ -614,7 +672,9 @@ body {
 }
 #container .cont1 .center .rightWrap .joinWrap form .btns {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #container .cont1 .center .rightWrap .joinWrap form .btns button {
   font-family: "Poppins", sans-serif;
@@ -632,4 +692,51 @@ body {
 #container .cont1 .center .rightWrap .joinWrap form .btns button:disabled {
   border: 1px solid #bbb;
   background-color: #bbb;
+}
+#container .cont1 .center .rightWrap .joinWrap form .btns > a {
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 7px;
+  color: #777;
+  transition: all 0.5s;
+}
+#container .cont1 .center .rightWrap .joinWrap form .btns > a:hover {
+  color: #a50034;
+}
+
+@media screen and (max-width: 1600px) {
+  #container .cont1 .center {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container .cont1 .center {
+    width: 95%;
+  }
+  #container .cont1 .center .leftWrap {
+    display: none;
+  }
+  #container .cont1 .center .rightWrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .cont1 .center .rightWrap .joinWrap form .member_infor .line01, #container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 {
+    display: block;
+  }
+  #container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 .form_control, #container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 .form_control {
+    width: 100%;
+  }
+  #container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 .form_control input, #container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 .form_control input {
+    width: 90%;
+  }
+  #container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 .form_control.name,
+  #container .cont1 .center .rightWrap .joinWrap form .member_infor .line01 .form_control.pass, #container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 .form_control.name,
+  #container .cont1 .center .rightWrap .joinWrap form .member_infor .line05 .form_control.pass {
+    margin-bottom: 7px;
+  }
+  #container .cont1 .center .rightWrap .joinWrap form .member_infor .line02 .form_control, #container .cont1 .center .rightWrap .joinWrap form .member_infor .line03 .form_control, #container .cont1 .center .rightWrap .joinWrap form .member_infor .line04 .form_control {
+    width: 100%;
+  }
 }

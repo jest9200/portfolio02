@@ -113,19 +113,31 @@ body {
                                     color: #a50034;
                                 }
                             }
+                            .form_control.ok {
+                                border: 1px solid #ddd;
+                                span {
+                                    display: none;
+                                }
+                            }
+                            .form_control.no {
+                                border: 1px solid #a50034;
+                            }
                             .line01 {
                                 display: flex;
                                 justify-content: space-between;
                                 margin-bottom: 7px;
                                 .form_control {
                                     width: 45.5%;
+                                    input {
+                                        width: 75%;
+                                    }
                                 }
                             }
                             .line02 {
                                 margin-bottom: 7px;
                                 .form_control {
                                     input {
-                                        width: 90%;
+                                        width: 75%;
                                     }
                                 }
                             }
@@ -133,7 +145,7 @@ body {
                                 margin-bottom: 7px;
                                 .form_control {
                                     input {
-                                        width: 90%;
+                                        width: 75%;
                                     }
                                 }
                                 p {
@@ -145,12 +157,20 @@ body {
                             }
                             .line04 {
                                 margin-bottom: 7px;
+                                .form_control {
+                                    input {
+                                        width: 75%;
+                                    }
+                                }
                             }
                             .line05 {
                                 display: flex;
                                 justify-content: space-between;
                                 .form_control {
                                     width: 45.5%;
+                                    input {
+                                        width: 75%;
+                                    }
                                 }
                             }
                             .line06 {
@@ -190,7 +210,9 @@ body {
                         }
                         .btns {
                             display: flex;
+                            flex-direction: column;
                             justify-content: center;
+                            align-items: center;
                             button {
                                 font-family: 'Poppins', sans-serif;
                                 width: 70%;
@@ -206,6 +228,79 @@ body {
                                 &:disabled {
                                     border: 1px solid #bbb;
                                     background-color: #bbb;
+                                }
+                            }
+                            > a {
+                                display: block;
+                                font-size: 15px;
+                                line-height: 20px;
+                                margin-top: 7px;
+                                color: #777;
+                                transition: all .5s;
+                                &:hover {
+                                    color: #a50034;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 반응형
+@media screen and (max-width:1600px){
+    #container {
+        .cont1 {
+            .center {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #container {
+        .cont1 {
+            .center {
+                width: 95%;
+                .leftWrap {
+                    display: none;
+                }
+                .rightWrap {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #container {
+        .cont1 {
+            .center {
+                .rightWrap {
+                    .joinWrap {
+                        form {
+                            .member_infor {
+                                .line01,.line05 {
+                                    display: block;
+                                    .form_control {
+                                        width: 100%;
+                                        input {
+                                            width: 90%;
+                                        }
+                                    }
+                                    .form_control.name,
+                                    .form_control.pass {
+                                        margin-bottom: 7px;
+                                    }
+                                }
+                                .line02,.line03,.line04 {
+                                    .form_control {
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }

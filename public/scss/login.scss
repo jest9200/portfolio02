@@ -183,6 +183,56 @@ body {
                 }
             }
         }       
-
     }
 }
+
+
+// 반응형
+@media screen and (max-width:1600px){
+    #container {
+        .cont1 {
+            .center {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #container {
+        .cont1 {
+            .center {
+                width: 95%;
+                .leftWrap {
+                    display: none;
+                }
+                .rightWrap {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #container {
+        .cont1 {
+            .center {
+                .rightWrap {
+                    .loginWrap {
+                        width: 85%;
+                        h2 {
+                            span {
+                                font-size: 24px;
+                            }
+                            img {
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

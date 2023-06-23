@@ -258,14 +258,24 @@ input, button {
 #header .mobileMenu .gnbMenu > li:nth-child(6) a {
   width: auto;
   display: flex;
-  font-size: 18px;
+  justify-content: space-between;
+  font-size: 16px;
 }
 #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(3)::before {
   content: "|";
   display: block;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 20px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .before {
+  font-size: 16px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after {
+  font-size: 13px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(3)::before {
+  font-size: 13px;
 }
 #header .mobileMenu .gnbMenu > li.on i {
   transform: rotate(180deg);
@@ -362,6 +372,11 @@ input, button {
   color: #000;
 }
 
+@media screen and (max-width: 1600px) {
+  #header .botHeader .center .gnb > li .depth2 {
+    width: 100%;
+  }
+}
 #footer {
   position: relative;
   padding: 50px 0;
@@ -434,6 +449,31 @@ input, button {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1200px) {
+  #footer .center {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #footer .center {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .center {
+    width: 90%;
+  }
+  #footer .center .footerMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .center .footerMenu li {
+    margin: 15px 0;
+  }
+  #footer .center .textWrap p {
+    font-size: 14px;
+  }
+}
 html,
 body {
   max-width: 100%;
@@ -715,4 +755,58 @@ body {
 #container .backToTop.show {
   right: 50px;
   opacity: 1;
+}
+
+@media screen and (max-width: 1600px) {
+  #container .cont2 .textWrap .center {
+    width: 50%;
+  }
+  #container .cont2 .imgWrap {
+    width: 90%;
+  }
+  #container .cont3 .textWrap .center {
+    width: 80%;
+  }
+  #container .cont3 .swiper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container .cont2 .textWrap .center {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .cont1 .textWrap {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  #container .cont1 .textWrap h2 {
+    font-size: 22px;
+  }
+  #container .cont1 .textWrap p {
+    font-size: 15px;
+  }
+  #container .cont3 .swiper::before {
+    background: linear-gradient(450deg, #000 10%, rgba(0, 0, 0, 0));
+  }
+  #container .cont3 .swiper::after {
+    background: linear-gradient(270deg, #000 10%, rgba(0, 0, 0, 0));
+  }
+  #container .cont4 .center {
+    width: 90%;
+  }
+  #container .cont4 .center .textWrap .links a {
+    font-size: 12px;
+    width: 160px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #container .cont3 .swiper::before {
+    background: none;
+  }
+  #container .cont3 .swiper::after {
+    background: none;
+  }
 }

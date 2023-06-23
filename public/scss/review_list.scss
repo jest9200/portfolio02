@@ -146,47 +146,117 @@ body {
             form {
                 display: flex;
                 align-items: center;
-                select {
-                    width: 140px;
-                    padding: 10px;
-                    outline: none;
-                    font-family: 'Poppins', sans-serif;
-                    border: 1px solid #ddd;
-                    margin-right: 10px;
-                }
-                input {
-                    width: 180px;
-                    padding: 10px;
-                    font-family: 'Poppins', sans-serif;
-                    border: 1px solid #ddd;
-                }
-                button {
-                    border: 1px solid #141416;
-                    background-color: #141416;
-                    font-family: 'Poppins', sans-serif;
-                    color: #fff;
-                    padding: 10px 15px;
-                    margin-right: 10px;
-                    cursor: pointer;
-                }
-                a {
+                > div {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid #141416;
-                    background-color: #141416;
-                    color: #fff;
-                    font-size: 15px;
-                    height: 40px;
-                    padding: 0 10px;
-                    transition: all .5s;
-                    &:hover {
-                        background: #fff;
-                        color: #141416;
+                    select {
+                        width: 140px;
+                        padding: 10px;
+                        outline: none;
+                        font-family: 'Poppins', sans-serif;
+                        border: 1px solid #ddd;
+                        margin-right: 10px;
+                    }
+                    input {
+                        width: 180px;
+                        padding: 10px;
+                        font-family: 'Poppins', sans-serif;
+                        border: 1px solid #ddd;
+                    }
+                    button {
+                        border: 1px solid #141416;
+                        background-color: #141416;
+                        font-family: 'Poppins', sans-serif;
+                        color: #fff;
+                        padding: 10px 15px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #141416;
+                        background-color: #141416;
+                        color: #fff;
+                        font-size: 15px;
+                        height: 40px;
+                        padding: 0 10px;
+                        transition: all .5s;
+                        &:hover {
+                            background: #fff;
+                            color: #141416;
+                        }
+                    }
+                    .back {
+                        margin-right: 10px;
                     }
                 }
-                .back {
-                    margin-right: 10px;
+            }
+        }
+    }
+}
+
+// 반응형
+@media screen and (max-width:1600px){
+    #container {
+        .cont2 {
+            .center {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #container {
+        .cont2 {
+            .center {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #container {
+        .cont2 {
+            .center {
+                .listWrap {
+                    .list {
+                        .imgWrap {
+                            width: 45%;
+                        }
+                        .titleWrap {
+                            width: 50%;
+                            h3 {
+                                font-size: 13px;
+                            }
+                            h2 {
+                                font-size: 18px;
+                            }
+                            p {
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cont3 {
+            .center {
+                form {
+                    flex-direction: column-reverse;
+                    > div {
+                        padding-bottom: 10px;
+                        select {
+                            width: 110px;
+                        }
+                        input {
+                            width: 150px;
+                        }
+                    }
                 }
             }
         }

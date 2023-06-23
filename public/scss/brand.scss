@@ -453,3 +453,156 @@ body {
     }
 }
 // container end
+
+// 반응형
+@media screen and (max-width:1600px){
+    #container {
+        .cont2 {
+            .center {
+                width: 90%;
+            }
+        }
+        .cont3 {
+            .tabWrap {
+                .tabMenu {
+                    width: 90%;
+                }
+            }
+        }
+        .cont4,.cont5,.cont6 {
+            .center {
+                width: 90%;
+                .imgs {
+                    .box {
+                        p {
+                            span {
+                                font-size: 15px;
+                            }
+                        }
+                        > div {
+                            >span {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cont7 {
+            .titleWrap {
+                .center {
+                    width: 90%;
+                }
+            }
+            .imgWrap {
+                .center {
+                    width: 90%;
+                    .botImgs {
+                        img {
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+            .bannerWrap {
+                .center {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #container {
+        .cont2 {
+            .center {
+                width: 95%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    #container {
+        .cont1 {
+            .textWrap {
+                top: 50%;
+                bottom: auto;
+                transform: translate(-50%, -50%);
+                h2 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .cont2 {
+            .center {
+                .topWrap {
+                    width: 85%;
+                }
+                .botWrap {
+                    height: 350px;
+                }
+            }
+        }
+
+        .cont3 {
+            .tabWrap {
+                .tabMenu > li > a {
+                    font-size: 15px;
+                }
+            }
+            .titleWrap {
+                .center {
+                    width: 80%;
+                    .text {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .cont4,.cont5,.cont6 {
+            .center {
+                width: 90%;
+                .imgs {
+                    .box {
+                        p {
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                        > div {
+                            >span {
+                                font-size: 10px;
+                                bottom: 5px;
+                                left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .cont7 {
+            .titleWrap {
+                .center {
+                    .text {
+                        width: 80%;
+                    }
+                }
+            }
+            .bannerWrap {
+                .center {
+                    background-position: left;
+                }
+            }
+        }
+    }
+}

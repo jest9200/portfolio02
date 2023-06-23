@@ -258,14 +258,24 @@ input, button {
 #header .mobileMenu .gnbMenu > li:nth-child(6) a {
   width: auto;
   display: flex;
-  font-size: 18px;
+  justify-content: space-between;
+  font-size: 16px;
 }
 #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(3)::before {
   content: "|";
   display: block;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 20px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .before {
+  font-size: 16px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after {
+  font-size: 13px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(3)::before {
+  font-size: 13px;
 }
 #header .mobileMenu .gnbMenu > li.on i {
   transform: rotate(180deg);
@@ -362,6 +372,11 @@ input, button {
   color: #000;
 }
 
+@media screen and (max-width: 1600px) {
+  #header .botHeader .center .gnb > li .depth2 {
+    width: 100%;
+  }
+}
 #footer {
   position: relative;
   padding: 50px 0;
@@ -434,6 +449,31 @@ input, button {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1200px) {
+  #footer .center {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #footer .center {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .center {
+    width: 90%;
+  }
+  #footer .center .footerMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .center .footerMenu li {
+    margin: 15px 0;
+  }
+  #footer .center .textWrap p {
+    font-size: 14px;
+  }
+}
 html,
 body {
   max-width: 100%;
@@ -608,4 +648,32 @@ body {
 #container .cont1 .center .rightWrap .loginWrap form .linkWrap > a:hover {
   background-color: #141416;
   color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+  #container .cont1 .center {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container .cont1 .center {
+    width: 95%;
+  }
+  #container .cont1 .center .leftWrap {
+    display: none;
+  }
+  #container .cont1 .center .rightWrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .cont1 .center .rightWrap .loginWrap {
+    width: 85%;
+  }
+  #container .cont1 .center .rightWrap .loginWrap h2 span {
+    font-size: 24px;
+  }
+  #container .cont1 .center .rightWrap .loginWrap h2 img {
+    width: 180px;
+  }
 }

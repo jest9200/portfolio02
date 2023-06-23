@@ -162,3 +162,33 @@ body {
         }
     }
 }
+
+// 반응형
+@media screen and (max-width:1600px){
+    #container {
+        .cont1 {
+            .wrap {
+                .center {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #container {
+        .cont1 {
+            .wrap {
+                .center {
+                    width: 95%;
+                    flex-direction: column-reverse;
+                    .textWrap,
+                    .imgWrap {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

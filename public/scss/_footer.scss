@@ -88,3 +88,39 @@
         }
     }
 }
+
+@media screen and (max-width:1200px) {
+    #footer {
+        .center {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    #footer {
+        .center {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #footer {
+        .center {
+            width: 90%;
+            .footerMenu {
+                flex-direction: column;
+                align-items: center;
+                li {
+                    margin: 15px 0;
+                }
+            }
+            .textWrap {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

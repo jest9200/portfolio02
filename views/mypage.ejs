@@ -1,5 +1,5 @@
 <%- include("header",{ title:"MY PAGE | LG SIGNATURE", cssFiles:["mypage.css"],
-    jsFiles:["header.js","login_join/scroll.js"] }) %>
+    jsFiles:["header.js","login_join/scroll.js","login_join/mypageCheck.js"] }) %>
     <div id="container">
         <div class="cont1">
             <div class="center">
@@ -19,7 +19,8 @@
                 </div>
                 <div class="rightWrap">
                     <div class="mypageWrap">
-                        <h2>My Infomation<span>(ID No.<%- (login.memberno < 10) ? "0" + login.memberno : login.memberno %>)</span></h2>
+                        <h2>My Infomation</h2>
+                        <!-- <span>(ID No.<%# (login.memberno < 10) ? "0" + login.memberno : login.memberno %>)</span> -->
                         <div class="line01">
                             <div class="myInfo">
                                 <h2>My Name</h2>
@@ -51,14 +52,16 @@
                         <div class="line05">
                             <h2>Change Your Password</h2>
                             <p>You must change your password periodically to maintain security.</p>
-                            <form action="/myupdate" method="post">
+                            <form id="passCheck" action="/myupdate" method="post">
                                 <div class="wrap">
                                     <label for="originPass">Original Password</label>
                                     <input id="originPass" type="password" name="originPass" placeholder="Please enter your original password">
+                                    <span class="err_msg"></span>
                                 </div>
                                 <div class="wrap">
                                     <label for="changePass">Changing Password</label>
                                     <input id="changePass" type="password" name="changePass" placeholder="Please enter the password you want to change">
+                                    <span class="err_msg"></span>
                                 </div>
                                 <div class="btn">
                                     <button type="submit">Submit</button>

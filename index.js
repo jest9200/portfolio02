@@ -365,7 +365,7 @@ app.get("/join", (req, res) => {
 app.post("/joindb", (req, res) => {
     db.collection("members").findOne({ memberid: req.body.memberid }, (err, member) => {
         if (member) {
-            res.send("<script> alert('이미 가입된 아이디입니다.'); location.href='/join'; </script>")
+            res.send("<script> alert('The ID is already subscribed.'); location.href='/join'; </script>")
         } else {
             db.collection("count").findOne({ name: "회원" }, (err, result) => {
                 db.collection("members").insertOne({
@@ -378,7 +378,7 @@ app.post("/joindb", (req, res) => {
                     memberphone: req.body.memberphone
                 }, (err) => {
                     db.collection("count").updateOne({ name: "회원" }, { $inc: { memberCount: 1 } }, (err) => {
-                        res.send("<script> alert('회원가입 완료'); location.href='/login' </script>")
+                        res.send("<script> alert('Member registration completed.'); location.href='/login' </script>")
                     })
                 })
             })
@@ -397,7 +397,7 @@ app.post("/logincheck", passport.authenticate('local', { failureRedirect: '/logi
 
 // 로그인하지않고 notice 들어갔을때 경고창 띄우기
 app.get("/noticelogin",(req,res)=>{
-    res.send("<script>alert('You need to login in.'); location.href = '/login'</script>")
+    res.send("<script>alert('You need to login.'); location.href = '/login'</script>")
 })
 
 

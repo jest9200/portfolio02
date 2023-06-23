@@ -258,14 +258,24 @@ input, button {
 #header .mobileMenu .gnbMenu > li:nth-child(6) a {
   width: auto;
   display: flex;
-  font-size: 18px;
+  justify-content: space-between;
+  font-size: 16px;
 }
 #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) a:nth-child(3)::before {
   content: "|";
   display: block;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 20px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .before {
+  font-size: 16px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after {
+  font-size: 13px;
+}
+#header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(2)::before, #header .mobileMenu .gnbMenu > li:nth-child(6) .after:nth-child(3)::before {
+  font-size: 13px;
 }
 #header .mobileMenu .gnbMenu > li.on i {
   transform: rotate(180deg);
@@ -362,6 +372,11 @@ input, button {
   color: #000;
 }
 
+@media screen and (max-width: 1600px) {
+  #header .botHeader .center .gnb > li .depth2 {
+    width: 100%;
+  }
+}
 #footer {
   position: relative;
   padding: 50px 0;
@@ -434,6 +449,31 @@ input, button {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1200px) {
+  #footer .center {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #footer .center {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .center {
+    width: 90%;
+  }
+  #footer .center .footerMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .center .footerMenu li {
+    margin: 15px 0;
+  }
+  #footer .center .textWrap p {
+    font-size: 14px;
+  }
+}
 html,
 body {
   max-width: 100%;
@@ -572,7 +612,10 @@ body {
   display: flex;
   align-items: center;
 }
-#container .cont3 .center form select {
+#container .cont3 .center form > div {
+  display: flex;
+}
+#container .cont3 .center form > div select {
   width: 140px;
   padding: 10px;
   outline: none;
@@ -580,13 +623,13 @@ body {
   border: 1px solid #ddd;
   margin-right: 10px;
 }
-#container .cont3 .center form input {
+#container .cont3 .center form > div input {
   width: 180px;
   padding: 10px;
   font-family: "Poppins", sans-serif;
   border: 1px solid #ddd;
 }
-#container .cont3 .center form button {
+#container .cont3 .center form > div button {
   border: 1px solid #141416;
   background-color: #141416;
   font-family: "Poppins", sans-serif;
@@ -595,7 +638,7 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
-#container .cont3 .center form a {
+#container .cont3 .center form > div a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -607,10 +650,50 @@ body {
   padding: 0 10px;
   transition: all 0.5s;
 }
-#container .cont3 .center form a:hover {
+#container .cont3 .center form > div a:hover {
   background: #fff;
   color: #141416;
 }
-#container .cont3 .center form .back {
+#container .cont3 .center form > div .back {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+  #container .cont2 .center {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container .cont2 .center {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .cont2 .center .listWrap .list .imgWrap {
+    width: 45%;
+  }
+  #container .cont2 .center .listWrap .list .titleWrap {
+    width: 50%;
+  }
+  #container .cont2 .center .listWrap .list .titleWrap h3 {
+    font-size: 13px;
+  }
+  #container .cont2 .center .listWrap .list .titleWrap h2 {
+    font-size: 18px;
+  }
+  #container .cont2 .center .listWrap .list .titleWrap p span {
+    font-size: 12px;
+  }
+  #container .cont3 .center form {
+    flex-direction: column-reverse;
+  }
+  #container .cont3 .center form > div {
+    padding-bottom: 10px;
+  }
+  #container .cont3 .center form > div select {
+    width: 110px;
+  }
+  #container .cont3 .center form > div input {
+    width: 150px;
+  }
 }

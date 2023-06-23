@@ -356,3 +356,68 @@ body {
     }
 }
 // container end
+
+// 반응형
+
+@media screen and (max-width:1400px) {
+    #container {
+        .cont2 {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        height: 350px;
+                    }
+                    .swiper-slide-active {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #container {
+        .cont3 {
+            .center {
+                .wrapper {
+                    .boxWrap {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #container {
+        .cont1 {
+            .textWrap {
+                top: 50%;
+                bottom: auto;
+                transform: translate(-50%, -50%);
+                h2 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        .cont2 .swiper .swiper-button-prev {
+            left: 5%;
+        }
+        .cont2 .swiper .swiper-button-next {
+            right: 5%;
+        }
+        .cont2 {
+            .topWrap {
+                .titleWrap {
+                    width: 80%;
+                }
+            }
+        }
+        
+    }
+}

@@ -110,13 +110,13 @@
                 <li><a href="/inspiration">INSPIRATION</a></li>
                 <li>
                      <% if (login) { %>
-                        <a href="/mypage"><%- login.memberid %></a>
-                        <a href="/logout">LOGOUT</a>
-                        <a href="/notice/review/list">NOTICE</a>
+                        <a class="after" href="/mypage"><%- login.memberid %></a>
+                        <a class="after" href="/logout">LOGOUT</a>
+                        <a class="after" href="/notice/review/list">NOTICE</a>
                     <% } else { %>
-                        <a href="/login">LOGIN</a>
-                        <a href="/join">JOIN</a>
-                        <a href="/login">NOTICE</a>
+                        <a class="before" href="/login">LOGIN</a>
+                        <a class="before" href="/join">JOIN</a>
+                        <a class="before" href="/noticelogin">NOTICE</a>
                     <% } %>
                 </li>
             </ul>

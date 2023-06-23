@@ -299,3 +299,98 @@ body {
     }
 }
 // container end
+
+// 반응형
+
+@media screen and (max-width:1600px) {
+    #container {
+        .cont2 {
+            .textWrap {
+                .center {
+                    width: 50%;
+                }
+            }
+            .imgWrap {
+                width: 90%;
+            }
+        }
+        .cont3 {
+            .textWrap {
+                .center {
+                    width: 80%;
+                }
+            }
+            .swiper {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #container {
+        .cont2 {
+            .textWrap {
+                .center {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #container {
+        .cont1 {
+            .textWrap {
+                top: 50%;
+                bottom: auto;
+                transform: translate(-50%, -50%);
+                h2 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        .cont3 {
+            .swiper {
+                &::before {
+                    background: linear-gradient(450deg,#000 10%,rgba(0,0,0,0));
+                }
+                &::after {
+                    background: linear-gradient(270deg,#000 10%,rgba(0,0,0,0));
+                }
+            }
+        }
+        .cont4 {
+            .center {
+                width: 90%;
+                .textWrap {
+                    .links {
+                        a {
+                            font-size: 12px;
+                            width: 160px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    #container {
+        .cont3 {
+            .swiper {
+                &::before {
+                    background: none;
+                }
+                &::after {
+                    background: none;
+                }
+            }
+        }
+    }
+}

@@ -21,7 +21,7 @@ body {
             display: flex;
             .leftWrap {
                 width: 33%;
-                background-image: url(/img/index/test.jpg);
+                background-image: url(/img/index/mypageBg.jpg);
                 background-position: left;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -92,13 +92,13 @@ body {
                         line-height: 35px;
                         margin-bottom: 20px;
                         color: #141416;
-                        span {
-                            padding-left: 10px;
-                            color: #777;
-                            font-weight: 400;
-                            font-size: 15px;
-                        }
                     }
+                    // span {
+                    //     padding-left: 10px;
+                    //     color: #777;
+                    //     font-weight: 400;
+                    //     font-size: 15px;
+                    // }
                     .myInfo {
                         display: flex;
                         justify-content: space-between;
@@ -155,6 +155,25 @@ body {
                                     width: 96%;
                                     border: 1px solid #ddd;
                                 }
+                                span {
+                                    display: block;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    color: #a50034;
+                                }
+                            }
+                            .wrap.ok {
+                                input {
+                                    border: 1px solid #ddd;
+                                }
+                                .err_msg {
+                                    display: none;
+                                }
+                            }
+                            .wrap.no {
+                                input {
+                                    border: 1px solid #a50034;
+                                }
                             }
                             .btn {
                                 display: flex;
@@ -174,6 +193,56 @@ body {
                                     }
                                 }
                             } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 반응형
+@media screen and (max-width:1600px){
+    #container {
+        .cont1 {
+            .center {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #container {
+        .cont1 {
+            .center {
+                width: 95%;
+                .leftWrap {
+                    display: none;
+                }
+                .rightWrap {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #container {
+        .cont1 {
+            .center {
+                .rightWrap {
+                    .mypageWrap {
+                        width: 85%;
+                        .line01 {
+                            display: block;
+                            .myInfo {
+                                width: 95%;
+                                &:nth-child(1) {
+                                    margin-bottom: 7px;
+                                }
+                            }
                         }
                     }
                 }
