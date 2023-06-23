@@ -852,4 +852,7 @@ body {
   #container .cont2 .topWrap .titleWrap {
     width: 80%;
   }
+  #container .backToTop.show {
+    right: 20px;
+  }
 }

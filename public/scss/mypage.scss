@@ -238,10 +238,15 @@ body {
                         .line01 {
                             display: block;
                             .myInfo {
-                                width: 95%;
+                                width: 96%;
                                 &:nth-child(1) {
                                     margin-bottom: 7px;
                                 }
+                            }
+                        }
+                        .line02,.line03,.line04 {
+                            .myInfo {
+                                width: 96%;
                             }
                         }
                     }

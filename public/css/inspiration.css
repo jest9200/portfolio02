@@ -1008,4 +1008,7 @@ body {
   #container .cont5 .listWrap .center .listBox {
     width: 100%;
   }
+  #container .backToTop.show {
+    right: 20px;
+  }
 }

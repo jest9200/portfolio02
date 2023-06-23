@@ -659,6 +659,9 @@ input, button {
   #container .cont2 .center ul li:nth-child(2)::after {
     display: none;
   }
+  #container .backToTop.show {
+    right: 20px;
+  }
 }
 .craftCont {
   font-family: "Poppins", sans-serif;

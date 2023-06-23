@@ -955,4 +955,7 @@ body {
   #container .cont7 .bannerWrap .center {
     background-position: left;
   }
+  #container .backToTop.show {
+    right: 20px;
+  }
 }

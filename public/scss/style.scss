@@ -1759,6 +1759,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
                         bottom: 20px;
                         right: 20px;
                     }
+                    .close {
+                        top: 10px;
+                        right: 10px;
+                    }
                 }
             }
             .textWrap {
@@ -2037,6 +2041,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
                     }
                     .cover {
                         height: 500px;
+                        .coverClose {
+                            top: 10px;
+                            right: 10px;
+                        }
                     }
                 }
             }
@@ -2127,11 +2135,11 @@ html, body { max-width: 100%; overflow-x: hidden; }
                             &:nth-child(1),
                             &:nth-child(2),
                             &:nth-child(3){
-                                width: 28%;
+                                width: 30%;
                             }
                             &:nth-child(4),
                             &:nth-child(5) {
-                                width: 44%;
+                                width: 47%;
                             }
                         }
                     }

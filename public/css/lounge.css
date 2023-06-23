@@ -801,6 +801,9 @@ body {
     font-size: 12px;
     width: 160px;
   }
+  #container .backToTop.show {
+    right: 20px;
+  }
 }
 @media screen and (max-width: 640px) {
   #container .cont3 .swiper::before {

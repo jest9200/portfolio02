@@ -680,9 +680,12 @@ body {
     display: block;
   }
   #container .cont1 .center .rightWrap .mypageWrap .line01 .myInfo {
-    width: 95%;
+    width: 96%;
   }
   #container .cont1 .center .rightWrap .mypageWrap .line01 .myInfo:nth-child(1) {
     margin-bottom: 7px;
+  }
+  #container .cont1 .center .rightWrap .mypageWrap .line02 .myInfo, #container .cont1 .center .rightWrap .mypageWrap .line03 .myInfo, #container .cont1 .center .rightWrap .mypageWrap .line04 .myInfo {
+    width: 96%;
   }
 }

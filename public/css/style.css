@@ -2088,6 +2088,10 @@ html, body {
     bottom: 20px;
     right: 20px;
   }
+  #container .cont4 .imgWrap .center .close {
+    top: 10px;
+    right: 10px;
+  }
   #container .cont4 .textWrap .center {
     width: 90%;
   }
@@ -2303,6 +2307,10 @@ html, body {
   #container .cont10 .galleryWrap .imgWrap .cover {
     height: 500px;
   }
+  #container .cont10 .galleryWrap .imgWrap .cover .coverClose {
+    top: 10px;
+    right: 10px;
+  }
   #container .cont10 .textWrap .center .text {
     width: 90%;
   }
@@ -2354,10 +2362,10 @@ html, body {
     font-size: 70px;
   }
   #container .cont7 .imgWrap .center .imgList a:nth-child(1), #container .cont7 .imgWrap .center .imgList a:nth-child(2), #container .cont7 .imgWrap .center .imgList a:nth-child(3) {
-    width: 28%;
+    width: 30%;
   }
   #container .cont7 .imgWrap .center .imgList a:nth-child(4), #container .cont7 .imgWrap .center .imgList a:nth-child(5) {
-    width: 44%;
+    width: 47%;
   }
   #container .cont9 .moonWrap {
     width: 440px;
