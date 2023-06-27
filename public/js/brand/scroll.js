@@ -66,8 +66,12 @@ window.addEventListener("scroll",()=>{
             brandTabLists[2].classList.add("on");
         }
     } else {
-        brandHeader.style.display = "block";
-        brandTab.classList.remove("on");
+        setTimeout(()=>{
+            brandHeader.style.display = "block";
+            setTimeout(()=>{
+                brandTab.classList.remove("on");
+            },0)
+        },100);
     }
 });
 
