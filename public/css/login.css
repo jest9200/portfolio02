@@ -605,7 +605,7 @@ body {
   color: #ccc;
 }
 #container .cont1 .center .rightWrap .loginWrap form .btnWrap {
-  padding: 10px 0 40px;
+  padding: 10px 0;
 }
 #container .cont1 .center .rightWrap .loginWrap form .btnWrap button {
   font-family: "Poppins", sans-serif;
@@ -629,6 +629,11 @@ body {
 #container .cont1 .center .rightWrap .loginWrap form .btnWrap button:disabled {
   border: 1px solid #bbb;
   background-color: #bbb;
+}
+#container .cont1 .center .rightWrap .loginWrap form .admin {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
 }
 #container .cont1 .center .rightWrap .loginWrap form .linkWrap {
   display: flex;
