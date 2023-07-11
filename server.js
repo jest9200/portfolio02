@@ -2,7 +2,7 @@ const express = require("express");
 const multer = require('multer'); // 파일업로드 기능 multer 불러오기
 const MongoClient = require("mongodb").MongoClient;
 const app = express();
-const port = 3000;
+const port = 8080;
 
 // ejs 파일형식을 node.js에서 사용하기위한 시작구문(최초 한번)
 app.set("view engine", "ejs");
